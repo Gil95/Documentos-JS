@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="shortcut icon" href="../estilos/GJS.ico" type="image/x-icon">
+    <title>Modelo de Caixas</title>
+</head>
+<body>
+    <header>
+        <h1>Exemplo de caixa box-level</h1>
+    </header>
+    <main>
+        <h2>box-level e inline-level</h2>
+        <p>Parágrafos também são exemplos de box-level, mas os <a href="#">Links</a> são exemplos de caixas inline-level</p>
+        <p>As box-level podem ser observadas e alteradas usando a ferramenta "inspecionar" do Google Chrome, onde podemos alterar altura e largura, além de espaçamento, margem e bordas.</p>
+    </main>
+    <main>
+        <h2>box-level</h2>
+        <p style="text-align:center;">Esta main é um exemplo de caixa box-level </p>
+        <p style="text-align:center;">Este <abbr title="Texto sublinhado é um exemplo de inline-level" style="background-color:#86bbd8;">passe o mouse aqui</abbr> pois inicia e termina na mesma linha.</p>
+    </main>
+    <main>
+        <h2>Características da caixa</h2>
+        <figure>
+            <img src="../imagens/Característica da caixa.PNG" alt="Características da caixa" class="center">
+            <figcaption>Características da caixa</figcaption>
+        </figure>
+        <p style="text-align:center;">A caixa possui medidas de espaçamento, preenchimento, borda e linha externa.</p>
+        <div class="box">
+            <div class="content">Caixa de exemplo</div>
+        </div>
+        <p>Nesta caixa de exemplo, temos um outline na cor <span style="color:#daf7dc;">Verde triunfo (#DAF7DC)</span>, uma borda na cor <span style="color:#336699;">Loop Taverny (#336699)</span>, além de um background-color na cor <span style="color:#2F4858; background-color:#86bbd8;">Dark Blue (#2F4858)</span>.</p>
+        <p>Podemos também alterar uma tag que é por padrão box-level para inline-level, basta definir o valor "inline" na propriedade "display".</p>
+    </main>
+</body>
+</html>

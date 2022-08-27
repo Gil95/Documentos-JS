@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="GJS.ico" type="image/x-icon">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <header>
+        <h1>Links HTML</h1>
+    </header>
+    <section>
+        <h2>Usando links externos</h2>
+        <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external"onclick="alerta()">repositório público no GitHub</a></p>
+        <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external"onclick="alerta()">canal gratúito no YouTube</a></p>
+    </section>
+    <section>
+        <h2>Usando links internos</h2>
+        <p>Esta é a minha primeira página do site. Se você quiser, pode acessar também a minha <a href="links2.html" target="_self" rel="next">Segunda página.</a></p>
+        <p>Você também pode visitar a nossa <a href="notícias/pag003.html" target="_self" rel="next">página de notícias</a></p>
+    </section>
+    <section>
+        <h2>Links para downloads</h2>
+        <ul>
+            <li>Livro em PDF</li>
+                <ul>
+                    <li><a href="../ex002/livro/10 - Ligações em toda parte.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+                    <li><a href="../ex002/livro/10 - Ligações em toda parte.pdf" target="_blank" type="application/pdf">Abrir em segundo plano o livro em PDF</a></li>
+                </ul>
+            <li><a href="../ex002/livro/10 - Ligações em toda parte.zip" download="meu livro.zip">Livro compactado em ZIP</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Media Types</h2>
+        <a href="https://www.iana.org/assignments/media-types/media-types.xml" target="_blank" rel="noopener noreferrer">iana Media Types</a>
+    </section>
+    <footer>
+        <h1>&copy;Gil.JS</h1>
+    </footer>
+    <script>
+        function alerta(){
+            window.alert('Você está sendo redirecionado para um site externo')}
+    </script>
+</body>
+</html>

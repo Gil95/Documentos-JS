@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <Style>
+        div#area{
+            Background: Green;
+            Color: white;
+            width: 500px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            background-position: center;}
+        div#area2{
+            background: yellow;
+            color: red;
+            width: 500px;
+            height:200px;
+            line-height: 200px;
+            text-align: center;
+            background-position: center;}
+    </Style>
+</head>
+<body>
+
+    <div id= "area" onclick="clicar()"
+    onmouseenter="entrar()" onmouseout="sair()"
+    onmousewheel="roll()">
+        
+        Interaja
+
+    </div> 
+
+    </br>
+
+    <div id= "area2" onclick="clicar2()"
+    onmouseenter="entrar2()" onmouseout="sair2()"
+    onmousewheel="roll2()">
+        
+        Não interaja
+
+    </div>
+
+    <script>
+
+        var a1 = document.getElementById('area')
+        var a2 = document.getElementById('area2')
+
+        function clicar(){            
+            a1.innerText = 'Clicou!'
+            a1.style.backgroundColor ='cyan'
+            a1.style.color = 'black'}
+
+        function entrar(){            
+            a1.innerText = 'Entrou!'
+            a1.style.backgroundColor ='green'
+            a1.style.color = 'white'}
+
+        function sair(){
+            a1.innerText = 'Saiu!'
+            a1.style.backgroundColor ='green'
+            a1.style.color = 'white'}
+
+        function roll(){
+            a1.innerText = 'Rolou!'
+            a1.style.backgroundColor = 'blue'}
+
+        function clicar2(){
+            a2.innerText = 'Eu disse para não interajir!'
+            a2.style.backgroundColor = 'red'
+            a2.style.color = 'black'}
+
+        function entrar2(){
+            a2.innerText = 'Não Clique!'
+            a2.style.backgroundColor ='yellow'
+            a2.style.color = 'red'}
+
+        function sair2(){
+            a2.innerText = 'Ainda bem!'
+            a2.style.backgroundColor ='yellow'
+            a2.style.color = 'red'}
+
+        function roll2(){
+            a2.innerText = 'Nem mesmo role o mouse!'
+            a2.style.backgroundColor ='black'
+            a2.style.color = 'red'}
+        
+    </script>
+
+</body>
+</html>

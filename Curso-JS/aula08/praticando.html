@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+
+    <script>
+
+        //variáveis
+        var nome = window.prompt('Qual o seu nome?')
+        var idade = window.prompt('Qual a sua idade?')
+        var sexo = window.prompt('Qual o seu sexo? responda com M ou F')
+        var cidade = window.prompt('Em que estado você mora? Responda com a sigla de seu estado')
+        var matemática = window.prompt('Prove que sabe matemática básica, quanto é 2+2?')
+
+        //operadores relacionais
+        var i2 = idade   >   18
+        var m1 = sexo    ==  'F'
+        var c2 = cidade != 'RJ' && cidade != 'SP'
+        var m2 = matemática == 4
+
+        //operadores ternários
+        i2 && m1 && c2 && m2 ? document.write (`Olá, ${nome}. Você está apta a participar de nossa pesquisa.`) :
+        document.write (`Olá, ${nome}. Você não está apto(a) à participar de nossa pesquisa.`)  
+
+    </script>
+    
+</body>
+</html>

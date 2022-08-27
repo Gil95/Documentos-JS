@@ -1,0 +1,69 @@
+body{
+    background-image: linear-gradient(to bottom, dodgerblue,#FFE8BF);
+    font: normal 18pt arial;
+    background-attachment: fixed;
+}
+
+header{
+    color: aliceblue;
+    text-align: center;
+}
+
+section{
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(10,10,10,0.650);
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer{
+    color: aliceblue;
+    text-align: center;
+}
+
+figure {
+    background-color: aliceblue;
+    border: thin #c0c0c0 solid;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 100%;
+    min-width: 500px;
+    margin: auto;
+}
+
+img{
+    align-content: center;
+    margin-bottom: 0px;
+    border-radius: 10px;
+}
+
+figcaption {
+    background-color: #FFE8BF;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font: arial;
+    padding: 0px;
+    text-align: center;
+}
+
+.reduz60{
+    max-width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tam100{
+    max-width: 100%;
+    min-width: 100%;
+}

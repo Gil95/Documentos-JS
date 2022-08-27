@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis compostas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <header>
+
+        <h1>
+
+            Variáveis compostas
+
+        </h1>
+    
+    </header>
+    
+    <section id="texto">
+
+        <p>
+
+            Vetor é composto de elementos, o elemento de um vetor é
+             um par que agrupa o espaço da memória,
+             o valor colocado dentro dele é o indice, que também pode ser chamado de chave
+             sendo o conteúdo sendo armazenado em cada índice
+
+        </p>
+
+    </br>
+    
+        <p>
+
+            Um array, ou vetor, ou uma variável 
+            composta é uma variável que contém varios elementos,
+             cada elemento é composto por seu valor e por uma
+              chave de identificação
+            
+        </p>
+
+    </br>
+
+        <img src="Array.png" alt="" srcset="">
+
+        <p>
+
+            Variáveis compostas devem ser colocadas como
+
+        </p>
+
+    </br>
+
+        <p>
+        
+            <strong> var a = [ Mercedes C180 , BMW X1 , Fiat Uno ] </strong>
+        
+        </p>
+
+    </br>
+
+        <p>
+
+            Sendo a variável A uma ARRAY (VETOR)</br>
+            Dentre os colchetes o ELEMENTO </br>
+            Dentre as vírgulas, o CONTEÚDO </br>
+            Sendo cada ítem identificador por um ÍNDICE(CHAVE), numerados de 0 até infinito
+
+        </p>
+
+    </section>
+
+</br>
+
+    <section id="js">
+
+        <h1>
+
+            console.log
+
+        </h1>
+
+        <p>
+
+            let num = [2,5,9]
+        
+        </br>
+        
+            console.log(`Nosso vetor é o 2,5,9`)
+        
+        </br>
+        
+            num [3] = 6
+        
+        </br>
+        
+            console.log(`Nosso novo vetor é o 2,5,9,6`)
+        
+        </br>
+        
+            num.push(15)
+        
+        </br>
+        
+            console.log(`Nosso novo vetor é o 2,5,9,6,15`)
+        
+        </br>
+        
+            num.push(95)
+        
+        </br>
+        
+            console.log(`Nosso novo vetor é o 2,5,9,6,15,95`)
+        
+        </br>
+        
+            console.log (num.lenght) <strong>6</strong>
+        
+        </br>
+        
+            num.sort
+        
+        </br>
+        
+            console.log (num) <strong>2,5,6,9,15,95</strong>
+        
+        </br>
+        
+            num.sort (() => Math.random() - 0.5 )
+        
+        </br>
+        
+            console.log (num) <strong>15,9,2,95,6,5</strong>
+        
+        </br>
+        
+            for (let pos = 0; pos < num.length ; pos++) {
+                console.log(num[pos])
+            }
+            <strong>15</br>9</br>2</br>95</br>6</br>5</strong>
+        
+        </br>
+    
+        </p>
+        
+        </br>
+        
+        <p>
+        
+            let valores = [8,1,7,4,9,6,5,9,8,5,6,3,2]</br>
+
+        </br>
+        </br>    
+            <strong>estrutura de repetição</strong></br>
+            for (let pos=0 ; pos < valores.length ; pos++ ) {</br>
+                console.log(`A posição ${pos} tem o valor ${valores[pos]}`)</br>
+            }</br>
+        </br>
+        </br>    
+            <strong>estrutura de repetição simplificada</strong></br>
+            for(let pos in valores){</br>
+                console.log(`A posição ${pos} tem o valor ${valores[pos]}`)</br>
+            }</br>
+        </br>
+            console.log(valores.indexOf(5))</br>
+
+        </p>
+    </section>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

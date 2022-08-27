@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem de caracteres, toUpperCase e toLowerCase</title>
+
+</head>
+
+    <Style>
+        
+        body{font: italic 20pt arial;}
+
+    </Style>
+
+<body>
+
+    <script>
+        
+        var nome = window.prompt ('Qual é o seu nome?')
+        var sobrenome = window.prompt ('Qual é o seu sobrenome?')
+        var s1 = `${nome} ${sobrenome}`
+        document.write(`Olá, ${s1} seu nome e sobrenome tem ${s1.length} letras </br>`)
+        document.write(`Seu nome em maiúsculas fica ${s1.toUpperCase()}</br>`)
+        document.write(`Seu nome em minúsculas fica ${s1.toLowerCase()}`)
+
+    </script>
+
+</body>
+
+</html>

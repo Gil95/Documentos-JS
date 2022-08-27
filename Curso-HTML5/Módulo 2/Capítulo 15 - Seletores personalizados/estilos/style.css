@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Alice';
+    src: url('../../../../Fontes\ Baixadas/Alice_in_Wonderland_3.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Personal Script';
+    src: url('../../../../Fontes\ Baixadas/Playlist\ Script.otf') format('opentype');
+}
+
+*{
+    font: normal 16px Arial, Helvetica, Sans-serif;
+}
+
+body{
+    background-image: linear-gradient( to top, #829399, #e8e8e8);
+    background-attachment: fixed;
+}
+
+header{
+    color: #11151c;
+}
+main{
+    width: 90%;
+    background-color: #364156 ;
+    color: #e8e8e8;
+    border-radius: 20px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.650);
+}
+
+main#html{
+    width: 90%;
+    background-color: #11151c ;
+    color: #e8e8e8;
+    border-radius: 20px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.650);
+}
+
+main#css{
+    width: 90%;
+    background-color: #212d40 ;
+    color: #e8e8e8;
+    border-radius: 20px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.650);
+}
+
+h1{
+    font: normal 3em 'Personal Script', Arial, sans-serif;
+    text-align: center;
+    text-shadow: 5px 5px 10px #212d40;
+}
+
+h2{
+    font: normal 2.5em 'Alice', Arial, sans-serif;
+    text-align: center;
+    text-shadow: 5px 5px 5px #11151c;
+}
+
+h3{
+    text-indent: 40px;
+    font-size: 1.4em
+}
+
+p{
+    text-align: justify;
+    text-indent: 10px;
+    margin: 10px;
+}
+
+div{
+    text-align: center;
+}
+strong{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+code{
+    font-family: monospace;
+}
+.center{
+    text-align: center;
+}
+.margin20{
+    margin-left: 20px;
+}
+
+dl{
+    margin: 10px;
+}
+
+.basico{
+    color: #365639;
+}
+
+.intermediario{
+    color: #555636;
+}
+
+.avançado{
+    color: #563636;
+}
+
+.destaque{
+    text-decoration: underline;
+}
+
+a:link{
+    color: #829399;
+    text-decoration: none;
+
+}
+
+a:visited{
+    color: #e8e8e8;
+}
+
+a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.especial{
+    background-color: #563636;
+    border-radius: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin: 2px;
+    padding: 2px;
+}
+
+.especial::before{
+    content: '★';
+}
+
+.especial::after{
+    content: '★';
+}
+
+a:active{
+    color: #555636;
+}
+
+a::before {
+    content: ' > ';
+    text-decoration: none;
+    font-weight: normal;
+    color: #829399;
+}
+a::after{
+    content: ' <';
+    text-decoration: none;
+    font-weight: normal;
+    color:#829399
+}

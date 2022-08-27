@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="shortcut icon" href="../estilos/GJS.ico" type="image/x-icon">
+    <title>Seletores</title>
+</head>
+<body>
+    <header>
+        <h1>Criando Sites com HTML e CSS</h1>
+    </header>
+    <main>
+        <h2>Seletores id e class</h2>
+        <h3>O que são os seletores?</h3>
+        <p>Podemos utilizar seletores, personalizando algumas tags de nosso HTML. Estes seletores são chamados de <strong>id</strong> e <strong>class</strong>, estas tags servem para identificar e personalizar algumas das nossas tags em HTML, como por exemplo, demarcar uma ou mais dentre outras tags de mesmo nível para serem personalizadas.</p>
+        <p>Um dos exemplos é as caixas <strong>main</strong> abaixo, com <strong>background-color</strong> de cores diferentes.</p>
+        <h3>Como representar id e class em HTML</h3>
+        <p>Em HTML devemos identificar os seletores dentro da tag de abertura, exemplo:
+            <pre class="center"><code>
+&lt;h1 id="principal"&gt; Título de exemplo &lt;/h1&gt;
+            </code></pre></p>
+        <p>Em CSS devemos representar os seletores id e class da seguinte forma
+            <pre class="margin20"><code>h1#principal{
+    text-align: center;
+}</code></pre></p>
+            <ul>
+                <li>class deve ser representado como .</li>
+                <li>id deve ser representado como #</li>
+            </ul>
+    </main>
+    <main>
+        <h2>Qual devo usar? id ou class?</h2>
+        <h3>Use os seletores de forma correta</h3>
+        <p>Quando usamos <strong>id</strong>, não deve ser repetido o mesmo <strong>id</strong> para diversas tags.
+        <br>Neste caso, usamos o seletor <strong>class</strong>.</p>
+        <dl>
+            <dt>Seletor <strong>id</strong></dt>
+            <dd>Deve ser usado de forma única</dd>
+            <dt>Seletor <strong>class</strong></dt>
+            <dd>Pode ser usado em múltiplos elementos</dd>
+        </dl>
+        <h3>Nomeie seus seletores de forma correta</h3>
+        <p>Sempre que nomear seus seletores, nomeie de forma em que os classifique, mas nunca por sua forma indicada em seu CSS.</p>
+        <p>Podemos também indicar duas classes para uma mesma tag, basta colocar dentro do seletor class a segunda classe desejada, sem vírgula, apenas um espaço.</p>
+        <p>Podemos utilizar <strong>id</strong> e <strong>class</strong> na mesma tag, porém as <strong class="destaque">CSS de id sobrepõem as CSS de class</strong>.</p>
+    </main>
+    <main id="html">
+        <h2>Aprendento HTML</h2>
+        <h3 class="basico">HTML básico</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="basico">Distinctio eos error</span> nobis dolor officiis odit aliquam ad possimus numquam corrupti saepe facilis, nostrum dicta quasi consequatur enim sint eveniet cupiditate.</p>
+        <h3 class="intermediario">HTML intermediário</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est rem quae quibusdam nemo quaerat blanditiis libero cumque sequi error! Facilis dolor voluptatem adipisci asperiores laborum temporibus quibusdam quasi atque modi.</p>
+        <h3 class="avançado">HTML avançado</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere fugiat ea error quidem similique quaerat omnis soluta itaque. Nostrum nesciunt itaque iste? Ipsa nesciunt fuga dignissimos at est accusantium cumque?</p>
+    </main>
+    <main id="css">
+        <h2>Aprendendo CSS</h2>
+        <h3 class="basico">CSS básico</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut ut rerum perspiciatis exercitationem placeat qui voluptatum ipsa, voluptatem eius, inventore laboriosam deleniti, ducimus dicta quas quam quaerat! Rerum, distinctio harum!</p>
+        <h3 class="intermediario">CSS intermediário</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, reprehenderit corporis quod nostrum voluptatum delectus sapiente <span class="destaque intermediario">architecto necessitatibus</span> minus maxime dolores ex harum nobis quisquam blanditiis ratione! Itaque, pariatur consequuntur!</p>
+        <h3 class="avançado">CSS avançado</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi obcaecati optio maiores debitis dolorem qui amet vitae, reprehenderit, asperiores voluptatibus quisquam doloribus vero, blanditiis necessitatibus facilis. Laudantium corrupti eos corporis.</p>
+    </main>
+</body>
+</html>

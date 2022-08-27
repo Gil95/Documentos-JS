@@ -1,0 +1,132 @@
+body{
+    background-color: rgb(70,142,236);
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background-color: rgb(245,245,245);
+    border-radius: 10px;
+    align-content: center;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.450);
+    max-width: fit-content;
+    min-width: 80%;
+    margin-top: 15px;
+    font: normal 15pt arial;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    size: 90%;
+}
+footer{
+    text-align: center;
+    color: white;
+    font: normal 10pt arial;
+    margin-top: 20px;
+}
+
+.left{
+    text-align: left;
+    display: block;
+    float: left;
+}
+
+.right{
+    text-align: right;
+    display: block;
+    float: inline-start;
+}
+
+h1{
+    font: bold 32pt arial;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+audio{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.450);
+    border-radius: 50px;
+}
+
+h2{
+    font: bold 26pt arial;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h3{
+    font: normal 22pt arial;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h4{
+    font: normal 18pt arial;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+address{
+    font: normal 15pt arial;
+    font-style: italic;
+}
+
+.exemploHTML{
+    font: bold arial;
+    color: rgb(61, 105, 224);
+}
+
+.center{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+abbr{
+    text-decoration: none;
+    color: grey;
+}
+mark{
+    background-color: aqua;
+    text-decoration: none;
+}
+
+.height{
+    display: block;
+    content: "";
+    margin: 20px;
+}
+
+.height10{
+    display: block;
+    content: "";
+    margin: 10px;
+}
+
+code{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+}
+
+a{
+    color:rgb(70,142,236);
+    text-decoration: none;
+}
+
+a:visited{
+    color: rgb(87, 207, 255);
+    text-decoration: none;
+}

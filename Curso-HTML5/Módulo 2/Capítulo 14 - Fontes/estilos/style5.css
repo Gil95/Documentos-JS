@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Alice';
+    src: url('../../../../Fontes\ Baixadas/Alice_in_Wonderland_3.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Playlist Script';
+    src: url('../../../../Fontes\ Baixadas/Playlist\ Script.otf') format('opentype');
+}
+
+body{
+    background-image: linear-gradient(to bottom, #2b50aa, #ff858d);
+    background-attachment: fixed;
+    font: normal 16px Arial, Verdana, serif;
+    text-align: left;
+}
+
+main{
+    background-color: #daf7dc;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #9ee493d9;
+    margin-top: 10px;
+    margin-bottom:10px;
+    padding: 1px;
+}
+
+h1{
+    color: #fff;
+    font-family: 'Playlist Script', 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 3em;
+}
+
+h2{
+    font-family: 'Alice', 'Times New Roman', Times, serif;
+    color: #2b50aa;
+    text-align: center;
+    font-size: 2em;
+}
+
+h3{
+    color: #2b50aa;
+    margin-left: 10px;
+    font-size: 1.6em;
+}
+
+p{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+figure {
+    background-color: #9ee493;
+    border: thin #c0c0c0 solid;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.tam90{
+    max-width: 90%;
+}
+
+img{
+    align-content: center;
+    margin-bottom: 2px;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+figcaption {
+    background-color: #daf7dc;
+    border-radius: 10px;
+    color: #000000;
+    font: arial;
+    padding: 0px;
+    text-align: center;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+    color:#2b7a1f;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #ff858d;
+    text-decoration: none;
+}
+
+code{
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 10px;
+}

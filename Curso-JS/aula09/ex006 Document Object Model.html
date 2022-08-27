@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo o DOM</title>
+
+    <Style>
+        body{
+            background: cadetblue;
+            color: rgb(0, 9, 61);
+            font: normal 16pt arial}
+        
+    </Style>
+
+</head>
+
+<body>
+
+    <h1>Iniciando os estudos <strong>DOM</strong></h1>
+    
+    <p>Aqui vai o resultado</p>
+    
+    <p>aprendendo à usar o <strong>DOM</strong> em Javascript</p>
+
+    <div id="msg">Clique em mim</div>
+
+    </br>
+
+    <div name="nome">Parabéns, Josiscleisson</div>
+
+    </br>
+    
+    <div name="nome3">Parabéns, Oliveira</div>
+
+    </br>
+
+    <div class="pedra">Basalto</div>
+
+    </br>
+
+    <div id="msg2">Clica aqui não</div>
+
+    </br>
+
+    <div class="nome2">Joaquina</div>
+    <script>
+        
+        //Selecionando DOM por Marca -- getElementsByTagName()
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.backgroundColor = 'darkgrey'
+        var p2 = window.document.getElementsByTagName('p')[1]
+        p2.style.backgroundColor = 'cyan'
+        var h1 = window.document.getElementsByTagName('h1')[0]
+        h1.style.backgroundColor = 'purple'
+
+        //Selecionando DOM por ID -- getElementById()
+        var d = window.document.getElementById('msg')
+        d.style.backgroundColor = 'red'
+        window.document.getElementById('msg').innerText = 'Olá'
+
+        //Selecionando DOM por Nome -- getElementsByName()
+        var na1 = document.getElementsByName('nome')[0]
+        na1.style.backgroundColor = 'brown'
+        var na2 = document.getElementsByName('nome3')[0]
+        na2.style.backgroundColor = 'white'
+
+        //Selecionando DOM por Classe -- getElementsByClassName()
+        var c1 = document.getElementsByClassName('pedra')[0]
+        c1.style.backgroundColor = 'pink'
+
+        //Selecionando DOM por Seletor -- querySelector() ou querySelectorAll()
+        var d1 = window.document.querySelector('div#msg2') //# para id e . para class
+        d1.style.backgroundColor = 'yellow'
+
+        var c1 = window.document.querySelector('div.nome2')
+        c1.style.backgroundColor = 'green'
+
+    </script>
+</body>
+</html>

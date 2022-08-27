@@ -1,0 +1,131 @@
+body{
+    background-color: rgb(70,142,236);
+    font: normal 15pt arial;}
+
+header{
+    color: white;
+    text-align: center;
+    font: normal 20pt arial;}
+
+header#exemplo{
+    margin-top: 300px;}
+
+section#exemplohtml{
+        
+    background-color:rgb(245, 245, 245);
+    border-radius: 10px;
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459) ;
+    border-spacing: 10px;
+    margin-top: 10px;
+    height: auto;
+    align-content: center;
+    position: center;}
+
+section#exemplocss{
+        
+    background-color:rgb(245, 245, 245);
+    border-radius: 10px;
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459) ;
+    border-spacing: 10px;
+    margin-top: 10px;
+    height: auto;
+    align-content: center;
+    position: center;}
+
+section#estruturaHtml{
+    background-color:rgb(245, 245, 245);
+    border-radius: 10px;
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459) ;
+    border-spacing: 10px;
+    margin-top: 10px;
+    height: auto;
+    align-content: center;
+    position: center;}
+
+section#funcionamentoHtmlCss{
+    background-color:rgb(245, 245, 245);
+    border-radius: 10px;
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459) ;
+    border-spacing: 10px;
+    margin-top: 10px;
+    height: auto;
+    align-content: center;
+    position: center;}
+
+section#html{
+    background-color:rgb(245, 245, 245);
+    border-radius: 10px;
+    padding: 15px;
+    width: 29%;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459) ;
+    border-spacing: 10px;
+    margin-top: 10px;
+    float: left;
+    height: 200px;
+    margin-right: 0.2%;}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;}
+
+section#css{
+    background-color:rgb(245, 245, 245);
+    border-radius: 10px;
+    padding: 15px;
+    width: 29%;
+    float: left;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459) ;
+    border-spacing: 10px;
+    margin-top: 10px;
+    height: 200px;
+    margin-right: 0.2%;}
+    
+section#javascript{
+    background-color:rgb(245, 245, 245);
+    border-radius: 10px;
+    padding: 15px;
+    width: 29%;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459) ;
+    border-spacing: 10px;
+    margin-top: 10px;
+    float: left;
+    height: 200px;}
+
+h1{
+    text-align: center;}
+
+h2{
+    font: bold 18pt arial;
+    text-align: center;
+}
+
+p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font: normal 15pt arial;}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-top: auto;
+    position: fixed;
+    bottom: auto;}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="shortcut icon" href="../estilos/GJS.ico" type="image/x-icon">
+    <title>Exemplo de Hover</title>
+    <style>
+        div > p {
+            display: none;
+        }
+        div:hover{
+            color: red;
+            
+        }
+        div:hover > p{
+            display: block;
+            background-color: #829399;
+            margin: auto;
+            max-width: fit-content;
+            color: #e8e8e8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exemplo de Hover</h1>
+    </header>
+    <main>
+        <h2>Mostrando o funcionamento da pseudo-classe "Hover"</h2>
+        <p style="text-align: center;">Passe o mouse sobre o texto abaixo</p>
+        <div>
+            Passe o mouse aqui
+            <p style="text-align: center;">SHAZAM CARAIO!</p>
+        </div>
+    </main>
+</body>
+</html>

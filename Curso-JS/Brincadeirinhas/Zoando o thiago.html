@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Será que o Thiago é gado?</title>
+
+    <style>
+
+        body{
+            background-color: lightgray;
+            font: normal 12pt arial;
+            text-align: justify;}
+
+        div#quantas{
+            margin-bottom: 10px;}
+        
+        input#reiniciar{
+            margin-top: 30px;}
+
+        div#complemento{
+            margin-top: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Thiago é ou não gado?</h1>
+
+    <p>Todos do grupo sabemos que o Thiago é gado, realmente preciso fazer algo pra confirmar isso?</p>
+    <p>Claro que preciso disso, essa é uma afirmação que deve ser espalhada aos sete mares.</p>
+
+    <div id="gado">A resposta vai aparecer aqui, e a resposta é óbvia</div>
+    
+</br>
+
+    <div id="quantas">Quantas o Thiago já deu em cima esse ano?</div>
+    
+    <select name="Thiago" id="Thiago">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">setenta e doze</option>
+        <option value="5">Nem ele sabe</option>
+    </select>
+
+    <input type="button" name="verificar" id="verificar" value="Será?" onclick="verificar()">
+
+</br>
+    <div id="complemento"></div>
+
+    <script>
+        
+        function verificar(){
+            
+            var qnt = document.querySelector('select#Thiago')
+            var res = Number(qnt.value)
+            if (res == "1"){
+                gado.innerHTML = "<strong>DUVIDOOOOOOOOOOOOOOOOOO</strong>"
+                complemento.innerHTML = "Você definitivamente não conhece o Thiago"}
+            
+            if (res == "2"){
+                gado.innerHTML = "<strong>Se fosse o ENEM, seu chute passou looooooooonge!</strong>"
+                complemento.innerHTML = `Sua resposta merece estar <a href="https://www.stoodi.com.br/guias/enem/perolas-do-enem/">aqui</a>`}
+            
+            if (res == "3"){
+                gado.innerHTML = "<strong>Hoje é dia 3 de janeiro? então a resposta ainda está errada</strong>"
+                complemento.innerHTML = "Em janeiro mesmo ele deu em cima dessa quantidade citada enquanto namorava"}
+            
+            if (res == "4"){
+                gado.innerHTML = "<strong>Definitivamente esta resposta é a mais próxima do valor real entre todas.</br> Não é um número, mas aparentemente é grande o suficiente."
+                complemento.innerHTML = "está ficando mais divertido isso aqui kkkk"}
+            
+            if (res == "5"){
+                gado.innerHTML = "<strong>A única resposta que realmente faz sentido.</br>Parece que perdi meu tempo programando isso, mas tenho certeza que todos nós amamos</strong>"
+                complemento.innerHTML = "Até o presente momento, estou impressionado que o Thiago ainda não encontrou um Marcos."}}
+
+    </script>
+</body>
+</html>

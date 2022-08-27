@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="GJS.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <header>
+        <h1>Imagem Dinâmicas</h1>
+    </header>
+    <section>
+        <h2>Utilizando imagens dinâmicas</h2>
+        <p>Tente abrir esse site em vários dispositivos diferentes, ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+        <picture>
+            <source media="(max-width: 750px)" srcset="../imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="../imagens/foto-m.png" type="image/png">
+            <img src="../imagens/foto-g.png" alt="imagem flexível">
+        </picture>
+    </section>
+    <section>
+        <h2>Reproduzindo Áudio</h2>
+        <p>Vamos aprender a reproduzir áudios em HTML5</p>
+        <div class="left">
+            <audio src="../mídia/As You Fade Away - NEFFEX.mp3" controls id="asYouFadeAway"></audio>
+        </div>
+        <div class="right">
+            <audio src="../mídia/guanacast-33.mp3" controls></audio>
+        </div>
+        <figcaption class="left">As You Fade Away - NEFFEX</figcaption>
+        <figcaption class="right">Guanacast 33</figcaption>
+    </section>
+    <section>
+        <h2>Media types</h2>
+        <audio preload="metadata"loop controls>
+            <source src="../mídia/guanacast-33.mp3" type="audio/mpeg">
+            <source src="../mídia/guanacast-33.ogg" type="audio/ogg">
+            <source src="../mídia/guanacast-33.wav" type="audio/wav">
+            <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="../mídia/guanacast-33.mp3">Clique aqui para baixar</a></p>
+        </audio>
+        <p>Podemos utilizar <abbr title="audio/mpeg">.mp3</abbr>, <abbr title="audio/ogg">.ogg</abbr> ou <abbr title="audio/wav">.wav</abbr></p>
+        <figcaption>Guanacast 33</figcaption>
+    </section>
+    <footer>
+        <h1>&copy;Gil.JS</h1>
+    </footer>
+</body>
+</html>

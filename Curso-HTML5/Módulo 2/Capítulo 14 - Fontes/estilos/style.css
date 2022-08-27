@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #2b50aa, #ff858d);
+    background-attachment: fixed;
+}
+main{
+    background-color: #daf7dc;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(158, 228, 147, 0.850);
+    margin-top: 10px;
+    margin-bottom:10px;
+    padding: 1px;
+}
+
+h1{
+    text-align: center;
+    font-size: 26pt;
+    color: #fff;
+}
+
+h2{
+    text-align: center;
+    color: #2b50aa;
+    font-size: 20pt;
+}
+
+h3{
+    text-indent: 20px;
+}
+
+p{
+    text-indent: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+dl{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-indent: 10px;
+}
+
+figure {
+    background-color: rgb(158, 228, 147);
+    border: thin #c0c0c0 solid;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 60%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.tam90{
+    max-width: 90%;
+}
+
+img{
+    align-content: center;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+figcaption {
+    background-color: #daf7dc;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font: arial;
+    padding: 0px;
+    text-align: center;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.times{
+    font-family: 'Times New Roman', Times, serif;
+}

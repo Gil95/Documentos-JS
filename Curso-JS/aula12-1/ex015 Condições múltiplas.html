@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições múltiplas</title>
+</head>
+<body>
+
+    <h1>Condições múltiplas</h1>
+
+    <p>É de extrema importância escrever o break no código switch para evitar erros!</p>
+    <p>Obs 2: Todo e qualquer dado se inicia com 0, neste caso o Domingo é 0</p>
+
+    <div id=diaSEM></div>
+
+    <script>
+
+        var dia = new Date()
+        var diaSem = dia.getDay()
+
+        switch(diaSem){
+            
+            case 0:
+                diaSEM.innerHTML = 'Hoje é domingo'
+                break
+            
+            case 1:
+                diaSEM.innerHTML = 'Hoje é segunda-feira'
+                break
+            
+            case 2:
+                diaSEM.innerHTML = 'Hoje é terça-feira'
+                break
+            
+            case 3:
+                diaSEM.innerHTML = 'Hojé é quarta-feira'
+                break
+            
+            case 4:
+                diaSEM.innerHTML = 'Hoje é quinta-feira'
+                break
+            
+            case 5:
+                diaSEM.innerHTML = 'Hoje é sexta-feira'
+                break
+
+            case 6:
+                diaSEM.innerHTML = 'Hoje é sábado'
+                break}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="GJS.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <header>
+        <h1>Trabalhando com listas</h1>
+    </header>
+    <section>
+        <h2>Listas Ordenadas</h2>
+        <h3>Rotina do dia</h3>
+        <ol type="1">
+            <li>Acordar</li>
+            <li>Tomar café</li>
+            <li>Escovar os dentes</li>
+            <li>Vestir as roupas</li>
+            <li>Pegar as chaves do carro</li>
+            <li>Sair para o trabalho</li>
+            <li>Voltar para casa</li>
+            <li>Jantar</li>
+            <li>Escovar os dentes</li>
+            <li>Dormir</li>
+        </ol>
+
+        <p>A Lista Ordenada foi digitada da seguinte forma
+        <br>
+        <pre><code>    
+&lt;ol type="1"&gt;
+    &lt;li&gt;Acordar&lt;/li&gt;
+    &lt;li&gt;Tomar café&lt;/li&gt;
+    &lt;li&gt;Escovar os dentes&lt;/li&gt;
+    &lt;li&gt;Vestir as roupas&lt;/li&gt;
+    &lt;li&gt;Pegar as chaves do carro&lt;/li&gt;
+    &lt;li&gt;Sair para o trabalho&lt;/li&gt;
+    &lt;li&gt;Voltar para casa&lt;/li&gt;
+    &lt;li&gt;Jantar&lt;/li&gt;
+    &lt;li&gt;Escovar os dentes&lt;/li&gt;
+    &lt;li&gt;Dormir&lt;/li&gt;
+&lt;/ol&gt;
+        </code></pre>
+        <p>Podemos personalizar utilizando um type="<ins>1</ins>"
+        <br><abbr title="A,B,C,D...">A</abbr>, <abbr title="a,b,c,d...">a</abbr>, <abbr title="I,II,III,IV,V...">I</abbr>, <abbr title="i,ii,iii,iv,v...">i</abbr>, <abbr title="1,2,3,4...">1</abbr>
+        <br>Passe o mouse nas opções e veja qual é a sua sequência.
+        <br>Podemos iniciar uma contagem à partir de um número específico informando um start="x" dentro da tag.
+        </p>
+    </section>
+    <section>
+        <h2>Listas não Ordenadas</h2>
+        <h3>Lista de compras</h3>
+            <ul type="circle">
+                <li>Pão</li>
+                <li>Leite</li>
+                <li>Queijo</li>
+                <li>Tomate</li>
+                <li>Arroz</li>
+                <li>Manteiga</li>
+                <li>Alface</li>
+                <li>Feijão</li>
+            </ul>
+        <p>Podemos personalizar utilizando o type="<ins>circle</ins>"
+        <br>circle, square, <ins><abbr title="default">disk</abbr></ins>
+        </p>
+        <p>A lista foi digitada da seguinte forma</p>
+        <pre><code>            
+&lt;ul type="circle"&gt;
+    &lt;li&gt;Pão&lt;/li&gt;
+    &lt;li&gt;Leite&lt;/li&gt;
+    &lt;li&gt;Queijo&lt;/li&gt;
+    &lt;li&gt;Tomate&lt;/li&gt;
+    &lt;li&gt;Arroz&lt;/li&gt;
+    &lt;li&gt;Manteiga&lt;/li&gt;
+    &lt;li&gt;Alface&lt;/li&gt;
+    &lt;li&gt;Feijão&lt;/li&gt;
+&lt;/ul&gt;
+        </code></pre>
+    </section>
+    <section>
+        <h2>Juntando listas versão 1.0</h2>
+        <h3>Minhas linguagens favoritas</h3>
+        <ol>
+            <li>Antigas</li>
+            <ol type="a">
+                <li>Clipper</li>
+                <li>Visual Basic</li>
+                <li>Fortran</li>
+                <li>Delphi</li>
+            </ol>
+            <li>Novas</li>
+            <ol type="a" start="5">
+                <li>PHP</li>
+                <li>Python</li>
+                <li>Javascript</li>
+                <li>Kotlin</li>
+            </ol>
+        </ol>
+        <h3>Meus jovos favoritos</h3>
+        <ol>
+            <li>SNES</li>
+                <ul type="disc">
+                    <li>Super Mario World</li>
+                    <li>MarioKart</li>
+                </ul>
+            <li>N64</li>
+                <ul type="disc">
+                    <li>Super Smash Bros</li>
+                    <li>MarioKart</li>
+                </ul>
+            <li>PS2</li>
+                <ul type="disc">
+                    <li>Need for Speed</li>
+                        <ul>
+                            <li>Need for Speed: Underground</li>
+                            <li>Need fos Speed: Underground 2</li>
+                            <li>Neef fos Speed: Most Wanted</li>
+                        </ul>
+                    <li>Grand Theft Auto</li>
+                        <ul>
+                            <li>GTA San Andreas</li>
+                            <li>GTA Vice City</li>
+                        </ul>
+                    <li>Dragon Ball</li>
+                        <ul>
+                            <li>Dragon Ball Z Budokai Tenkaichi 2</li>
+                            <li>Dragon Ball Z Budokai Tenkaichi 3</li>
+                        </ul>
+                    <li>Bully</li>
+                    <li>Atelier Iris 3: Grand Phantasm</li>
+                </ul>
+            <li>XBOX360</li>
+                <ul type="disc">
+                    <li>Grand Theft Auto</li>
+                        <ul>
+                            <li>GTA IV</li>
+                            <li>GTA V</li>
+                        </ul>
+                    <li>Forza Motorsport 3</li>
+                    <li>CoD: Modern Warfare 2</li>
+                </ul>
+            <li>PC</li>
+                <ul type="disc">
+                    <li>Grand Chase</li>
+                    <li>League of Legends</li>
+                    <li>Grand Theft Auto V</li>
+                    <li>The Sims 4</li>
+                    <li>The Witcher 3</li>
+                    <li>Dead by Daylight</li>
+                </ul>
+        </ol>
+    </section>
+    <section>
+        <h2>Lista de definições</h2>
+        <h3>Linguagens e suas definições</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação para a criação de conteúdo</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a criação do design de um site</dd>
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+        </dl>
+    </section>
+    <footer>
+        <h1>&copy;Gil.JS</h1>
+    </footer>
+</body>
+</html>

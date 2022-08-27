@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bem vindo</title>
+    
+    <style>
+        
+        body{
+            background-color: rgb(230, 230, 230);}
+
+        h1{
+            color: black;
+            font: normal 25pt arial;
+            text-align: center;}
+        
+        div#log{
+            background-color: rgb(184, 184, 184);
+            width: 177px;
+            text-align: center;
+            font: normal 14pt arial;
+            margin-bottom: 5px;
+            word-spacing: 124px;}
+
+        input#LogIn{
+            margin-bottom: 5px;}
+        
+        div#res{
+            font: normal 16pt arial;
+            margin-top: 5px;}
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1>Faça o login</h1>
+    
+    <!--div-->
+    <div id= "log"> Login </div>
+    
+    
+    <!--input-->
+    <input type="text" id="LogIn" name="LogIn">
+    
+    </br>
+    
+    <input type="submit" id="entrar" value="Entrar" onclick="entering()">
+
+    <!--div2-->
+    <div id="res">Faça o login</div>
+    
+    <script>
+
+        function entering(){
+            
+            var log1 = document.querySelector('input#LogIn')
+            var logv1 = log1.value
+            res.innerHTML = `Seja bem vindo, ${logv1}` }
+
+    </script>
+
+</body>
+</html>

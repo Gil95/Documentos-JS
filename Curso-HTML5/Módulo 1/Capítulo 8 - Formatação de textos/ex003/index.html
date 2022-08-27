@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="GJS.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <header>
+        <h1>Outras formatações</h1>
+    </header>
+    <section>
+        <h2>Código-fonte</h2>
+        <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+        <p>Este texto foi monoespaçado com a tag
+        <br>
+        &lt;code&gt;document.getElementById('teste')&lt;/code&gt;
+        </p>
+        <br class="height">
+        <pre>
+            <code>
+    num=int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é IMPAR')
+    print('Fim do programa')
+            </code>
+        </pre>
+        <p>O código acima foram utilizadas as tags
+        <pre>
+            <code>
+<mark>&lt;pre&gt;</mark>    
+    <mark>&lt;code&gt;</mark>
+    
+    num=int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é IMPAR')
+    print('Fim do programa')
+    
+    <mark>&lt;/code&gt;</mark>
+<mark>&lt;/pre&gt;</mark>
+            </code>
+        </pre>
+        <br>
+        As tags <mark>&lt;pre&gt;</mark> são feitas para respeitar as indentações do código digitado no editor de HTML.
+        <br>
+        Já as tags <mark>&lt;code&gt;</mark> são usadas para monoespaçar  as letras de forma que seja melhor identificadas as letras escritas no HTML, ou seja, espaçar de forma uniforme as letras, respeitanto o mesmo tamanho em todas.
+        </p>
+    </section>
+    <section>
+        <h2>Citações simples</h2>
+        <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q></p>
+        <p>A frase acima foi marcada como citada usando a tag
+        <br>
+        &lt;q&gt;O computador é um burro muito rápido&lt;/q&gt;</p>
+        <h2>Citações completas</h2>
+        <p>Segundo Jeff Noble, no seu livro HTML para Leigos;</p>
+        <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_e_CSS_Para_Leigos/E8ZtDwAAQBAJ?hl=pt-BR&gbpv=1&dq=html+xhtml+e+css+para+leigos&printsec=frontcover">
+            A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML nesste capítulo descrevem os blocos de texto.
+        </blockquote>
+        <p>Esta frase acima foi marcada como citada utilizando a tag
+        <br class="height10">
+        &lt;blockquote cite=<mark><q>link de endereço da referência</q></mark>&gt;
+        <br>
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML nesste capítulo descrevem os blocos de texto.
+        <br>
+        &lt;/blockquote&gt;
+        </p>
+    </section>
+    <section>
+        <h2>Abreviações</h2>
+        <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheet">CSS</abbr>. Estou adorando!</p>
+        <p>As Abreviações acima foram marcadas com suas palavras completas utilizando a tag
+        <br>
+        &lt;abbr&gt;HTML&lt;/abbr&gt;</p>
+    </section>
+    <section>
+        <h2>Texto invertido</h2>
+        <p><bdo dir="rtl">Estou aprendendo a criar coisas no HTML</bdo></p>
+        <p><bdo dir="rtl">Aibofobia</bdo></p>
+        <p><bdo dir="rtl">Socorram-me, subi no ônibus em marrocos</bdo></p>
+        <p>Os textos acima foram invertidos utilizando as tags
+        <br>
+        &lt;bdo dir="rtl"&gt;Estou aprendendo a criar coisas no HTML&lt;/&gt;</p>
+        <p>As tags podem ser direcionadas com <abbr title="right to left">rtl</abbr> quanto por <abbr title="left to right">ltr</abbr></p>
+    </section>
+    <footer>
+        <h1>&copy;Gil.JS</h1>
+    </footer>
+</body>
+</html>

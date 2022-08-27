@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style2.css">
+    <link rel="shortcut icon" href="../estilos/GJS.ico" type="image/x-icon">
+    <title>Fonte em CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Trabalhando com fontes</h1>
+    </header>
+    <main>
+        <h2>Safe Font Combinations</h2>
+        <p>Existe uma combinação de fontes para que sejam sempre compatíveis com navegadores diferentes.<br>
+        Em modelo de referência destas "safe combinations", podemos usar o site <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank" rel="noopener noreferrer">CSS Web Safe Fonts</a>, onde podemos consultar quais são as "Safe Font Combinations".</p>
+        <p>Devemos sempre utilizar as Safe combinations com uma ordem, e deixando por última a genérica como "Sans-serif", "Serif", "Monospace" e etc. <br>
+        Exemplo: </p>
+        <p class="mono" style="font-size: 14pt; text-indent: 0px; margin-left: 40px;">font-family: 'Times New Roman', Times, serif; <br>
+        font-family: 'Courier New', Courier, monospace; <br>
+        font-family: arial, helvetica, sans-serif;</p>
+    </main>
+    <main>
+        <h2>Exemplos de Fontes</h2>
+        <h3>Arial, Helvetica, Sans-serif</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium doloremque, at non placeat dolorum tempora accusamus porro, molestiae neque blanditiis expedita aut ullam voluptate cumque veniam quaerat repudiandae odit. Deleniti?</p>
+        <h3 class="times">Times New Roman, Times, Serif</h3>
+        <p class="times">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, possimus natus laborum distinctio at eos reprehenderit consequuntur, dicta facere rem quos obcaecati blanditiis veritatis assumenda perspiciatis asperiores? Neque, pariatur excepturi?</p>
+        <h3 class="mono">Courier New, Courier, Monospace</h3>
+        <p class="mono">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio cupiditate sed culpa, voluptate, aut quod eaque blanditiis, laboriosam repellendus et deleniti necessitatibus numquam magni voluptatem vero sapiente fugit tenetur amet.</p>
+    </main>
+    <main>
+        <h2>Tamanho de fontes</h2>
+        <dl>
+            <dt>Medidas Absolutas</dt>
+            <dd>
+                <ul>
+                    <li>cm = centímetros</li>
+                    <li>mm = milímetros</li>
+                    <li>in = polegadas</li>
+                    <li>px = píxels (unidade sugerida pela W3C)</li>
+                    <li>pt = pontos</li>
+                    <li>pc = paica</li>
+                </ul>
+            </dd>
+            <dt>Medidas Relativas</dt>
+            <dd>
+                <ul>
+                    <li>em = relativa ao tamanho atual da letra M maiúscula da fonte (unidade sugerida pela W3C)</li>
+                    <li>ex = relativa ao tamanho atual da letra x minúscula da fonte</li>
+                    <li>rem = relativa ao root do tamanho da letra M configurado no body</li>
+                    <li>vw = relativa a porcentagem da largura da tela</li>
+                    <li>vh = relativa a porcentagem da altura da tela</li>
+                    <li>% = porcentagem relativa a original da padrão do navegador</li>
+                </ul>
+            </dd>
+        </dl>
+        <p>Preferencialmente trabalharemos com "em", que refere-se a medida relativa padrão.</p>
+        <p>Vale ressaltar que <strong>16px geralmente = 1em</strong></p>
+    </main>
+    <main>
+        <h2>Peso Estilo e Shorthand</h2>
+        <h3>Peso de fonte</h3>
+        <p>A Fonte <strong>'Work Sans'</strong> assim como outras, pode ser utilizada para diversos pesos de fonte. podendo variar utilizando chaves na caixa 'font-weight' em nossas tags CSS.</p>
+        <ul>
+            <li>lighter</li>
+            <li>normal</li>
+            <li>bold</li>
+            <li>bolder</li>
+        </ul>
+        <p>Também podemos utilizar a 'font-weight' númérica, utilizando do peso 100 ao 900.</p>
+        <h3>Uso do font-style</h3>
+        <p>As Fontes podem também possuir o estilo de itálico, como negrito, e também usar do peso no lugar de negrito.</p>
+        <p>Utilizando da tag <code>font-style:italic;</code></p>
+        <p style="font-style:italic;">Então teremos o texto em itálico</p>
+        <h3>Uso do text-decoration</h3>
+        <p>Alguns casos que precisamos ou gostaríamos de fazer o uso de um texto sublinhado, neste caso usamos o <code>text-decoration: underline;</code></p>
+        <p style="text-decoration:underline;">Então teremos o texto sublinhado</p>
+    </main>
+    <main>
+        <h2>Shorthand</h2>
+        <h3>Usando a tag <code>font: ;</code></h3>
+        <p>A tag <code>font</code> resume 4 tags em somente uma, facilitando o trabalho, porém possui uma ordem que deve ser respeitada.</p>
+        <ol>
+            <li>font-style</li>
+            <li>font-weight</li>
+            <li>font-size</li>
+            <li>font-family</li>
+        </ol>
+        <code>font: italic bolder 2em 'Work Sans' , sans-serif;</code>
+        <p style="font: italic bolder 2em sans-serif;"> E seu texto aparece assim.</p>
+    </main>
+</body>
+</html>

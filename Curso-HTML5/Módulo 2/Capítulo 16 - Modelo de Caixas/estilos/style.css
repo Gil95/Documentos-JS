@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Alice';
+    src: url('../../../../Fontes\ Baixadas/Alice_in_Wonderland_3.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Personal Script';
+    src: url('../../../../Fontes\ Baixadas/Playlist\ Script.otf') format('opentype');
+}
+
+*{
+    font: normal 16px Arial, Helvetica, Sans-serif;
+}
+
+/*
+Paleta de cores do Site
+
+#336699 Lapis Lazuli
+#86bbd8 Dark Sky Blue
+#2f4858 Charcoal
+#9ee493 Granny Smith Apple
+#daf7dc Nyanza
+
+*/
+
+body{
+    background-image: linear-gradient(to bottom, #336699, #daf7dc);
+    background-attachment: fixed;
+}
+
+h1{
+    font-family: 'Personal Script', Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    text-shadow: 5px 5px 10px #2f4858;
+    text-align: center;
+    margin: auto;
+}
+
+h2{
+    font-family: 'Alice', Arial, Helvetica, sans-serif;
+    font-size: 2.2em;
+    text-align: center;
+    margin: auto;
+}
+
+h3{
+    font-family: 'Alice', Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+    text-indent: 10px;
+    margin: 10px;
+}
+
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-indent: 10px;
+    margin: 10px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-indent: 8px;
+    margin: 10px;
+    text-align: justify;
+}
+
+main{
+    color: #ffffff;
+    min-width: fit-content;
+    max-width: 90%;
+    background-color: #2f4858;
+    margin: auto;
+    box-shadow: 5px 5px 10px #2f4858;
+    border-radius: 20px 5px;
+    padding: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #86bbd8;
+    margin-top: 10px;
+}
+
+article{
+    background-color: #336699;
+    padding: 5px;
+    border-radius: 15px 3px;
+    margin: 10px;
+}
+
+article > aside{
+    background-color: hsl(210, 50%, 30%);
+    max-width: fit-content;
+    padding: 5px;
+    border-radius: 8px 2px;
+    text-align: right;
+    margin-left: auto;
+}
+
+dl{
+    color: #daf7dc;
+}
+
+.center{
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+}
+
+figure {
+    background-color: #336699;
+    border: thin #86bbd8 solid;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    background-color: #2f4858;
+    border-radius: 10px;
+    color: #ffffff;
+    font: arial;
+    padding: 5px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+a{
+    color: #daf7dc;
+    width: auto;
+    border-radius: 6px;
+}
+
+a:visited{
+    color: #86bbd8;
+}
+
+abbr{
+    text-decoration: none;
+
+}
+
+div{
+    background-color: #2f4858;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.box {
+    outline-color: #daf7dc;
+    outline-style: solid;
+    outline-width: 10px;
+    position: relative;
+    width:    100px;
+    border-color: #336699;
+    border-width: 10px;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.box:before {
+    content:     "";
+    display:     block;
+    padding-top: 100%;
+}
+
+.content {
+    position: absolute;
+    top:      0;
+    left:     0;
+    bottom:   0;
+    right:    0;
+    text-align: center;
+}
+
+nav{
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #2f4858;
+    min-width: 96%;
+    display: block;
+    max-width: fit-content;
+    border-radius: 6px;
+    border-color: #86bbd8;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 5px 5px 10px #2f4858;
+}
+
+footer{
+    margin: auto;
+    margin-top: 30px;
+}
+
+nav > a{
+    text-decoration: none;
+    background-color: #2f4858;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #86bbd8;
+    padding: 5px;
+    margin: auto;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+main#borda{
+    border-image-source: url('../imagens/bordas\ personalizadas.png');
+    border-image-slice: 11;
+    border-image-repeat: repeat;
+    border-width: 5px;
+}

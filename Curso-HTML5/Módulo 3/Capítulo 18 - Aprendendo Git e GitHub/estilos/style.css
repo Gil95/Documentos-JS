@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Alice' ;
+    src: url(../../../../Fontes\ Baixadas/Alice_in_Wonderland_3.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(../../../Módulo\ 2/Capítulo\ 17\ -\ Primeiro\ mini-projeto/fontes/BebasNeue-Regular.ttf) format('truetype');
+}
+
+:root{
+    --cor0: #3B4C6E;
+    --cor1: #80a4ed;
+    --cor2: #bcd3f2;
+    --cor3: #C7DFFF;
+    --cor4: #6f5e76;
+    --cor5: #17301c;
+    --cor6: #5da271;
+    --cor7: #6ABA81;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', 'cursive';
+    --fonte2: 'Alice', sans-serif;
+}
+
+*{
+    font: normal normal 16px var(--fonte0);
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Classes*/
+.center{
+    margin: auto;
+    display: block;
+}
+
+/*Figure*/
+figure{
+    outline: var(--cor5);
+    outline-style: solid;
+    outline-width: 1px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--cor3);
+    max-width: fit-content;
+}
+
+img{
+    max-width: 100%;
+}
+
+figcaption{
+    text-align: center;
+}
+
+/*Blocos gerais de conteúdo*/
+body{
+    margin: 0px;
+    min-width: none;
+    background-color: var(--cor0);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    background-attachment: local;
+    width: 100%;
+    height: 150px;
+}
+
+header h1{
+    font: normal normal 3em var(--fonte2);
+    text-align: center;
+    padding-top: 20px;
+    color: #000;
+}
+
+nav{
+    background-color: var(--cor2);
+    min-width: 100%;
+    position: sticky;
+    padding: 12px 0px 12px 0px;
+    top: 0;
+}
+
+nav div{
+    margin: auto;
+    max-width: fit-content;
+}
+
+nav div a{
+    padding: 5px;
+    background-color: var(--cor2);
+    text-decoration: none;
+    outline: var(--cor2);
+    outline-style: solid;
+    color: #000;
+    font: normal lighter 1.5em var(--fonte1);
+    margin: auto;
+    border-radius: 3px;
+    transition-duration: 400ms;
+}
+
+nav div a:hover{
+    background-color: var(--cor1);
+}
+
+main{
+    max-width: 900px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 10px;
+    min-width: 320px;
+    border-radius: 5px 20px;
+}
+
+main article{
+    padding: 20px;
+}
+
+main article h1{
+    font: normal normal 2em var(--fonte1) ;
+    color: #000;
+    background-image: linear-gradient(to right, var(--cor2), #fff);
+    padding: 2px 5px;
+    border-radius: 5px;
+    text-indent: 10px;
+    
+}
+
+main article figure{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+main article p{
+    margin: 10px 0px;
+    font: normal normal 1.2em var(--fonte0);
+    text-indent: 10px;
+    line-height: 1.5em;
+}

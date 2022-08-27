@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetições (Parte 2)</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section>
+
+        <h1>Estrutura de repetição com variável de controle</h1>
+
+        <div id="res"></div>
+        <input type="button" value="executar" onclick="clicar()">
+    
+    </section>
+    
+    <script>
+
+        //testa, executa bloco, incrementa e testa novamente.
+        //após o teste negativo, ele pula o bloco.
+        for (inicio ; teste ; incremento) { 
+
+        }
+        /*
+        function clicar(){
+            var c = 1
+            while(c<=10){
+            window.alert(`Passo ${c}`)
+            c++
+            }
+        }*/
+        
+        function clicar(){
+            for (var c = 1 ; c <= 5 ; c++ ){
+                window.alert(`Passo ${c}`)
+            }
+        }
+    </script>
+</body>
+</html>
