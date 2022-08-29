@@ -22,9 +22,8 @@ section{
 
 img{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    size: 90%;
+    margin: 0px 0px 0px 0px ;
+    width: auto;
 }
 
 iframe{
@@ -53,14 +52,21 @@ h2{
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    text-align: center;
+    width: 320px;
+    max-width: 900px;
+    min-width: none;
 }
 
 a{
     color:rgb(0, 58, 146);
+    margin: 0px;
+    width: 320px;
 }
 
 a:visited{
     color: rgb(59, 81, 90);
+}
+
+.width{
+    width: 320px;
 }
