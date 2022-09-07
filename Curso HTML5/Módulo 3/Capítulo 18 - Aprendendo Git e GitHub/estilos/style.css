@@ -87,13 +87,13 @@ header{
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
     background-attachment: local;
     width: 100%;
-    height: 150px;
 }
 
 header h1{
     font: normal normal 3em var(--fonte2);
     text-align: center;
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     color: #000;
 }
 
@@ -121,10 +121,13 @@ nav div a{
     margin: auto;
     border-radius: 3px;
     transition-duration: 400ms;
+    margin: 5px;
 }
 
 nav div a:hover{
     background-color: var(--cor1);
+    outline: var(--cor1);
+    outline-style: solid;
 }
 
 main{
@@ -161,4 +164,40 @@ main article p{
     font: normal normal 1.2em var(--fonte0);
     text-indent: 10px;
     line-height: 1.5em;
+}
+
+footer{
+    background-color: #fff;
+    max-width: 860px;
+    min-width: 320px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 0px 20px;
+    border-radius: 5px 20px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+footer>h1{
+    padding-top: 10px;
+    font: normal normal 1.8em var(--fonte1);
+    text-align: center;
+    color: #000;
+}
+
+footer>a{
+    text-align: center;
+    color: var(--cor0);
+    font: normal normal 1.5em var(--fonte0);
+    margin: auto;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+footer>a:visited{
+    margin: auto;
+    display: block;
+    color: var(--cor1);
+    text-decoration: none;
 }
