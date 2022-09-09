@@ -38,12 +38,13 @@ body{
 header{
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor3)) ;
     height: 120px;
+    min-width: 320px;
 }
 
 header h1{
     padding-top: 35px;
     padding-bottom: 35px;
-    font: normal normal 50px var(--fonte2);
+    font: normal normal 40px var(--fonte2);
     text-align: center;
 }
 
@@ -52,6 +53,7 @@ nav{
     background-color: var(--cor3);
     position: sticky;
     top: 0;
+    min-width: 320px;
 }
 
 nav div{
@@ -73,6 +75,8 @@ nav div a{
     text-decoration: none;
     font: normal normal 1.2em var(--fonte0);
     margin: 1px;
+    display: inline-block;
+    margin-top: 5px;
 }
 
 nav div a:hover{
@@ -109,12 +113,18 @@ main article h1{
     color:#000;
     background-image: linear-gradient(to right, var(--cor0), var(--cor2));
     padding: 5px;
-    border-radius: 5px 20px;
+    border-radius: 5px;
 }
 
 main article p{
     font:normal normal 1.2em var(--fonte0);
     line-height: 1.5em;
+    text-indent: 20px;
+}
+
+span.background-color{
+    color: var(--cor1);
+    font-weight: bold;
 }
 
 /* footer */
@@ -126,10 +136,22 @@ footer{
     box-shadow: 5px 5px 10px #000;
     margin-top:10px;
     margin-bottom:10px;
+    margin: auto;
 }
 
 footer h1{
     font:normal normal 2em var(--fonte1);
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p a{
+    text-decoration: none;
+    font: normal normal 1.5em var(--fonte0);
+    color: var(--cor4);
 }
 
 div#color{
