@@ -1,0 +1,9 @@
+body{
+    margin: 0;
+    height: 98vh;
+    background-image: url(../imagens/wallpaper003.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    background-color: #0084B9;
+}
