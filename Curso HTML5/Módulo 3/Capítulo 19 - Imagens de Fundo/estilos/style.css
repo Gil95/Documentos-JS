@@ -106,6 +106,7 @@ main article{
     outline-color: var(--cor1);
     outline-style: solid;
     outline-width: 1px;
+    margin-bottom: 20px;
 }
 
 main article h1{
@@ -114,6 +115,7 @@ main article h1{
     background-image: linear-gradient(to right, var(--cor0), var(--cor2));
     padding: 5px;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 main article p{
@@ -182,4 +184,46 @@ div#url{
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
+}
+
+div#repeat{
+    outline: 1px solid var(--cor1);
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    background-image: url(../imagens/v8-engine.png);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-size: 100px 100px;
+    background-repeat: repeat-x;
+    background-position: center center
+}
+
+div#repeat2{
+    outline: 1px solid var(--cor1);
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    background-image: url(../imagens/v8-engine.png);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-size: 100px 100px;
+    background-repeat: repeat-y;
+    background-position: center center
+}
+
+div#repeat3{
+    outline: 1px solid var(--cor1);
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    background-image: url(../imagens/v8-engine.png);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: center center
 }
