@@ -1,11 +1,13 @@
 body{
     margin: 0px;
     height: 100vh;
-    background-color: #000;
+    background: black url('../imagens/wallpaper002.jpg') center center no-repeat cover fixed;
+    /*background-color: #000;
     background-image: url(../imagens/wallpaper002.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;*/
 }
 
 main{
@@ -15,4 +17,5 @@ main{
     background-color: #FFF;
     max-width: 500px;
     margin: auto;
+    min-width: 320px;
 }
