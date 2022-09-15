@@ -280,7 +280,6 @@ div#shorthand{
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    border-radius: 20px;
     background: var(--cor2) url(../imagens/v8-engine.png) center center no-repeat local;
     background-size: 300px 300px;
 }
