@@ -227,3 +227,65 @@ div#repeat3{
     background-repeat: no-repeat;
     background-position: center center
 }
+
+div#position{
+    outline: 1px solid var(--cor1);
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    background-image: url(../imagens/wallpaper003.jpg);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+div#position2{
+    outline: 1px solid var(--cor1);
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    background-image: url(../imagens/wallpaper003.jpg);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: right top
+}
+
+div#position2:hover{
+    background-size: contain;
+    background-position: center center;
+}
+
+div#position3{
+    outline: 1px solid var(--cor1);
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    background-image: url(../imagens/v8-engine.png);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: 450px 140px;
+}
+
+div#shorthand{
+    outline: 1px solid var(--cor1);
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: var(--cor2) url(../imagens/v8-engine.png) center center no-repeat local;
+    background-size: 300px 300px;
+}
+
+strong{
+    font-weight: bolder;
+    color: var(--cor0);
+}
