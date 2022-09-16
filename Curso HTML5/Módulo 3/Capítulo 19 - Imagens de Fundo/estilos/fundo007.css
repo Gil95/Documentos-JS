@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Alice' ;
+    src: url(../../../../Fontes\ Baixadas/Alice_in_Wonderland_3.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(../../../Módulo\ 2/Capítulo\ 17\ -\ Primeiro\ mini-projeto/fontes/BebasNeue-Regular.ttf) format('truetype');
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor0: #3B4C6E;
+    --cor1: #80a4ed;
+    --cor2: #bcd3f2;
+    --cor3: #C7DFFF;
+    --cor4: #6f5e76;
+    --cor5: #17301c;
+    --cor6: #5da271;
+    --cor7: #6ABA81;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', 'cursive';
+    --fonte2: 'Alice', sans-serif;
+}
+
+#container{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../imagens/target001.png);
+    background-size: 100% 100%;
+    position: relative;
+    height: 100vh;
+    background-color: purple;
+}
+
+#conteudo{
+    background-image: url(../imagens/target001.png);
+    background-size: 100% 100%;
+    position: absolute;
+    height: 150px;
+    background-color: yellow;
+    width: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}

@@ -282,6 +282,32 @@ div#shorthand{
     margin-bottom: 20px;
     background: var(--cor2) url(../imagens/v8-engine.png) center center no-repeat local;
     background-size: 300px 300px;
+    border-radius: 20px;
+}
+
+div#container{
+    padding: 0px;
+    background-image: url(../imagens/target001.png);
+    background-size: 100% 100%;
+    height: 300px;
+    position: relative;
+    background-color: var(--cor5);
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+div#conteudo{
+    background-image: url(../imagens/target001.png);
+    background-size: 100% 100%;
+    position: absolute;
+    height: 150px;
+    background-color: var(--cor6);
+    width: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
 strong{
