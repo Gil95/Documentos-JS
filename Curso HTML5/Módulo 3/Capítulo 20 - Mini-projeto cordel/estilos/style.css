@@ -52,10 +52,10 @@ header p a:hover{
 
 main section p{
     font-family: var(--fonte1);
-    margin-bottom: 30px;
-    padding-left: 10px;
-    line-height: 40px;
+    padding-left: 10vw;
+    line-height: 2em;
     font-size: 1.4em;
+    margin-bottom: 0px;
 }
 
 main section.normal{
@@ -63,8 +63,40 @@ main section.normal{
     color: #000;
 }
 
+section.imagem{
+    background-color: #333;
+    color: #fff;
+}
+
+section.imagem p{
+    width: 400px;
+    background-color: #0005;
+    margin-left: 10vw;
+    padding-left: 2vw;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+section#flor{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section#livro{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 footer{
-    margin-top: 50px;
     height: 100px;
     background-color: #000;
 }
