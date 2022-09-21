@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --fonte0: 'Passion One', Arial, Helvetica, sans-serif ;
+    --fonte1: 'Sriracha', Arial, Helvetica, sans-serif ;
+    --fonte2: Arial, Helvetica, sans-serif;
+}
+
+*{
+    font: normal normal 16px var(--fonte2);
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    height: 200px;
+    background-color: #000;
+    margin: 0px;
+    text-align: center;
+}
+
+header h1{
+    color: #fff;
+    font-family: var(--fonte0);
+    font-size: 40px;
+    padding-top: 60px;
+}
+
+header p{
+    color: #fff;
+    font-size: 1.2em;
+}
+
+header p a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header p a:hover{
+    outline-style: solid;
+    outline-color: #fff;
+    padding: 1px;
+    outline-width: 1px;
+    border-radius: 3px;
+}
+
+main section p{
+    margin-top: 30px;
+    padding-left: 10px;
+    line-height: 30px;
+}
+
+footer{
+    margin-top: 50px;
+    height: 100px;
+    background-color: #000;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 20px;
+    font-family: var(--fonte0);
+}
+
+footer p a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--fonte0);
+}
