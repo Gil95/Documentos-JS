@@ -14,8 +14,12 @@
     padding: 0px;
 }
 
+body{
+    min-height: 100vh;
+    background-color: #ddd5cc;
+}
+
 header{
-    height: 200px;
     background-color: #000;
     margin: 0px;
     text-align: center;
@@ -24,12 +28,14 @@ header{
 header h1{
     color: #fff;
     font-family: var(--fonte0);
-    font-size: 40px;
-    padding-top: 60px;
+    font-size: 50px;
+    padding-top: 30px;
+    font-variant: small-caps;
 }
 
 header p{
     color: #fff;
+    padding-bottom: 30px;
     font-size: 1.2em;
 }
 
@@ -37,22 +43,24 @@ header p a{
     color: #fff;
     text-decoration: none;
     font-size: 1.2em;
+    font-weight: bold;
 }
 
 header p a:hover{
-    outline-style: solid;
-    outline-color: #fff;
-    padding: 1px;
-    outline-width: 1px;
-    border-radius: 3px;
+    text-decoration: underline;
 }
 
 main section p{
     font-family: var(--fonte1);
-    margin-top: 30px;
+    margin-bottom: 30px;
     padding-left: 10px;
     line-height: 40px;
     font-size: 1.4em;
+}
+
+main section.normal{
+    background-color: #fff;
+    color: #000;
 }
 
 footer{
@@ -74,4 +82,9 @@ footer p a{
     text-decoration: none;
     font-size: 20px;
     font-family: var(--fonte0);
+    font-weight: bold;
+}
+
+footer p a:hover{
+    text-decoration: underline;
 }
