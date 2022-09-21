@@ -70,6 +70,7 @@ section.imagem{
 
 section.imagem p{
     width: 400px;
+    max-width: 80vw;
     background-color: #0005;
     margin-left: 10vw;
     padding-left: 2vw;
