@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 :root{
-    --fonte0: 'Passion One', Arial, Helvetica, sans-serif ;
-    --fonte1: 'Sriracha', Arial, Helvetica, sans-serif ;
+    --fonte0: 'Passion One', cursive;
+    --fonte1: 'Sriracha', cursive;
     --fonte2: Arial, Helvetica, sans-serif;
 }
 
