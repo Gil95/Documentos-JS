@@ -60,3 +60,31 @@ nav div {
 nav div a{
     display: inline-block;
 }
+
+footer{
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+    max-width:900px;
+    min-width:320px;
+    border-radius:5px 20px;
+    box-shadow: 5px 5px 10px #000;
+    margin-top:20px;
+    margin-bottom:10px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer h1{
+    font:normal normal 2em var(--fonte1);
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p a{
+    text-decoration: none;
+    font: normal normal 1.5em var(--fonte0);
+    color: var(--cor4);
+}
