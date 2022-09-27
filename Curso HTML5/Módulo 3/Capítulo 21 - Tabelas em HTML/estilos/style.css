@@ -31,6 +31,9 @@
     padding: 0px;
 }
 
+body{
+    background-color: var(--cor0);
+}
 header{
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor0));
     background-attachment: local;
@@ -70,17 +73,54 @@ nav div a{
     margin: 2px;
 }
 
+main{
+    max-width: 900px;
+    background-color: var(--cor4);
+    margin: auto;
+    border-radius: 5px 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.300);
+}
+
+main section{
+    margin: auto;
+    max-width: 800px;
+    outline: rgba(0, 0, 0, 0.274) solid 1px;
+    border-radius: 5px 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+}
+
+main section h1{
+    font: normal normal 2em var(--fonte1)
+}
+
+ol{
+    margin-left: 20px;
+}
+
+li{
+    font: normal normal 1em var(--fonte3);
+}
+
+ol#lista-base{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
 footer{
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
     max-width:900px;
     min-width:320px;
     border-radius:5px 20px;
     box-shadow: 5px 5px 10px #000;
-    margin-top:20px;
-    margin-bottom:20px;
     margin: auto;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-top:20px;
+    margin-bottom:20px;
 }
 
 footer h1{
