@@ -106,11 +106,13 @@ nav{
 }
 
 nav div{
+    display: block;
     margin: auto;
     max-width: fit-content;
 }
 
 nav div a{
+    display: inline-block;
     padding: 5px;
     background-color: var(--cor2);
     text-decoration: none;
