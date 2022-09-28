@@ -98,6 +98,12 @@ main section h1{
     font: normal normal 2em var(--fonte1)
 }
 
+main section h2{
+    font: normal normal 1.5em var(--fonte1);
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
 main section p{
     font: normal normal 1em var(--fonte3);
 }
@@ -116,11 +122,13 @@ ol#lista-base{
 }
 
 figure{
-    margin-top: 10px;
     outline: black solid 1px;
-    padding-top: 20px;
-    padding-bottom: 20px;
     border-radius: 5px 20px;
+    width: fit-content;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor0), var(--cor1));
 }
 
 .center{
@@ -131,6 +139,16 @@ figure{
 img{
     max-height: 80vh;
     max-width: 80vh;
+}
+
+figcaption{
+    margin: auto;
+    text-align: center;
+    margin-top: 5px;
+    background-image: linear-gradient(to right, #fff, #999, #fff);
+    background-attachment: local;
+    padding: 3px 5px;
+    border-radius: 3px;
 }
 
 footer{
