@@ -52,12 +52,8 @@ nav{
     background-color: var(--cor0);
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-nav div {
-    display: block;
-    margin: auto;
-    width: fit-content;
+    position: sticky;
+    top: 0;
 }
 
 nav div a{
@@ -126,9 +122,17 @@ figure{
     border-radius: 5px 20px;
     width: fit-content;
     padding: 20px;
-    margin: auto;
     margin-top: 20px;
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor0), var(--cor1));
+}
+div.centralizada{
+    width: fit-content;
+    display: block;
+    margin: auto;
+}
+.inline-block{
+    display: inline-block;
+    width: 35vw;
 }
 
 .center{
@@ -137,7 +141,7 @@ figure{
 }
 
 img{
-    max-height: 80vh;
+    height: 70vh;
     max-width: 80vh;
 }
 
