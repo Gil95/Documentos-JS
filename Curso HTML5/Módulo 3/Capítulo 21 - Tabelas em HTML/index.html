@@ -23,16 +23,16 @@
     <main id="simples">
         <section>
             <h1>Hierarquia de tabelas (simples)</h1>
-            <ol type="1" id="lista-base">
+            <ul type="none" id="lista-base">
                 <li>TABLE &lt;table&gt;= Tabela</li>
-                <ol type="1">
+                <ul type="none">
                     <li>TABLE ROW &lt;tr&gt;= linha de tabela</li>
-                    <ol type="1">
-                        <li>TABLE HEADER &lt;th&gt;= Cabeçalho de tabela</li>
+                    <ul type="none">
+                        <li>TABLE HEADER &lt;th&gt;= Título de tabela</li>
                         <li>TABLE DATA &lt;td&gt;= Dado de tabela</li>
-                    </ol>
-                </ol>
-            </ol>
+                    </ul>
+                </ul>
+            </ul>
         </section>
         <section>
             <h1>Uso de tabelas simples</h1>
@@ -60,6 +60,38 @@
                 </figure>
             </div>
             <p>Caso queira visualizar a tabela no seu navegador, acesse-o neste <a href="https://gil95.github.io/Documentos-JS/Curso%20HTML5/M%C3%B3dulo%203/Cap%C3%ADtulo%2021%20-%20Tabelas%20em%20HTML/tabela001.html" target="_blank" rel="noopener noreferrer">link</a></p>
+        </section>
+    </main>
+    <main id="grandes">
+        <section>
+            <h1>Hierarquia de tabelas (grandes)</h1>
+            <ul type="none" id="lista-base">
+                <li>TABLE &lt;table&gt;= Tabela</li>
+                <ul>
+                    <li>TABLE HEAD &lt;thead&gt;= Cabeçalho da tabela</li>
+                    <ul type="none">
+                        <li>TABLE ROW &lt;tr&gt;= Linha de tabela</li>
+                        <ul type="none">
+                            <li>TABLE HEADER &lt;th&gt;= Título de tabela</li>
+                        </ul>
+                    </ul>
+                    <li>TABLE BODY &lt;tbody&gt;= Corpo da tabela</li>
+                    <ul type="none">
+                        <li>TABLE ROW &lt;tr&gt;= Linha de tabela</li>
+                        <ul type="none">
+                            <li>TABLE DATA &lt;td&gt;= Dado de tabela</li>
+                        </ul>
+                    </ul>
+                    <li>TABLE FOOT &lt;tfoot&gt;= Pé da tabela</li>
+                    <ul type="none">
+                        <li>TABLE ROW &lt;tr&gt;= Linha de tabela</li>
+                        <ul type="none">
+                            <li>TABLE HEADER &lt;th&gt;= Título de tabela</li>
+                            <li>TABLE DATA &lt;td&gt;= Dado de tabela</li>
+                        </ul>
+                    </ul>
+                </ul>
+            </ul>
         </section>
     </main>
     <footer id="footer">
