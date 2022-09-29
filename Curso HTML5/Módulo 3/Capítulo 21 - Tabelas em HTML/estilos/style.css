@@ -96,12 +96,22 @@ main section h1{
 
 main section h2{
     font: normal normal 1.5em var(--fonte1);
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 5px;
 }
 
 main section p{
     font: normal normal 1em var(--fonte3);
+}
+
+main section p a{
+    text-decoration: none;
+    font: normal bold 1em var(--fonte3);
+    color: var(--cor1);
+}
+
+main section p a:hover{
+    text-decoration: underline;
 }
 
 ol{
@@ -122,8 +132,9 @@ figure{
     border-radius: 5px 20px;
     width: fit-content;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor0), var(--cor1));
+    margin-bottom: 20px;
 }
 div.centralizada{
     width: fit-content;
@@ -132,7 +143,6 @@ div.centralizada{
 }
 .inline-block{
     display: inline-block;
-    width: 35vw;
 }
 
 .center{
@@ -142,7 +152,7 @@ div.centralizada{
 
 img{
     height: 70vh;
-    max-width: 80vh;
+    max-width: 80vw;
 }
 
 figcaption{
