@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -7,6 +12,11 @@ body{
 table{
     width: 500px;
     border-collapse: collapse;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
 }
 
 td , th{
