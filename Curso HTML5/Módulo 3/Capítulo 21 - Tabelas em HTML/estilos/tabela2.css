@@ -32,3 +32,11 @@ thead, tfoot{
 td.num{
     text-align: right;
 }
+
+tbody > tr:nth-child(1n){
+    background-color: lightgray;
+}
+
+tbody > tr:nth-child(2n){
+    background-color: white;
+}
