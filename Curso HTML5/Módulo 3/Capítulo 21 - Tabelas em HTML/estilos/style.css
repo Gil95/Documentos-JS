@@ -101,6 +101,7 @@ main section h2{
 }
 
 main section p{
+    text-indent: 10px;
     font: normal normal 1em var(--fonte3);
 }
 
@@ -112,6 +113,10 @@ main section p a{
 
 main section p a:hover{
     text-decoration: underline;
+}
+
+span{
+    color: #dbb023 ;
 }
 
 ul{
@@ -141,6 +146,7 @@ div.centralizada{
     display: block;
     margin: auto;
 }
+
 .inline-block{
     display: inline-block;
 }
