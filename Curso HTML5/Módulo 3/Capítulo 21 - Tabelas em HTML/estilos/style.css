@@ -91,18 +91,23 @@ main section{
 }
 
 main section h1{
-    font: normal normal 2em var(--fonte1)
+    font: normal normal 2em var(--fonte1);
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 main section h2{
     font: normal normal 1.5em var(--fonte1);
     margin-top: 30px;
     margin-bottom: 5px;
+    margin-left: 20px;
 }
 
 main section p{
-    text-indent: 10px;
+    text-indent: 5px;
     font: normal normal 1em var(--fonte3);
+    margin-left: 10px;
 }
 
 main section p a{
@@ -115,8 +120,25 @@ main section p a:hover{
     text-decoration: underline;
 }
 
-span{
+span.selector{
     color: #dbb023 ;
+}
+
+span.property{
+    color: #3c8fe2;
+}
+
+span.value{
+    color: #50ce7a;
+}
+
+div#fixedHeader{
+    background-color: rgb(29, 29, 29);
+    width:fit-content;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: #fff;
 }
 
 ul{

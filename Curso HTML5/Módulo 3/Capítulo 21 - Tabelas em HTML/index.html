@@ -120,10 +120,48 @@
                 </figure>
             </div>
             <h2>Efeito zebrado</h2>
-            <p>Podemos utilizar o efeito zebrado fazendo uso da pseudo-classe <span>:nth-child(odd)</span> ou <span>:nth-child(even)</span>.<br>
+            <p>Podemos utilizar o efeito zebrado fazendo uso da pseudo-classe <span class="selector">:nth-child(odd)</span> ou <span class="selector">:nth-child(even)</span>.<br>
             Estas pseudo-classes permitem selecionar somente as tabelas pares (odd) ou ímpares (even), onde podemos definir uma propriedade de background-color em linhas pares ou ímpares</p>
+            <h2>Cabeçalho Fixo</h2>
+            <p>
+                Para tornar um cabeçalho fixo, basta utilizar do seletor <span class="selector">thead > tr > th{</span>, seguido com as propriedades <span class="property">position</span>, <span class="property">top</span> e <span class="property">background-color</span>, com os respectivos valores <span class="value">sticky</span>, <span class="value">-2px</span> e <span class="value">gray</span> da mesma forma que a indicada abaixo.
+<div id="fixedHeader"><code><pre>
+<span class="selector">thead > tr > th{</span>
+    <span class="property">position</span>: <span class="value">sticky</span>;
+    <span class="property">top</span>: <span class="value">-2px</span>;
+    <span class="property">background-color</span>: <span class="value">gray</span>
+<span class="selector">}</span></pre></code>
+</div>
+            </p>
+            <p>Usando a position <span class="property">sticky</span>, ao rolar a tela, a tag HTML informada no seletor se prenderá na posição indicada com a <span class="property">top</span>, para que seja marcada a posição de onde a mesma deve se prender, lembrando de ajustar seu afastamento de margem. No entanto devemos informar a <span class="property">background-color</span> novamente, para que não fique em um fundo invisível e quase ilegível por cima da tabela que continuará rolando ao fundo. </p>
             <br>
             <p>Caso queira visualizar a tabela no seu navegador, acesse-o neste <a href="https://gil95.github.io/Documentos-JS/Curso%20HTML5/M%C3%B3dulo%203/Cap%C3%ADtulo%2021%20-%20Tabelas%20em%20HTML/tabela002.html" target="_blank" rel="noopener noreferrer">link</a></p>
+        </section>
+        <section>
+            <h1>Mesclagem de células</h1>
+            <p>A tabela não é diferente das demais, porém agora para mesclagem de células, apenas devemos fazer a célula ocupar o espaço de duas células, utilizando apenas um seletor <span class="selector">rowspan</span> para ocupar duas células na mesma linha e/ou <span class="selector">colspan</span> para ocupar duas células na mesma coluna.</p>
+            <p>Desta forma, é possível criar tabelas que se parecem com essa abaixo.</p>
+            <h2>HTML apresentado no navegador</h2>
+            <div class="centralizada">
+                <figure>
+                    <img src="imagens/tabela-navegador-mesclagem.PNG" alt="Imagem de Tabela com Mesclagem de células">
+                    <figcaption>Mesclagem de células</figcaption>
+                </figure>
+            </div>
+            <h2>Código da tabela</h2>
+            <div class="centralizada">
+                <figure class="inline-block">
+                    <img src="imagens/table-html-mesclagem.PNG" alt="HTML de uma mesclagem de tabelas">
+                    <figcaption>HTML de célula mesclada</figcaption>
+                </figure>
+                <figure class="inline-block">
+                    <img src="imagens/table-css-mesclagem.PNG" alt="CSS de uma mesclagem de tabelas">
+                    <figcaption>CSS de célula mesclada</figcaption>
+                </figure>
+            </div>
+            <p>Na parte de CSS não tem muita coisa diferente, apenas as definições de bordas, largura das células e a propriedade de <span class="property">border-collapse</span> para que as células não fiquem afastadas e pareçam blocos separados</p>
+            <br>
+            <p>Caso queira visualizar a tabela no seu navegador, acesse-o neste <a href="https://gil95.github.io/Documentos-JS/Curso%20HTML5/M%C3%B3dulo%203/Cap%C3%ADtulo%2021%20-%20Tabelas%20em%20HTML/tabela003.html" target="_blank" rel="noopener noreferrer">link</a></p>
         </section>
     </main>
     <footer id="footer">
