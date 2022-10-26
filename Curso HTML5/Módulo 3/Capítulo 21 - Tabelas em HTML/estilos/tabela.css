@@ -4,6 +4,7 @@ table{
     border-collapse: collapse;
     max-width:90vw;
     height: 250px;
+    margin:auto;
 }
 
 td{
