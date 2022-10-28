@@ -7,12 +7,14 @@ body{
 h1{
     font: normal bold 3em arial;
     text-align: center;
+    max-width: 90vw;
 }
 
 caption{
     font-size: 1.3em;
     font-weight: bold;
     padding: 10px;
+    max-width: 90vw;
 }
 
 table{
@@ -23,12 +25,26 @@ table{
     margin: auto;
 }
 
-td, th{
-   border: 1px solid black;
-   padding: 10px;
-   text-align: center;
+th,td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    max-height: 10px;
 }
 
-td.filmes{
-    width: 90px;
+thead{
+    background: rgb(120,120,120);
+    color: white;
+}
+
+thead > tr > th{
+    padding: 10px;
+}
+
+tbody>tr:nth-child(odd){
+    background-color: rgb(180,180,180);
+}
+
+div#container{
+    overflow-x: auto;
 }
