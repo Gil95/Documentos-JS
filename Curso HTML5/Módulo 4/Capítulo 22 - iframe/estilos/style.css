@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Alice' ;
+    src: url(../../../../Fontes\ Baixadas/Alice_in_Wonderland_3.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(../../../Módulo\ 2/Capítulo\ 17\ -\ Primeiro\ mini-projeto/fontes/BebasNeue-Regular.ttf) format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --cor0: #dd7373;
+    --cor1: #fedc97;
+    --cor2: #235789;
+    --cor3: #a1cdf4;
+    --cor4: #c2fff0;
+    --cor5: #fff;
+    --cor6:#000;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', 'cursive';
+    --fonte2: 'Alice', sans-serif;
+    --fonte3: 'Passion One', cursive;
+    --fonte4: 'Sriracha', cursive;
+}
+
+*{
+    font: normal normal 16px var(--fonte0);
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor3);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+    height: 200px;
+}
+
+header > h1{
+    font: normal bold 50px var(--fonte1);
+    color: var(--cor5);
+    text-align: center;
+    padding-top: 70px;
+    text-shadow: 5px 5px 15px #000000ff;
+}
+
+nav{
+    background-color: #a1cdf4aa;
+    border: 0px;
+    border-top: 1px;
+    position: sticky;
+    top: 0;
+}
+
+nav > div{
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+}
+
+nav > div > a{
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 5px;
+    background-color: var(--cor3);
+    border: 2px solid var(--cor3);
+    transition-duration: 200ms;
+    color: var(--cor2);
+    font: normal normal 1.2em var(--fonte1);
+    text-decoration: none;
+}
+
+nav > div > a:hover{
+    background-color: var(--cor2);
+    color: var(--cor5);
+    transition-duration: 200ms;
+}
+
+main{
+    background-color: var(--cor5);
+    width: 90vw;
+    padding: 10px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px 20px;
+    box-shadow: inset 5px 5px 10px #00000099;
+}
+
+main > section{
+    background-color: var(--cor3);
+    border-radius: 5px 20px;
+    border: 1px solid var(--cor3);
+    padding: 20px;
+    margin: 10px;
+}
+
+main > section > h1{
+    font: normal bold 2em var(--fonte1);
+    text-shadow: 5px 5px 10px #00000099;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: var(--cor5);
+}
+
+main > section > h2{
+    font: normal normal 1.5em var(--fonte1);
+    margin: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+main > section > p{
+    font: normal normal 1em var(--fonte3);
+}
+
+span.selector{
+    background-color: rgb(56, 56, 56);
+    color: #dbb023;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+span.property{
+    background-color: rgb(56, 56, 56);
+    color: #3c8fe2;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+span.valuetype{
+    background-color: rgb(56, 56, 56);
+    color: #db8523;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+span.valuesize{
+    background-color: rgb(56, 56, 56);
+    color: #50ce7a;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+iframe{
+    max-width: 90vw;
+}
