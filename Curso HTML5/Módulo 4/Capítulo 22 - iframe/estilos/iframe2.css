@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Alice' ;
+    src: url(../../../../Fontes\ Baixadas/Alice_in_Wonderland_3.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(../../../Módulo\ 2/Capítulo\ 17\ -\ Primeiro\ mini-projeto/fontes/BebasNeue-Regular.ttf) format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --cor0: #dd7373;
+    --cor1: #fedc97;
+    --cor2: #235789;
+    --cor3: #a1cdf4;
+    --cor4: #c2fff0;
+    --cor5: #fff;
+    --cor6:#000;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', 'cursive';
+    --fonte2: 'Alice', sans-serif;
+    --fonte3: 'Passion One', cursive;
+    --fonte4: 'Sriracha', cursive;
+}
+
+*{
+    font: normal normal 16px var(--fonte0);
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor3);
+}
+
+section{
+    background-color: var(--cor4);
+    width: 90vw;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px 20px;
+    box-shadow: 5px 10px 10px black;
+}
+
+h1{
+    font: normal bold 3em var(--fonte1);
+    padding: 2px 10px;
+    border-radius: 2px;
+    text-shadow: 2px 5px 10px #00000099;
+    text-align: center;
+}
+
+p{
+    font: normal normal 1em var(--fonte0);
+    margin: 20px;
+    text-indent: 10px;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+}

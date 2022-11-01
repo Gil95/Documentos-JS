@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(206, 206, 206);
+}
+
+h1{
+    font: normal bold 3em arial;
+    text-align: center;
+}
+
+caption{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+table{
+    border-collapse: collapse;
+    width: fit-content;
+    max-width: 90vw;
+    border: 1px solid black;
+    margin: auto;
+}
+
+td, th{
+   border: 1px solid black;
+   padding: 10px;
+   text-align: center;
+   background-color: white;
+}
+
+td.filmes{
+    width: 90px;
+}
