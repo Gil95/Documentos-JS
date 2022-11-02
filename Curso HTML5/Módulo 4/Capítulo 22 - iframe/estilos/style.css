@@ -51,7 +51,7 @@ header > h1{
 }
 
 nav{
-    background-color: #a1cdf4aa;
+    background-color: #a1cdf4dd;
     border: 0px;
     border-top: 1px;
     position: sticky;
@@ -114,42 +114,100 @@ main > section > h1{
 
 main > section > h2{
     font: normal normal 1.5em var(--fonte1);
-    margin: 10px;
-    margin-top: 20px;
-    text-align: center;
+    margin: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 main > section > p{
     font: normal normal 1em var(--fonte3);
+    text-indent: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+a:visited{
+    color: var(--cor2);
+    text-decoration: none;
+}
+
+p.code{
+    text-indent: 0px;
+    background-color: #1E1E1E;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: fit-content;
+    padding: 1px;
 }
 
 span.selector{
-    background-color: rgb(56, 56, 56);
+    background-color: #1E1E1E;
     color: #dbb023;
     padding: 1px;
     font-family: 'Courier New', Courier, monospace;
 }
 
 span.property{
-    background-color: rgb(56, 56, 56);
-    color: #3c8fe2;
+    background-color: #1E1E1E;
+    color: #9DDCFC;
     padding: 1px;
     font-family: 'Courier New', Courier, monospace;
 }
 
 span.valuetype{
-    background-color: rgb(56, 56, 56);
+    background-color: #1E1E1E;
     color: #db8523;
     padding: 1px;
     font-family: 'Courier New', Courier, monospace;
 }
 span.valuesize{
-    background-color: rgb(56, 56, 56);
+    background-color: #1E1E1E;
     color: #50ce7a;
     padding: 1px;
     font-family: 'Courier New', Courier, monospace;
 }
 
-iframe{
-    max-width: 90vw;
+span.tag{
+    background-color: #1E1E1E;
+    color: #569CD6;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+iframe#janela{
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 300px;
+}
+
+ul{
+    margin-left: 30px;
+}
+
+footer{
+    padding: 0px;
+    margin: 0px;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor2));
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-top:20px;
+}
+
+footer h1{
+    font:normal normal 2em var(--fonte1);
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p a{
+    text-decoration: none;
+    font: normal normal 1.5em var(--fonte0);
+    color: var(--cor4);
 }

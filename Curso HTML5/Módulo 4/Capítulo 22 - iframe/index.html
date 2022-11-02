@@ -15,9 +15,10 @@
     <nav>
         <div>
             <a href="#top">Início</a>
-            <a href="#iframe">o que é um iframe?</a>
-            <a href="#">texto 2</a>
-            <a href="#">Fale conosco</a>
+            <a href="#iframe">O que é um iframe?</a>
+            <a href="#config-iframes">Configurando Iframes</a>
+            <a href="#local-iframes">Iframes Locais</a>
+            <a href="#footer">Fale conosco</a>
         </div>
     </nav>
     <main>
@@ -29,12 +30,40 @@
             <br>
             <p>Como podemos ver, a linha inferior do texto está alinhada com o iframe.</p>
         </section>
-        <section>
+        <section id="config-iframes">
             <h2>Configurando iframes</h2>
             <p>Por padrão, um iframe tem uma medida de <span class="valuesize">300px</span> por <span class="valuesize">150px</span></p>
             <p>Podemos a configurar da forma que quiser à partir das CSS, utilizando do seu seletor <span class="selector">iframe</span>, ou criando uma classe ou id para a mesma e utilizando de seu seletor <span class="selector">.(classe)</span> ou <span class="selector">#(id)</span>.</p>
-            <p><a href="https://gil95.github.io/Meu-perfil">link</a></p>
+        </section>
+        <section id="local-iframes">
+            <h2>Conteúdo local no iframe</h2>
+            <p>O iframe pode ser endereçado por uma url interna de pastas, quanto de uma url externa de sites diferentes.</p>
+            <p>O iframe tem uma tag bem simples.
+            </p>
+            <p class="code">&lt;<span class="tag">iframe</span> <span class="property">src</span>=<span class="valuetype">"https://gil95.github.io/Meu-perfil"</span> <span class="property">frameborder</span>=<span class="valuetype">"0"</span>&gt; &lt;/<span class="tag">iframe</span>&gt;
+            </p>
+            <br>
+            <p>Esta tag acima se representa da forma a seguir. <iframe src="https://gil95.github.io/Meu-perfil" frameborder="0"></iframe></p>
+        </section>
+        <section id="naveg">
+            <h2>Navegação no iframe</h2>
+            <p>Podemos usar o iframe como uma tela para o nosso conteúdo, seguindo com um link e uma target definida da seguinte forma</p>
+            <p class="code">&lt;<span class="tag">a</span> <span class="property">href</span> =<span class="valuetype"> "https://gil95.github.io/Meu-perfil"</span> <span class="property">target</span>=<span class="valuetype">"janela"</span>&gt; &lt;/<span class="tag">a</span>&gt;</p>
+            <p>Esta "janela" deve ser o nome do iframe que servirá como navegador em nossa página.</p>
+            <p class="code">&lt;<span class="tag">iframe</span> <span class="property">src</span>= <span class="valuetype">""</span> <span class="property">frameborder</span>=<span class="valuetype">"0"</span> <span class="property">name</span>=<span class="valuetype">"janela"</span>&gt; &lt;/<span class="tag">iframe</span>&gt;</p>
+            <h2>Dessa forma teremos algo do tipo.</h2>
+            <ul>
+                <li><a href="paginas extras/pag001.html" target="janela">Página 1</a></li>
+                <li><a href="paginas extras/pag002.html" target="janela">Página 2</a></li>
+                <li><a href="paginas extras/pag003.html" target="janela">Página 3</a></li>
+            </ul>
+            <br>
+            <iframe src="" frameborder="1" name="janela" id="janela"></iframe>
         </section>
     </main>
+    <footer id="footer">
+        <h1>Site criado por Gilson Neto para o CursoemVideo.</h1>
+        <p><a href="https://gil95.github.io/Meu-perfil/" target="_blank" rel="noopener noreferrer">Siga para nos conhecer melhor</a></p>
+    </footer>
 </body>
 </html>
