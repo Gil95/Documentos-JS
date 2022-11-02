@@ -14,7 +14,7 @@ num.push(95)
 
 console.log(`Nosso novo vetor é o ${num}`)
 
-console.log (num.length)
+console.log (`Nosso vetor possui ${num.length} números`)
 
 num.sort
 
