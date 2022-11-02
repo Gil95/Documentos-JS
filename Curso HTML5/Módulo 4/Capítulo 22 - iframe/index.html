@@ -19,10 +19,12 @@
             <a href="#config-iframes">Configurando Iframes</a>
             <a href="#local-iframes">Iframes Locais</a>
             <a href="#naveg">Navegação por iframes</a>
+            <a href="#seg">Segurança</a>
             <a href="#footer">Fale conosco</a>
         </div>
     </nav>
     <main>
+
         <section id="iframe">
             <h1>O que é um iframe?</h1>
             <p>O iframe é um quadro que possui uma <span class="property">display</span> <span class="valuetype">inline</span>, ou seja, o iframe fica lado a lado com o texto</p>
@@ -31,11 +33,13 @@
             <br>
             <p>Como podemos ver, a linha inferior do texto está alinhada com o iframe.</p>
         </section>
+
         <section id="config-iframes">
             <h2>Configurando iframes</h2>
             <p>Por padrão, um iframe tem uma medida de <span class="valuesize">300px</span> por <span class="valuesize">150px</span></p>
             <p>Podemos a configurar da forma que quiser à partir das CSS, utilizando do seu seletor <span class="selector">iframe</span>, ou criando uma classe ou id para a mesma e utilizando de seu seletor <span class="selector">.(classe)</span> ou <span class="selector">#(id)</span>.</p>
         </section>
+
         <section id="local-iframes">
             <h2>Conteúdo local no iframe</h2>
             <p>O iframe pode ser endereçado por uma url interna de pastas, quanto de uma url externa de sites diferentes.</p>
@@ -46,6 +50,7 @@
             <br>
             <p>Esta tag acima se representa da forma a seguir. <iframe src="../../Módulo 3/Capítulo 20 - Mini-projeto cordel/index.html" frameborder="0"></iframe></p>
         </section>
+
         <section id="naveg">
             <h2>Navegação no iframe</h2>
             <p>Podemos usar o iframe como uma tela para o nosso conteúdo, seguindo com um link e uma target definida da seguinte forma</p>
@@ -66,6 +71,29 @@
             <p>A imagem também deve ser lembrada de como deve ser digitada, pois a mesma se usa apenas 'aspas simples'</p>
             <p class="code">&lt;<span class="tag">iframe</span> <span class="property">srcdoc</span>= <span class="valuetype">"&lt;img src='imagens/paisagem.jpg'&gt;</span> &lt;/<span class="tag">iframe</span>&gt;</p>
         </section>
+
+        <section id="seg">
+            <h2>Tornando iframes mais seguros</h2>
+            <p>O iframe possui um problema quanto a segurança, pois o mesmo pode fazer uma conexão para outros sites que não seja o seu. Este problema costuma estar relacionado à sites que não podemos controlar, visto que não é relacionado com os nossos, e a segurança do site de terceiros embora não seja nossa, a segurança de seus usuários é de nossa responsabilidade, pois o mesmo problema foi acessado à partir de nosso site.</p>
+            <h3>Sandbox</h3>
+            <p>A sandbox é uma propriedade do iframe que nos permite negar ou permitir alguns recursos de sites de terceiros, como script, formulários e etc. Caso a propriedade sandbox estiver com um valor sandbox, a mesma nega todo e qualquer tipo de permissão, sendo uma segurança de que até mesmo nos impede de utilizar suas interações por javascript ou interagir com seus links.</p>
+            <br>
+            <p class="code">&lt;<span class="tag">iframe</span> <span class="property">src</span> =<span class="valuetype"> "paginas extras/pag004.html"</span> <span class="property">target</span>=<span class="valuetype">"janela"</span> <span class="property">sandbox</span>=<span class="valuetype">"sandbox"</span>
+            <span class="property">frameborder</span>=<span class="valuetype">"1"</span>&gt; &lt;/<span class="tag">iframe</span>&gt;</p>
+            <br>
+            <p>Desta forma, teremos um site exatamente assim:</p>
+            <iframe src="paginas extras/pag004.html" frameborder="1" sandbox="sandbox"></iframe>
+            <p>O mesmo sequer interage com o botão cadastrar</p>
+            <br>
+            <h3>Política de referência</h3>
+            <p>A política de referência remete à basicamente qual a relação temos com o site indicado, o mesmo deve ser indicado pela propriedade referrerpolicy com o valor de noreferrer</p>
+            <p class="code">&lt;<span class="tag">iframe</span> <span class="property">src</span> =<span class="valuetype"> "paginas extras/pag004.html"</span> <span class="property">target</span>=<span class="valuetype">"janela"</span> <span class="property">referrerpolicy</span>=<span class="valuetype">"noreferrer"</span>
+            <span class="property">frameborder</span>=<span class="valuetype">"1"</span>&gt; &lt;/<span class="tag">iframe</span>&gt;</p>
+            <p>Desta forma, o conteúdo terá acesso à interações dos sites, mas terá uma política de não referenciado, ainda assim o site terá uma vulnerabilidade caso o usuário tenha permitido uma coleta de dados por parte do site de terceiro.</p>
+            <br>
+            <iframe src="paginas extras/pag004.html" referrerpolicy="noreferrer" frameborder="1"></iframe>
+        </section>
+
     </main>
     <footer id="footer">
         <h1>Site criado por Gilson Neto para o CursoemVideo.</h1>

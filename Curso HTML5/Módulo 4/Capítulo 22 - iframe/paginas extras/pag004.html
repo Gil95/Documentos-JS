@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        @charset "UTF-8";
+
+@font-face {
+    font-family: 'Alice' ;
+    src: url(../../../../Fontes\ Baixadas/Alice_in_Wonderland_3.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(../../../Módulo\ 2/Capítulo\ 17\ -\ Primeiro\ mini-projeto/fontes/BebasNeue-Regular.ttf) format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --cor0: #dd7373;
+    --cor1: #fedc97;
+    --cor2: #235789;
+    --cor3: #a1cdf4;
+    --cor4: #c2fff0;
+    --cor5: #fff;
+    --cor6:#000;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', 'cursive';
+    --fonte2: 'Alice', sans-serif;
+    --fonte3: 'Passion One', cursive;
+    --fonte4: 'Sriracha', cursive;
+}
+
+        body{
+            background-color: var(--cor3);
+        }
+
+        input#nome{
+            width: 140px;
+        }
+
+        h1{
+            font: normal bold 2em var(--fonte1);
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+            font: normal normal 1em var(--fonte0);
+        }
+
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <h1>Cadastre-se aqui</h1>
+        <p>
+            Nome:
+            <input type="text" name="nome" id="nome">
+            <input type="submit" value="Cadastrar">
+        </p>
+    </form>
+</body>
+</html>

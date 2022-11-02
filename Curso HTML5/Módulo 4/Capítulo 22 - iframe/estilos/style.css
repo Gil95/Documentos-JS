@@ -119,6 +119,12 @@ main > section > h2{
     margin-bottom: 10px;
 }
 
+main > section > h3{
+    font: normal normal 1.3em var(--fonte1);
+    text-indent: 20px;
+    margin-top: 10px;
+}
+
 main > section > p{
     font: normal normal 1em var(--fonte3);
     text-indent: 10px;
