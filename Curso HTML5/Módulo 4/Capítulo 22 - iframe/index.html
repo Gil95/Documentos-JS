@@ -41,10 +41,10 @@
             <p>O iframe pode ser endereçado por uma url interna de pastas, quanto de uma url externa de sites diferentes.</p>
             <p>O iframe tem uma tag bem simples.
             </p>
-            <p class="code">&lt;<span class="tag">iframe</span> <span class="property">src</span>= <span class="valuetype">"https://gil95.github.io/Meu-perfil"</span> <span class="property">frameborder</span>=<span class="valuetype">"0"</span>&gt; &lt;/<span class="tag">iframe</span>&gt;
+            <p class="code">&lt;<span class="tag">iframe</span> <span class="property">src</span>= <span class="valuetype">"../../Módulo 3/Capítulo 20 - Mini-projeto cordel/index.html"</span> <span class="property">frameborder</span>=<span class="valuetype">"0"</span>&gt; &lt;/<span class="tag">iframe</span>&gt;
             </p>
             <br>
-            <p>Esta tag acima se representa da forma a seguir. <iframe src="https://gil95.github.io/Meu-perfil" frameborder="0"></iframe></p>
+            <p>Esta tag acima se representa da forma a seguir. <iframe src="../../Módulo 3/Capítulo 20 - Mini-projeto cordel/index.html" frameborder="0"></iframe></p>
         </section>
         <section id="naveg">
             <h2>Navegação no iframe</h2>
@@ -60,6 +60,11 @@
             </ul>
             <br>
             <iframe srcdoc="<h1>Podemos colocar um HTML aqui dentro!</h1><p>Podemos usar esse recurso de digitar uma html fazendo uso de uma propriedade srcdoc= e digitar tags html aqui</p><p>Este recurso é muito útil para dar instruções antes de o link ser selecionado para este navegador iframe</p><p>Podemos também usar uma imagem, porém devemos usar aspas simples para a inserir</p><img src='../../../Imagens/Paisagens/paisagem full.jpg' style='max-width:80vw;display:block;margin:auto;'>" frameborder="1" name="janela" id="janela"></iframe>
+            <br>
+            <p>O srcdoc deve ser digitado da seguinte forma</p>
+            <p class="code">&lt;<span class="tag">iframe</span> <span class="property">srcdoc</span> = <span class="valuetype">"&lt;h1&gt;Título&lt;/h1&gt; &lt;p&gt;Parágrafo&lt;/p&gt;</span>&gt; &lt;/<span class="tag">iframe</span>&gt;</p>
+            <p>A imagem também deve ser lembrada de como deve ser digitada, pois a mesma se usa apenas 'aspas simples'</p>
+            <p class="code">&lt;<span class="tag">iframe</span> <span class="property">srcdoc</span>= <span class="valuetype">"&lt;img src='imagens/paisagem.jpg'&gt;</span></p>
         </section>
     </main>
     <footer id="footer">
