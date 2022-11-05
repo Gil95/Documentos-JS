@@ -140,7 +140,7 @@ a:visited{
     text-decoration: none;
 }
 
-p.code{
+.code{
     text-indent: 0px;
     background-color: #1E1E1E;
     color: #fff;
