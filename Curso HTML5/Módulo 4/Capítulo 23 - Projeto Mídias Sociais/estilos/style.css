@@ -3,28 +3,34 @@
 *{
     padding: 0px;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
 }
 
 body{
-    background-color: rgb(105, 56, 10);
-    background-image: url(../Imagens/fundo-madeira.jpg);
-    background-repeat: no-repeat;
+    background: url(../Imagens/fundo-madeira.jpg) no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-img#smartphone{
-    transform:translate(-50%,-50%);
+main{
+    height: 100vh;
+    position: relative;
+}
+
+section#telefone{
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 80vh;
-    width: ;
-}
-img#tela{
     transform: translate(-50%,-50%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 61vh;
-}
+    background: url(../Imagens/frame-iphone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 627px;
+    width: 311px;
+    }
