@@ -52,9 +52,11 @@ img{
     transition-duration: 200ms;
 }
 
-#redes-sociais{
-    text-align: right;
+section#redes-sociais{
+    display: inline-block;
     margin-right: 10px;
+    margin-top: 5vh;
+    margin-left: 85vw;
     padding-top: 10px;
     line-height: 40px;
 }
