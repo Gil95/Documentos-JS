@@ -59,6 +59,10 @@ img{
     line-height: 40px;
 }
 
+section#redes-sociais>a{
+    display: block;
+}
+
 section#redes-sociais img:hover{
     border: 2px solid white;
     text-align: right;
