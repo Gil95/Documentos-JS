@@ -15,16 +15,45 @@
     <nav>
         <div>
             <a href="#top">Início</a>
-            <a href="#">O que é?</a>
-            <a href="#">Exemplos</a>
+            <a href="#oq">O que é?</a>
+            <a href="#ex">Exemplos</a>
+            <a href="#metodos">Métodos GET e POST</a>
             <a href="#footer">Fale conosco</a>
         </div>
     </nav>
     <main>
         <h1>Formulários</h1>
-        <section>
+        <section id="oq">
             <h2>O que é um formulário?</h2>
-            <p></p>
+            <p>Um formulário é basicamente tudo aquilo onde você preenche com seus dados ou com alguma informação importante para que seja guardada, em nosso caso, para um servidor, seja uma plataforma ou website.</p>
+        </section>
+        <section id="ex">
+            <h2>Exemplos de Formulários</h2>
+            <ul type="circle">
+                <li><a href="form001.html" target="exemplo">Formulário 1</a></li>
+                <li></li>
+            </ul>
+            <iframe src="form001.html" name="exemplo" id="exemplo" frameborder="1"></iframe>
+        </section>
+        <section>
+            <h2>Método GET e POST</h2>
+            <h3>Método GET</h3>
+            <p>O Método GET é uma forma de transmitir um formulário, porém o mesmo é enviado sem amostrado na URL do site, algo que não é nada seguro quando se trata de dados confidenciais, como documentos e senhas.</p>
+            <h3>Método POST</h3>
+            <p>O Método POST também é uma forma de transmitir um formulário, porém desta forma não é amostrada na URL do site, porém não se trata de segurança, apenas está de forma oculta da URL, mas ainda é possível encontrar o dado enviado. <br>
+            A solução correta para a segurança desses dados, é a criptografia via HTTPS.</p>
+            <h3>Quando usamos um ou outro?</h3>
+            <dl>
+                <dt>GET</dt>
+                <dd>Quando desejamos que a URL seja compartilhável.</dd>
+                <dd>Quando os dados <strong>NÃO SÃO</strong> confidenciais</dd>
+                <dd>Possui um limite máximo de 3000 caracteres</dd>
+                <dt>POST</dt>
+                <dd>Quando possui fotos no formulário</dd>
+                <dd>Quando os dados <strong>SÃO</strong> confidenciais.</dd>
+                <dd>Quando desejamos que a URL não seja compartilhável</dd>
+                <dd>Não possui limite de caracteres</dd>
+            </dl>
         </section>
     </main>
     <footer id="footer">

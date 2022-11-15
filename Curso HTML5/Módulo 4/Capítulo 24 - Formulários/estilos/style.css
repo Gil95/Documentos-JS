@@ -46,7 +46,7 @@ body{
 header{
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor2));
     color: var(--cor5);
-    height: 300px;
+    height: 200px;
     width: 100vw;
     padding: 0px;
 }
@@ -54,7 +54,7 @@ header{
 header > h1{
     font: normal bold 3em var(--fonte1);
     text-align: center;
-    padding-top: 110px;
+    padding-top: 80px;
 }
 
 nav{
@@ -92,8 +92,8 @@ main{
     padding: 10px;
     width: 80vw;
     max-width: 800px;
-    margin-top: 20px;
     margin: auto;
+    margin-top: 20px;
 }
 
 main > h1{
@@ -101,4 +101,94 @@ main > h1{
     font: normal bold 2em var(--fonte1);
     text-align: center;
     padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+main > section{
+    background-color: var(--cor5);
+    border-radius: 5px 10px;
+    padding: 10px;
+    box-shadow: inset 0px 0px 15px var(--cor6);
+    margin-bottom: 20px;
+}
+
+main > section > h2{
+    font: normal bold 1.8em var(--fonte1);
+    text-indent: 10px;
+    padding: 5px 10px;
+}
+
+main > section > h3{
+    font: normal normal 1.4em var(--fonte1);
+    text-indent: 10px;
+    padding: 5px 10px;
+}
+
+main > section > p{
+    font: normal normal 1em var(--fonte4);
+    text-indent: 5px;
+    padding: 5px 10px;
+}
+
+ul{
+    margin-left: 20px;
+}
+
+main a{
+    text-decoration: none;
+    color: var(--cor3);
+    font: normal bold 1.2em var(--fonte1);
+}
+
+a:visited{
+    color: var(--cor0);
+}
+
+iframe{
+    width: 100%;
+    height: 200px;
+}
+
+footer{
+    margin-top: 10px;
+    background-image: linear-gradient( to bottom, var(--cor2), var(--cor0));
+    height: 120px;
+}
+
+footer > h1 {
+    padding-top: 30px;
+    color: var(--cor5);
+    font: normal bolder 2em var(--fonte1);
+    text-align: center;
+}
+
+footer > p{
+    text-align: center;
+}
+
+footer > p > a{
+    color: var(--cor4);
+    text-decoration: none;
+    font: normal normal 1.5em var(--fonte1);
+}
+
+footer > p > a:visited{
+    color: var(--cor4);
+}
+
+dl{
+    margin-left: 20px;
+}
+
+dt{
+    font: normal bold 1em var(--fonte0);
+}
+
+dd{
+    font: normal normal 1em var(--fonte0);
+    margin-left: 20px;
+}
+
+strong{
+    font-weight: bold;
 }
