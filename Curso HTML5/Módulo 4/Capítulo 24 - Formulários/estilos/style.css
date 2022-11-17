@@ -72,9 +72,10 @@ nav > div{
 }
 
 nav > div > a{
+    display: inline-block;
     padding: 2px 5px;
     background-color: var(--cor2);
-    font: normal normal 1.5em var(--fonte1);
+    font: normal normal 1.2em var(--fonte1);
     text-decoration: none;
     color: var(--cor5);
     transition-duration: 200ms;
@@ -100,7 +101,7 @@ main > h1{
     color: var(--cor5);
     font: normal bold 2em var(--fonte1);
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5px;
     margin-bottom: 10px;
 }
 
@@ -122,6 +123,7 @@ main > section > h3{
     font: normal normal 1.4em var(--fonte1);
     text-indent: 10px;
     padding: 5px 10px;
+    margin-top: 10px;
 }
 
 main > section > p{
@@ -130,17 +132,13 @@ main > section > p{
     padding: 5px 10px;
 }
 
-ul{
-    margin-left: 20px;
-}
-
-main a{
+main > a{
     text-decoration: none;
     color: var(--cor3);
     font: normal bold 1.2em var(--fonte1);
 }
 
-a:visited{
+main > a:visited{
     color: var(--cor0);
 }
 
@@ -177,7 +175,10 @@ footer > p > a:visited{
 }
 
 dl{
-    margin-left: 20px;
+    border-radius: 5px 10px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow:inset 2px 2px 10px #000000aa;
 }
 
 dt{
@@ -189,6 +190,61 @@ dd{
     margin-left: 20px;
 }
 
+ul{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul > li > a{
+    text-decoration: none;
+    color: var(--cor3);
+    font: normal bold 1.2em var(--fonte1);
+}
+
 strong{
     font-weight: bold;
+}
+
+.code{
+    text-indent: 0px;
+    background-color: #1E1E1E;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: fit-content;
+    padding: 1px;
+}
+
+span.selector{
+    background-color: #1E1E1E;
+    color: #dbb023;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+span.property{
+    background-color: #1E1E1E;
+    color: #9DDCFC;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+span.valuetype{
+    background-color: #1E1E1E;
+    color: #db8523;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+span.valuesize{
+    background-color: #1E1E1E;
+    color: #50ce7a;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+span.tag{
+    background-color: #1E1E1E;
+    color: #569CD6;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
 }
