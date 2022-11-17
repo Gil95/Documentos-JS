@@ -40,11 +40,11 @@
 }
 
 body{
-    background-color: var(--cor3);
+    background-color: var(--cor1);
 }
 
 header{
-    background-image: linear-gradient(to bottom, var(--cor0), var(--cor2));
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor0));
     color: var(--cor5);
     height: 200px;
     width: 100vw;
@@ -58,7 +58,7 @@ header > h1{
 }
 
 nav{
-    background-color: var(--cor2);
+    background-color: var(--cor0);
     border: 0px;
     position: sticky;
     top: 0;
@@ -74,7 +74,7 @@ nav > div{
 nav > div > a{
     display: inline-block;
     padding: 2px 5px;
-    background-color: var(--cor2);
+    background-color: var(--cor0);
     font: normal normal 1.2em var(--fonte1);
     text-decoration: none;
     color: var(--cor5);
@@ -88,7 +88,7 @@ nav > div > a:hover{
 }
 
 main{
-    background-color: var(--cor1);
+    background-color: var(--cor3);
     border-radius: 5px 20px;
     padding: 10px;
     width: 80vw;
@@ -149,7 +149,7 @@ iframe{
 
 footer{
     margin-top: 10px;
-    background-image: linear-gradient( to bottom, var(--cor2), var(--cor0));
+    background-image: linear-gradient( to bottom, var(--cor0), var(--cor2));
     height: 120px;
 }
 
