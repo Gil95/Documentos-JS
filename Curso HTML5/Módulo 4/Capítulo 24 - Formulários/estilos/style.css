@@ -187,6 +187,13 @@ dl{
     box-shadow:inset 2px 2px 10px #000000aa;
 }
 
+dl > div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ddd;
+    border-radius: 5px 10px;
+}
+
 dt{
     font: normal bold 1em var(--fonte0);
 }
