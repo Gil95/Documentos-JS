@@ -150,21 +150,27 @@ iframe{
 footer{
     margin-top: 10px;
     background-image: linear-gradient( to bottom, var(--cor0), var(--cor2));
-    height: 120px;
+    height: 180px;
 }
 
-footer > h1 {
-    padding-top: 30px;
+footer > div {
+    position: relative;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+}
+
+footer > div > h1 {
     color: var(--cor5);
     font: normal bolder 2em var(--fonte1);
     text-align: center;
 }
 
-footer > p{
+footer > div > p{
     text-align: center;
 }
 
-footer > p > a{
+footer > div > p > a{
     color: var(--cor4);
     text-decoration: none;
     font: normal normal 1.5em var(--fonte1);
