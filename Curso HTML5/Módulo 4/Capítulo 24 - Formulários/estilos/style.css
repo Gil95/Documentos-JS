@@ -150,7 +150,7 @@ iframe{
 footer{
     margin-top: 10px;
     background-image: linear-gradient( to bottom, var(--cor0), var(--cor2));
-    height: 180px;
+    height: 120px;
 }
 
 footer > div {
