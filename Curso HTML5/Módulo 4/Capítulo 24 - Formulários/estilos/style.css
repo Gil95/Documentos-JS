@@ -192,10 +192,12 @@ dl > div{
     margin-bottom: 10px;
     background-color: #ddd;
     border-radius: 5px 10px;
+    padding: 5px;
 }
 
 dt{
     font: normal bold 1em var(--fonte0);
+    padding: 5px;
 }
 
 dd{
@@ -224,6 +226,7 @@ strong{
     font-family: 'Courier New', Courier, monospace;
     max-width: fit-content;
     padding: 1px;
+    border-radius: 5px;
 }
 
 span.selector{
@@ -231,6 +234,7 @@ span.selector{
     color: #dbb023;
     padding: 1px;
     font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
 }
 
 span.property{
@@ -238,6 +242,7 @@ span.property{
     color: #9DDCFC;
     padding: 1px;
     font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
 }
 
 span.valuetype{
@@ -245,12 +250,14 @@ span.valuetype{
     color: #db8523;
     padding: 1px;
     font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
 }
 span.valuesize{
     background-color: #1E1E1E;
     color: #50ce7a;
     padding: 1px;
     font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
 }
 
 span.tag{
@@ -258,4 +265,5 @@ span.tag{
     color: #569CD6;
     padding: 1px;
     font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
 }
