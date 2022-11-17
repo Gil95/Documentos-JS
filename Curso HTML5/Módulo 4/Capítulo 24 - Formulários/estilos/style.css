@@ -197,9 +197,7 @@ dd{
 }
 
 ul{
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 20px;
 }
 
 ul > li > a{
