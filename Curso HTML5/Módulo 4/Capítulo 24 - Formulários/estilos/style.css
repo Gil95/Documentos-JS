@@ -33,12 +33,6 @@
     padding: 0px;
 }
 
-
-::-webkit-scrollbar{
-    width: 0px;
-    height: 0px;
-}
-
 body{
     background-color: var(--cor1);
 }
@@ -46,15 +40,20 @@ body{
 header{
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor0));
     color: var(--cor5);
-    height: 200px;
-    width: 100vw;
+    height: 120px;
     padding: 0px;
 }
 
-header > h1{
+header > div{
+    position: relative;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+}
+
+header > div > h1{
     font: normal bold 3em var(--fonte1);
     text-align: center;
-    padding-top: 80px;
 }
 
 nav{
