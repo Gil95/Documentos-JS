@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="estilos/GJS.ico" type="image/x-icon">
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ::-webkit-scrollbar{
+        width: 0px;
+        height: 0px;
+        }
+    </style>
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sex" id="imasc" value="M" checked><label for="imasc">Masculino</label> <br>
+            <input type="radio" name="sex" id="ifem" value="F"><label for="ifem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut" value="esfut" checked><label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esbas" id="iesbas" value="esbas" checked><label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esten" id="iesten" value="esten"><label for="iesten">Tenis</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat" value="esnat"><label for="iesnat">Natação</label> <br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
