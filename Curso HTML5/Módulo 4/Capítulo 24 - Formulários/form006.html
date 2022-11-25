@@ -18,18 +18,18 @@
 </head>
 <body>
     <h1>Exemplo de formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
-            <label for="icor">Cor</label>
+            <label for="icor">Cor:</label>
             <input type="color" name="cor" id="icor">
         </p>
         <p>
-            <label for="irange">Nível de Satisfação</label>
-            <input type="range" name="range" id="irange">
+            <label for="irange">Nível de Satisfação:</label>
+            <input type="range" name="range" id="irange" min="1" max="5" value="5">
         </p>
         <p>
-            <label for="ifile">Foto</label>
-            <input type="file" name="file" id="ifile">
+            <label for="ifoto">Foto do perfil:</label>
+            <input type="file" name="foto" id="ifoto">
         </p>
         <p>
             <input type="submit" value="Enviar">
