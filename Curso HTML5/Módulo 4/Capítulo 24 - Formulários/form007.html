@@ -19,7 +19,7 @@
     <h1>Exemplo de formulário</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
         <p>
-            <label for="iest">Estado</label>
+            <label for="iest">Estado :</label>
             <select name="estado" id="iest">
                 <optgroup label="Região Norte">
                 <option value="AC">Acre</option>
@@ -59,6 +59,20 @@
                 <option value="SC">Santa Catarina (SC)</option>
                 </optgroup>
             </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão :</label>
+            <input type="text" name="prof" id="iprof" list="lstprof" autocomplete="work">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem :</label><br>
+            <textarea name="msg" id="imsg" cols="34" rows="10" placeholder="Sua mensagem aqui"></textarea>
         </p>
         <p>
             <input type="submit" value="Enviar">
