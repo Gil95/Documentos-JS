@@ -78,6 +78,7 @@ nav > div > a{
     text-decoration: none;
     color: var(--cor5);
     transition-duration: 200ms;
+    border-radius: 5px;
 }
 
 nav > div > a:hover{
@@ -208,6 +209,7 @@ dd{
 
 ul{
     margin: 20px;
+    columns: 2;
 }
 
 ul > li > a{
