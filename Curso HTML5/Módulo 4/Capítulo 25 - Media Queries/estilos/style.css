@@ -23,8 +23,8 @@
     --fonte0: Arial, Helvetica, sans-serif;
     --fonte1: 'Bebas Neue', 'cursive';
     --fonte2: 'Alice', sans-serif;
-    --fonte3: 'Passion One', cursive;
-    --fonte4: 'Sriracha', cursive;
+    --fonte3: 'Passion One', 'cursive';
+    --fonte4: 'Sriracha', 'cursive';
 }
 
 *{
@@ -82,7 +82,7 @@ nav > div > a{
 }
 
 nav > div > a:hover{
-    background-color: var(--cor2);
+    background-color: var(--cor0);
     border-radius: 5px;
     transition-duration: 200ms;
 }
@@ -135,7 +135,7 @@ main > section > p > abbr >a{
 }
 
 main > section > p > abbr > a:visited{
-    color: var(--cor6);
+    color: var(--cor0);
 }
 
 footer{
