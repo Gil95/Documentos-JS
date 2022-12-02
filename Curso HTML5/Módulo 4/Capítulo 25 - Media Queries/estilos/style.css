@@ -23,8 +23,8 @@
     --fonte0: Arial, Helvetica, sans-serif;
     --fonte1: 'Bebas Neue', 'cursive';
     --fonte2: 'Alice', sans-serif;
-    --fonte3: 'Passion One', 'cursive';
-    --fonte4: 'Sriracha', 'cursive';
+    --fonte3: 'Passion One', cursive;
+    --fonte4: 'Sriracha', cursive;
 }
 
 *{

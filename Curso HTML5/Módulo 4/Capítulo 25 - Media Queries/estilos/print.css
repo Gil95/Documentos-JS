@@ -116,9 +116,10 @@ main > section > h2{
 }
 
 main > section > p{
-    font: normal normal 1em var(--fonte4);
+    font: normal normal 1.2em var(--fonte4);
     text-indent: 5px;
     padding: 5px 10px;
+    line-height: 1.5em;
 }
 
 abbr{
