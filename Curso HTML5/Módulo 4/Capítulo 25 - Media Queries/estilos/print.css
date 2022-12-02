@@ -57,10 +57,7 @@ header > div > h1{
 }
 
 nav{
-    background-color: var(--cor1);
-    border: 0px;
-    position: sticky;
-    top: 0;
+    display: none;
 }
 
 nav > div{
@@ -157,18 +154,15 @@ footer > div > h1 {
     text-align: center;
 }
 
-footer > div > p{
-    text-align: center;
-}
-
-.print{
+.tela{
     display: none;
 }
 
-footer > div > p > a{
+footer > div > p{
     color: var(--cor1);
     text-decoration: none;
     font: normal normal 1.5em var(--fonte1);
+    text-align: center;
 }
 
 footer > p > a:visited{
