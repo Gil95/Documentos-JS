@@ -174,3 +174,52 @@ footer > div > p > a{
 footer > p > a:visited{
     color: var(--cor2);
 }
+
+.code{
+    text-indent: 0px;
+    background-color: #1E1E1E;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: fit-content;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+span.selector{
+    background-color: #1E1E1E;
+    color: #dbb023;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+
+span.property{
+    background-color: #1E1E1E;
+    color: #9DDCFC;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+
+span.valuetype{
+    background-color: #1E1E1E;
+    color: #db8523;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+span.valuesize{
+    background-color: #1E1E1E;
+    color: #50ce7a;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+
+span.tag{
+    background-color: #1E1E1E;
+    color: #569CD6;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}

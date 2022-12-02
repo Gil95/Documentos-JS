@@ -169,3 +169,55 @@ footer > div > p{
 footer > p > a:visited{
     color: var(--cor2);
 }
+
+footer::before{
+    content: 'Esta aula foi impressa a partir do Github de Gil95.github.io/Documentos-JS/Curso%20HTML5/M%C3%B3dulo%204/Cap%C3%ADtulo%2025%20-%20Media%20Queries/index.html';
+}
+.code{
+    text-indent: 0px;
+    background-color: #1E1E1E;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: fit-content;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+span.selector{
+    background-color: #1E1E1E;
+    color: #dbb023;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+
+span.property{
+    background-color: #1E1E1E;
+    color: #9DDCFC;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+
+span.valuetype{
+    background-color: #1E1E1E;
+    color: #db8523;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+span.valuesize{
+    background-color: #1E1E1E;
+    color: #50ce7a;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+
+span.tag{
+    background-color: #1E1E1E;
+    color: #569CD6;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
