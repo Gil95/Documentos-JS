@@ -170,9 +170,6 @@ footer > p > a:visited{
     color: var(--cor2);
 }
 
-footer::before{
-    content: 'Esta aula foi impressa a partir do Github de Gil95.github.io/Documentos-JS/Curso%20HTML5/M%C3%B3dulo%204/Cap%C3%ADtulo%2025%20-%20Media%20Queries/index.html';
-}
 .code{
     text-indent: 0px;
     background-color: #1E1E1E;
