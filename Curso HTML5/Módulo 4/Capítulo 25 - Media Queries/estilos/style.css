@@ -124,6 +124,12 @@ main > section > p{
     padding: 5px 10px;
 }
 
+main > section > img{
+    width: 95%;
+    display: block;
+    margin: auto;
+}
+
 abbr{
     text-decoration: none;
 }
@@ -159,10 +165,6 @@ footer > div > h1 {
 
 footer > div > p{
     text-align: center;
-}
-
-.print{
-    display: none;
 }
 
 footer > div > p > a{
