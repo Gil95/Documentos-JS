@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.paisagem{
+    display: none;
+}
+
+.retrato{
+    width: 100vw;
+    padding: 0px;
+    margin: auto;
+}
