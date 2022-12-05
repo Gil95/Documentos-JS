@@ -130,6 +130,10 @@ main > section > img{
     margin: auto;
 }
 
+strong{
+    font-weight: bold;
+}
+
 abbr{
     text-decoration: none;
 }
