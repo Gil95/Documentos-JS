@@ -10,7 +10,28 @@
     src: url(../../../Módulo\ 2/Capítulo\ 17\ -\ Primeiro\ mini-projeto/fontes/BebasNeue-Regular.ttf) format('truetype');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+@font-face {
+    font-family: 'Sriracha';
+    src: url(../../../../Fontes\ Baixadas/Sriracha-Regular.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'Passion One';
+    src: url(../../../../Fontes\ Baixadas/PassionOne-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'Passion One';
+    src: url(../../../../Fontes\ Baixadas/PassionOne-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: 'Passion One';
+    src: url(../../../../Fontes\ Baixadas/PassionOne-Black.ttf) format('truetype');
+    font-weight: 900;
+}
 
 :root{
     --cor0: #1D1128;
