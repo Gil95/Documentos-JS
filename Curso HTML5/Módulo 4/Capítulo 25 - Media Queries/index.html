@@ -37,9 +37,15 @@
             <p>O site quando impresso não faz sentido que tenha links e menu de navegação, mas graças ao CSS por link, podemos usar uma página de CSS separada para a impressão.</p>
             <p>Desta forma, formatamos as CSS's preparada a impressão, retirando da página impressa o menu de navegação, tornando páginas mais legíveis para a impressão.</p>
             <br>
-            <p>O link das CSS's deve ser em dois padrões. <br>
-            <span class="code">&lt<span class="tag">link</span> <span class="property">rel</span>=<span class="valuetype">"stylesheet"</span> <span class="property">href</span>=<span class="valuetype">"estilos/style.css"</span> <span class="property">media</span>=<span class="valuetype">"screen"</span>&gt;</span> <br>
-            <span class="code">&lt<span class="tag">link</span> <span class="property">rel</span>=<span class="valuetype">"stylesheet"</span> <span class="property">href</span>=<span class="valuetype">"estilos/print.css"</span> <span class="property">media</span>=<span class="valuetype">"print"</span>&gt;</span></p>
+            <p>
+                O link das CSS's deve ser em dois padrões. <br>
+                <span class="code">
+                    &lt;<span class="tag">link</span> <span class="property">rel</span>=<span class="valuetype">"stylesheet"</span> <span class="property">href</span>=<span class="valuetype">"estilos/style.css"</span> <span class="property">media</span>=<span class="valuetype">"screen"</span>&gt;
+                </span> <br>
+                <span class="code">
+                    &lt;<span class="tag">link</span> <span class="property">rel</span>=<span class="valuetype">"stylesheet"</span> <span class="property">href</span>=<span class="valuetype">"estilos/print.css"</span> <span class="property">media</span>=<span class="valuetype">"print"</span>&gt;
+                </span>
+            </p>
             <p>Enquanto um link é designado pela propriedade <span class="property">media</span> para a tela, outra CSS é designada para a impressão, tornando duas páginas de estilos diferentes.</p>
         </section>
         <section id="features">
@@ -50,6 +56,17 @@
             <p>Na verdade sua tela apenas foi selecionada para mostrar o texto da forma que escolhi, pois a página de estilos selecionada é a referente ao formato utilizado, o texto na verdade foi escrito em duas formas diferentes como está sendo mostrado abaixo.</p>
             <img src="imagens/p - paisagem.PNG" alt="paragrafo em paisagem" class="paisagem">
             <img src="imagens/p - retrato.PNG" alt="paragrafo em retrato" class="retrato">
+            <h2>Media Features nos Links das CSS</h2>
+            <p>
+                As Media Features são basicamente características das <span class="code"><span class="property">media</span>=<span class="valuetype">"types"</span></span>, Seguem de um tipo de media e complementada com uma característica como por exemplo:
+            </p>
+            <ul>
+                <li>Orientação</li>
+                <li>Largura da tela</li>
+                <li>Resolução da tela</li>
+                <li>Cores da tela</li>
+            </ul>
+            <p>Entre muitas outras.</p>
         </section>
     </main>
     <footer id="footer">
