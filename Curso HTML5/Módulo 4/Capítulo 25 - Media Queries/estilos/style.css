@@ -34,16 +34,6 @@
     font-weight: 900;
 }
 
-@media screen and (orientation:portrait){
-    .print{
-        display: none;
-    }
-    
-    .paisagem{
-        display: none;
-    }
-}
-
 :root{
     --cor0: #1D1128;
     --cor1: #5941A9;
