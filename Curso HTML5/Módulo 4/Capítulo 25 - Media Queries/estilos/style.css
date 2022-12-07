@@ -34,6 +34,16 @@
     font-weight: 900;
 }
 
+@media screen and (orientation:portrait){
+    .print{
+        display: none;
+    }
+    
+    .paisagem{
+        display: none;
+    }
+}
+
 :root{
     --cor0: #1D1128;
     --cor1: #5941A9;
@@ -160,6 +170,14 @@ strong{
 
 abbr{
     text-decoration: none;
+}
+
+ul{
+    margin-left: 40px;
+}
+
+li{
+    font: normal normal 1.2em var(--fonte0);
 }
 
 main > section > p > abbr >a{
