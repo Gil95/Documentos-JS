@@ -13,6 +13,11 @@
     padding: 0px;
 }
 
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
 html{
     width: 100vw;
     height: 100vh;
@@ -21,12 +26,14 @@ html{
 body{
     background: black url(../imagens/back-phone.jpg) no-repeat ;
     background-size: cover;
+    background-attachment: fixed;
     background-position: center center;
 }
 
 main{
     background-color: rgba(255, 255, 255, 0.7);
-    width: 90%;
+    width: 400px;
+    max-width: 90vw;
     padding: 10px;
     margin: auto;
     margin-top: 10px;
