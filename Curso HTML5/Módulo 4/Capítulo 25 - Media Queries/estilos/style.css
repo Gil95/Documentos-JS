@@ -92,6 +92,28 @@ nav > div{
     margin: auto;
 }
 
+nav > span#burger{
+    display: block;    
+    width: 80vw;
+    padding: 2px 10px;
+    background-color: var(--cor1);
+    color: var(--cor5);
+    transition-duration: 200ms;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+}
+
+nav > span#burger:hover{
+    background-color: var(--cor0);
+    border-radius: 5px;
+    transition-duration: 200ms;
+}
+
+nav > div {
+    display: none;
+}
+
 nav > div > a{
     display: inline-block;
     padding: 2px 5px;
