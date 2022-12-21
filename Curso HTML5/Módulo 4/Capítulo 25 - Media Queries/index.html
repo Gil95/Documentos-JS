@@ -19,7 +19,7 @@
         </div>
     </header>
     <nav class="tela">
-        <span id="burger" class="material-symbols-outlined" onmouseenter="openMenu()" onmouseleave="closeMenu()">menu</span>
+        <span id="burger" class="material-symbols-outlined" onmouseenter="openMenu()" onmouseleave="closeMenu()" onclick="clickmenu()">menu</span>
         <div id="naveg" onmouseenter="openMenu()" onmouseleave="closeMenu()">
             <a href="#top">Início</a>
             <a href="#queries">O que são Media Queries?</a>
@@ -103,6 +103,13 @@
         }
         function closeMenu(){
             naveg.style.display = 'none'
+        }
+        function clickMenu(){
+            if (naveg.style.display == 'block'){
+                naveg.style.display = 'none'
+            } else { 
+                naveg.style.display = 'block'
+            }
         }
     </script>
 </body>
