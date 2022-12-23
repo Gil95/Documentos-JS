@@ -7,10 +7,10 @@
     div#naveg{
         display: block;
     }
-}
-
-@media screen and (min-width:768px) {
-    nav > div > a{
+    nav > div > ul{
+        columns: 1;
+    }
+    nav > div > ul > li{
         display: inline-block;
     }
 }
