@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="estilos/GJS.ico" type="image/x-icon">
     <title>Menu Responsivo</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <div>
             <h1>Meu Site</h1>
@@ -42,6 +42,13 @@
                 itens.style.display = 'none'
             } else {
                 itens.style.display = 'block'
+            }
+        }
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
             }
         }
     </script>
