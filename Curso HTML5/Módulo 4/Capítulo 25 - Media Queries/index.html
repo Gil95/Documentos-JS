@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation:portrait)">
     <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation:landscape)">
     <link rel="stylesheet" href="estilos/print.css" media="print">
@@ -12,23 +13,25 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Media Queries</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <div>
             <h1>Media Queries</h1>
         </div>
     </header>
     <nav class="tela">
-        <span id="burger" class="material-symbols-outlined" onmouseenter="openMenu()" onmouseleave="closeMenu()" onclick="clickMenu()">menu</span>
-        <div id="naveg" onmouseenter="openMenu()" onmouseleave="closeMenu()">
-            <a href="#top">Início</a>
-            <a href="#queries">O que são Media Queries?</a>
-            <a href="#impressao">Site para impressão</a>
-            <a href="#features">Media Features</a>
-            <a href="#mobile">Mobile First</a>
-            <a href="#device">Device Breakpoints</a>
-            <a href="#menu">Menu Responsivo</a>
-            <a href="#footer">Fale Conosco</a>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <div id="naveg">
+            <ul type="none">
+                <li><a href="#top" onclick="clickMenu()">Início</a></li>
+                <li><a href="#queries" onclick="clickMenu()">O que são Media Queries?</a></li>
+                <li><a href="#impressao" onclick="clickMenu()">Site para impressão</a></li>
+                <li><a href="#features" onclick="clickMenu()">Media Features</a></li>
+                <li><a href="#mobile" onclick="clickMenu()">Mobile First</a></li>
+                <li><a href="#device" onclick="clickMenu()">Device Breakpoints</a></li>
+                <li><a href="#menu" onclick="clickMenu()">Menu Responsivo</a></li>
+                <li><a href="#footer" onclick="clickMenu()">Fale Conosco</a></li>
+            </ul>
         </div>
     </nav>
     <main>
@@ -109,6 +112,13 @@
                 naveg.style.display = 'none'
             } else { 
                 naveg.style.display = 'block'
+            }
+        }
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                naveg.style.display = 'block'
+            } else {
+                naveg.style.display = 'none'
             }
         }
     </script>

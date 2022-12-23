@@ -114,8 +114,12 @@ nav > div {
     display: none;
 }
 
-nav > div > a{
-    display: inline-block;
+nav > div > ul {
+    text-decoration: none;
+    columns: 2;
+}
+nav > div > ul > li > a{
+    display: block;
     padding: 2px 5px;
     background-color: var(--cor1);
     font: normal normal 1.2em var(--fonte1);
@@ -125,7 +129,7 @@ nav > div > a{
     border-radius: 5px;
 }
 
-nav > div > a:hover{
+nav > div > ul > li > a:hover{
     background-color: var(--cor0);
     border-radius: 5px;
     transition-duration: 200ms;

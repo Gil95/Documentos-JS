@@ -1,0 +1,16 @@
+@charset "UTF-8" ;
+
+@media screen and (min-width:768px){
+    nav > span#burger{
+        display: none;
+    }
+    div#naveg{
+        display: block;
+    }
+}
+
+@media screen and (min-width:768px) {
+    nav > div > a{
+        display: inline-block;
+    }
+}
