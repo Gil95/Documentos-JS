@@ -80,9 +80,15 @@ header > div > h1{
 
 nav{
     background-color: var(--cor1);
-    border: 0px;
+    border: 4px;
     position: sticky;
     top: 0;
+    border-style: solid;
+    border-color: var(--cor0);
+    border-radius: 10px;
+    width: 81.84vw;
+    max-width: 810px;
+    margin: auto;
 }
 
 nav > div{
@@ -94,7 +100,7 @@ nav > div{
 
 nav > span#burger{
     display: block;    
-    width: 80vw;
+    width: 78.7vw;
     padding: 2px 10px;
     background-color: var(--cor1);
     color: var(--cor5);
