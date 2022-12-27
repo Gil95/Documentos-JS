@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Alice' ;
+    src: url(../../../../Fontes\ Baixadas/Alice_in_Wonderland_3.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(../../../Módulo\ 2/Capítulo\ 17\ -\ Primeiro\ mini-projeto/fontes/BebasNeue-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url(../../../../Fontes\ Baixadas/Sriracha-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'Passion One';
+    src: url(../../../../Fontes\ Baixadas/PassionOne-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'Passion One';
+    src: url(../../../../Fontes\ Baixadas/PassionOne-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: 'Passion One';
+    src: url(../../../../Fontes\ Baixadas/PassionOne-Black.ttf) format('truetype');
+    font-weight: 900;
+}
+
+:root{
+    --cor0: #454ADE;
+    --cor1: #6CCFF6;
+    --cor2: #FBDCE2;
+    --cor3: #C874D9;
+    --cor4: #2C0735;
+    --cor5: #fff;
+    --cor6: #000;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', 'cursive';
+    --fonte2: 'Alice', sans-serif;
+    --fonte3: 'Passion One', cursive;
+    --fonte4: 'Sriracha', cursive;
+}
+
+*{
+    font: normal normal 16px var(--fonte0);
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: linear-gradient(to top, var(--cor1), var(--cor3));
+    background-attachment: fixed;
+}
