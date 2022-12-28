@@ -59,3 +59,27 @@ body{
     background-image: linear-gradient(to top, var(--cor1), var(--cor3));
     background-attachment: fixed;
 }
+
+main > section#login{
+    background-color: var(--cor5);
+    display: block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    margin: auto;
+    max-width: 300px;
+}
+
+main > section#login > div#imagem{
+    display: block;
+    background-image: url(../imagens/predio.jpg);
+    background-size: cover;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main > section#login > div#formulário{
+
+}

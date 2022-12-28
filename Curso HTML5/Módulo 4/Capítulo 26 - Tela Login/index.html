@@ -7,9 +7,24 @@
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="shortcut icon" href="estilos/GJS.ico" type="image/x-icon">
-    <title>Tela de Login</title>
+    <title>Login</title>
 </head>
 <body>
-    
+    <main>
+        <section id="login">
+            <div id="imagem">
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente, Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <input type="email" name="email" id="iemail">
+                    <input type="password" name="senha" id="isenha">
+                    <input type="submit" value="Entrar">
+                    <input type="button" value="Esqueci a senha">
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
