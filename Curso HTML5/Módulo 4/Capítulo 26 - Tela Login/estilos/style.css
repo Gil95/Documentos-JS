@@ -97,6 +97,8 @@ main > section#login > div#imagem{
 
 section#login > div#formulario{
     display: block;
+    padding: 10px;
+    margin: auto;
 }
 
 div.caixa{

@@ -19,6 +19,8 @@
         padding: 2vw;
         width: 56vw;
         margin: auto;
+        padding: 0px;
+        text-align: center;
     }
 }
 
@@ -33,15 +35,17 @@
 
     main > section#login > div#imagem{
         float: right;
-        width: 45vw;
+        width: 50%;
         max-width: 512px;
         height: 100%;
     }
 
     main > section#login > div#formulario{
         float: left;
-        width: 45vw;
+        width: 49%;
         max-width: 512px;
         height: 100%;
+        padding: .5%;
+        text-align: center;
     }
 }
