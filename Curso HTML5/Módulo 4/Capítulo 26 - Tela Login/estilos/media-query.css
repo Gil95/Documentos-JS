@@ -16,11 +16,14 @@
 
     main > section#login > div#formulario{
         float: right;
-        padding: 2vw;
-        width: 56vw;
+        width: 60vw;
         margin: auto;
         padding: 0px;
         text-align: center;
+    }
+
+    div#formulario > div{
+        padding: 20px;
     }
 }
 
@@ -30,7 +33,8 @@
         width: 90vw;
         max-width: 1024px;
         min-width: 993px;
-        height: 500px;
+        height: 90vh;
+        max-height: 650px;
     }
 
     main > section#login > div#imagem{
@@ -42,10 +46,11 @@
 
     main > section#login > div#formulario{
         float: left;
-        width: 49%;
+        width: 50%;
         max-width: 512px;
         height: 100%;
-        padding: .5%;
-        text-align: center;
+    }
+    div#formulario > div{
+        padding: 40px;
     }
 }

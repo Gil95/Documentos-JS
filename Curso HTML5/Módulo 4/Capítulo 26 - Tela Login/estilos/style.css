@@ -81,8 +81,9 @@ main > section#login{
     max-width: 250px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px #000a;
-    transition: width .3s, heigth .3s;
+    transition: width .3s, height .3s;
     transition-timing-function: ease;
+    max-height: 100vh;
 }
 
 main > section#login > div#imagem{
@@ -97,19 +98,88 @@ main > section#login > div#imagem{
 
 section#login > div#formulario{
     display: block;
-    padding: 10px;
+    margin: auto;
+}
+
+div#formulario > div#caixa-central{
+    padding: 5px 15px 15px 15px;
     margin: auto;
 }
 
 div.caixa{
     display: block;
-    width: fit-content;
-    margin: auto;    
-    margin-top: 10px;
+    width: fit-content; 
+    margin-top: 5px;
+    text-align: left;
 }
 
 input#entrar, input#EsqueciSenha{
     display: block;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 5px;
+}
+
+h1{
+    font-family: var(--fonte1);
+    text-align: center;
+    font-size: 1.6em;
+}
+
+p{
+    font-family: var(--fonte0);
+    font-size: .8em;
+    line-height: 1.1em;
+    font-weight: normal;
+}   
+
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 32px;
+    background-color: var(--cor0);
+    border: none;
+    border-radius: 5px;
+    color: var(--cor5);
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover{
+    background-color: var(--cor1);
+    outline: var(--cor0) solid 1px;
+    box-shadow: inset 0px 0px 5px var(--cor0);
+}
+
+form > a#esqueciSenha{
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1em;
+    height: 26px;
+    padding-top: 3px;
+    width: 100%;
+    background-color: var(--cor5);
+    border: 1px solid var(--cor0);
+    border-radius: 5px;
+    color: var(--cor0);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+form > a#esqueciSenha > span.material-symbols-rounded{
+    font-size: .8em;
+}
+
+form > a#esqueciSenha:hover{
+    background-color: var(--cor1);
+    outline: var(--cor0) solid 1px;
+    box-shadow: inset 0px 0px 5px var(--cor0);
+}
+
+div.caixa{
+    background-color: var(--cor0);
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
 }
