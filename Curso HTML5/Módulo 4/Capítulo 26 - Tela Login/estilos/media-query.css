@@ -1,11 +1,11 @@
 @charset "UTF-8" ;
 
-@media screen and (min-width:768px) and (max-width:992px) {
+@media screen and (min-width:768px) and (max-width:992px) {/* Configuração para tablets */
 
     main > section#login{
         max-width: none;
         width: 90vw;
-        height: 60vh;
+        height: 250px;
     }
     
     main > section#login > div#imagem{
@@ -33,8 +33,7 @@
         width: 90vw;
         max-width: 1024px;
         min-width: 993px;
-        height: 90vh;
-        max-height: 650px;
+        height: 260px;
     }
 
     main > section#login > div#imagem{
@@ -49,6 +48,7 @@
         width: 50%;
         max-width: 512px;
         height: 100%;
+        padding-top: 10px;
     }
     div#formulario > div{
         padding: 40px;
