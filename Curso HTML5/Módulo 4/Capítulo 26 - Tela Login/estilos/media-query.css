@@ -20,7 +20,8 @@
         margin: auto;
         padding: 0px;
         text-align: center;
-        transition: width .3s height .3s;
+        transition: width .5s, height .5s;
+        transition-timing-function: ease;
     }
 
     div#formulario > div{

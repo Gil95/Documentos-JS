@@ -80,7 +80,7 @@ main > section#login{
     width: 90vw;
     border-radius: 20px;
     box-shadow: 0px 0px 10px #000a;
-    max-height: 100vh;
+    height: 100vh;
     transition: width 500ms, height 500ms;
     transition-timing-function: ease;
     transform: translate(-50%,-50%);
