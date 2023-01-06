@@ -54,3 +54,7 @@ h1 {
 .flex-direction-row-rev{
     flex-direction: row-reverse;
 }
+
+.flex-wrap-reverse{
+    flex-wrap: wrap-reverse;
+}

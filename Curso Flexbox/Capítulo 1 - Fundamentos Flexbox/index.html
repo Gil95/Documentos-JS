@@ -46,9 +46,23 @@
 
       <h1>display: flex; flex-wrap</h1>
       <section class="container">
-         <p>Nesta disposição de flexbox, temos um flex-wrap, onde a mesma respeita o container, tornando o conteúdo adaptado dentro do container e avançando em linhas para que o mesmo caiba na janela.</p>
+         <p>Nesta disposição de flexbox, temos um flex-wrap, onde a mesma respeita o container, tornando o conteúdo adaptado dentro do container e permitindo a quebra de linhas para que o mesmo caiba no container.</p>
       </section>
       <section class="container flex flex-wrap">
+         <div class="item">Teste 1</div>
+         <div class="item">Teste 2</div>
+         <div class="item">Teste 3</div>
+         <div class="item">Teste 4</div>
+         <div class="item">Teste 5</div>
+         <div class="item">Teste 6</div>
+         <div class="item">Teste 7</div>
+      </section>
+
+      <h1>display: flex; flex-wrap-reverse</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code">flex-wrap: wrap-reverse;</span>, onde a mesma respeita o container, tornando o conteúdo adaptado dentro do container e permitindo a quebra de linhas para que o mesmo caiba no container, porém quebrando as linhas de forma reversa.</p>
+      </section>
+      <section class="container flex flex-wrap-reverse">
          <div class="item">Teste 1</div>
          <div class="item">Teste 2</div>
          <div class="item">Teste 3</div>
