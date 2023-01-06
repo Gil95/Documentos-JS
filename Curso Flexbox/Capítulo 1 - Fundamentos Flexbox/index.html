@@ -8,49 +8,96 @@
     <title>FlexBox</title>
 </head>
 <body>
-    <h1>display: block;</h1>
-     <section class="container">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-     </section>
+      <h1>display: block;</h1>
+      <section class="container">
+         <p>Nesta configuração onde temos um display: block; as div's são separadas por padrão em linhas.</p>
+      </section>
+      <section class="container">
+         <div class="item">1</div>
+         <div class="item">2</div>
+         <div class="item">3</div>
+         <div class="item">4</div>
+      </section>
 
-     <h1>display: flex;</h1>
-     <section class="container flex">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-     </section>
+      <h1>display: flex; container</h1>
+      <section class="container">
+         <p>Neste flexbox, temos o conteúdo em linhas, mantendo-se o menor possível.</p>
+      </section>
+      <section class="container flex">
+         <div class="item">1</div>
+         <div class="item">2</div>
+         <div class="item">3</div>
+         <div class="item">4</div>
+      </section>
 
-     <h1>display: flex;</h1>
-     <section class="container flex">
-        <div class="item">Teste 1</div>
-        <div class="item">Teste 2</div>
-        <div class="item">Teste 3</div>
-        <div class="item">Teste 4</div>
-        <div class="item">Teste 5</div>
-        <div class="item">Teste 6</div>
-        <div class="item">Teste 7</div>
-     </section>
+      <h1>display: flex; container</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, podemos observar que o código prioriza o conteúdo, estourando o container.</p>
+      </section>
+      <section class="container flex">
+         <div class="item">Teste 1</div>
+         <div class="item">Teste 2</div>
+         <div class="item">Teste 3</div>
+         <div class="item">Teste 4</div>
+         <div class="item">Teste 5</div>
+         <div class="item">Teste 6</div>
+         <div class="item">Teste 7</div>
+      </section>
 
-     <h1>display: flex;</h1>
-     <section class="container flex flex-wrap">
-        <div class="item">Teste 1</div>
-        <div class="item">Teste 2</div>
-        <div class="item">Teste 3</div>
-        <div class="item">Teste 4</div>
-        <div class="item">Teste 5</div>
-        <div class="item">Teste 6</div>
-        <div class="item">Teste 7</div>
-     </section>
+      <h1>display: flex; flex-wrap</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um flex-wrap, onde a mesma respeita o container, tornando o conteúdo adaptado dentro do container e avançando em linhas para que o mesmo caiba na janela.</p>
+      </section>
+      <section class="container flex flex-wrap">
+         <div class="item">Teste 1</div>
+         <div class="item">Teste 2</div>
+         <div class="item">Teste 3</div>
+         <div class="item">Teste 4</div>
+         <div class="item">Teste 5</div>
+         <div class="item">Teste 6</div>
+         <div class="item">Teste 7</div>
+      </section>
 
-     <h1>display: flex; // flex-item-1</h1>
-     <section class="container flex">
-        <div class="item flex-item-1">Teste 1</div>
-        <div class="item flex-item-1">Teste 2</div>
-        <div class="item flex-item-1">Teste 3</div>
-     </section>
+      <h1>display: flex; // flex-item-1</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code">flex:1;</span> onde o mesmo torna os itens flexíveis e ocupando o espaço de forma otimizada, dividindo o espaço dentro do container entre as div's.</p>
+      </section>
+      <section class="container flex">
+         <div class="item flex-item-1">Teste 1</div>
+         <div class="item flex-item-1">Teste 2</div>
+         <div class="item flex-item-1">Teste 3</div>
+      </section>
+
+      <h1>display: flex; // flex-direction:row;</h1>
+      <section class="container"><p>Nesta disposição de flexbox, não temos um <span class="code">flex-direction</span> definido, onde o padrão é o <span class="code">row</span>.</p></section>
+      <section class="container flex">
+         <div class="item flex-item-1">Teste 1</div>
+         <div class="item flex-item-1">Teste 2</div>
+         <div class="item flex-item-1">Teste 3</div>
+      </section>
+
+      <h1>display: flex; // flex-direction:column;</h1>
+      <section class="container"><p>Nesta disposição de flexbox, temos um <span class="code">flex-direction:row-reverse;</span>, onde a mesma está definida em linha da mesma forma de antes, porém ordenada de forma inversa.</p></section>
+      <section class="container flex flex-direction-row-rev">
+         <div class="item flex-item-1">Teste 1</div>
+         <div class="item flex-item-1">Teste 2</div>
+         <div class="item flex-item-1">Teste 3</div>
+      </section>
+
+      <h1>display: flex; // flex-direction:column;</h1>
+      <section class="container"><p>Nesta disposição de flexbox, temos um <span class="code">flex-direction:column;</span>.</p></section>
+      <section class="container flex flex-direction-column">
+         <div class="item flex-item-1">Teste 1</div>
+         <div class="item flex-item-1">Teste 2</div>
+         <div class="item flex-item-1">Teste 3</div>
+      </section>
+
+      <h1>display: flex; // flex-direction:column;</h1>
+      <section class="container"><p>Nesta disposição de flexbox, temos um <span class="code">flex-direction:column-reverse;</span>, onde a mesma está definida em coluna da mesma forma de antes, porém ordenada de forma inversa.</p></section>
+      <section class="container flex flex-direction-column-rev">
+         <div class="item flex-item-1">Teste 1</div>
+         <div class="item flex-item-1">Teste 2</div>
+         <div class="item flex-item-1">Teste 3</div>
+      </section>
 </body>
 </html>

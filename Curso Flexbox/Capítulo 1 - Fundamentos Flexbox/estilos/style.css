@@ -4,6 +4,7 @@
     max-width: 350px;
     margin: 0 auto;
     border: 1px solid #ccc;
+    border-collapse: collapse;
 }
 
 .item{
@@ -11,7 +12,6 @@
     background: tomato;
     text-align: center;
     font-size: 1.5em;
-    flex: 1;
 }
 
 .flex{
@@ -31,4 +31,26 @@ h1 {
 	margin: 20px 0 0 0;
 	font-size: 1.25em;
 	font-weight: normal;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.code{
+    background-color: #333;
+    color: #9df;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+.flex-direction-column-rev{
+    flex-direction: column-reverse;
+}
+
+.flex-direction-row-rev{
+    flex-direction: row-reverse;
 }
