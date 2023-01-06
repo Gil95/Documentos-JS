@@ -86,7 +86,7 @@ nav{
     border-style: solid;
     border-color: var(--cor0);
     border-radius: 10px;
-    width: 81.84vw;
+    width: 82vw;
     max-width: 810px;
     margin: auto;
 }
@@ -100,7 +100,7 @@ nav > div{
 
 nav > span#burger{
     display: block;    
-    width: 78.7vw;
+    width: calc(82vw - 20px);
     padding: 2px 10px;
     background-color: var(--cor1);
     color: var(--cor5);
