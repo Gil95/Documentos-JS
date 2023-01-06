@@ -23,19 +23,15 @@ function verificar(){
 
             genero = 'masculino'
             
-            if( idade >= 0 && idade <= 10 ){
+            if( idade >= 0 && idade <= 11 ){
       
                 cIdade = 'menino'
                 img.setAttribute('src', 'child-boy.png')
 
-            }else if( idade >= 11 && idade <= 11){
+            }else if( idade >= 12 && idade <= 12){
       
                 cIdade = 'menino chato'
                 img.setAttribute('src', 'luis.jpeg')
-            }else if( idade <= 12 ){
-      
-                    cIdade = 'menino'
-                    img.setAttribute('src', 'child-boy.png')
 
             }else if( idade >= 13 && idade < 18){
         
@@ -84,7 +80,7 @@ function verificar(){
                 cIdade = 'jovem adulta'
                 img.setAttribute('src', 'adult-woman.png')
                 
-            }else if( idade == 22 ){
+            }else if( idade == 23 ){
         
                 cIdade = 'deusa linda do caralho'
                 img.setAttribute('src', 'bb.jpeg')
