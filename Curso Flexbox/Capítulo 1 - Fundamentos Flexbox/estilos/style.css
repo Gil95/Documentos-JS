@@ -33,7 +33,14 @@ h1 {
 	font-weight: normal;
 }
 
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-indent: 10px;
+}
+
 .column{
+    min-height: 200px;
     flex-direction: column;
 }
 
@@ -57,4 +64,36 @@ h1 {
 
 .flex-wrap-reverse{
     flex-wrap: wrap-reverse;
+}
+
+.flex-flow-row-nowrap{
+    flex-flow: row nowrap;
+}
+
+.flex-flow-row-wrap{
+    flex-flow: row wrap;
+}
+
+.flex-flow-column-nowrap{
+    flex-flow: column nowrap;
+}
+
+.flex-start{
+    justify-content: flex-start;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.flex-center{
+    justify-content: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.space-around{
+    justify-content: space-around;
 }

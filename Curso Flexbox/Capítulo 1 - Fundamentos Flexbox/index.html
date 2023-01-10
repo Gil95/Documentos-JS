@@ -82,7 +82,7 @@
          <div class="item flex-item-1">Teste 3</div>
       </section>
 
-      <h1>display: flex; // flex-direction:row;</h1>
+      <h1>flex-direction: NÃO DEFINIDO;</h1>
       <section class="container"><p>Nesta disposição de flexbox, não temos um <span class="code">flex-direction</span> definido, onde o padrão é o <span class="code">row</span>.</p></section>
       <section class="container flex">
          <div class="item flex-item-1">Teste 1</div>
@@ -90,7 +90,7 @@
          <div class="item flex-item-1">Teste 3</div>
       </section>
 
-      <h1>display: flex; // flex-direction:column;</h1>
+      <h1>flex-direction:row-rev;</h1>
       <section class="container"><p>Nesta disposição de flexbox, temos um <span class="code">flex-direction:row-reverse;</span>, onde a mesma está definida em linha da mesma forma de antes, porém ordenada de forma inversa.</p></section>
       <section class="container flex flex-direction-row-rev">
          <div class="item flex-item-1">Teste 1</div>
@@ -98,7 +98,7 @@
          <div class="item flex-item-1">Teste 3</div>
       </section>
 
-      <h1>display: flex; // flex-direction:column;</h1>
+      <h1>flex-direction:column;</h1>
       <section class="container"><p>Nesta disposição de flexbox, temos um <span class="code">flex-direction:column;</span>.</p></section>
       <section class="container flex flex-direction-column">
          <div class="item flex-item-1">Teste 1</div>
@@ -106,12 +106,184 @@
          <div class="item flex-item-1">Teste 3</div>
       </section>
 
-      <h1>display: flex; // flex-direction:column;</h1>
+      <h1>flex-direction:column-reverse;</h1>
       <section class="container"><p>Nesta disposição de flexbox, temos um <span class="code">flex-direction:column-reverse;</span>, onde a mesma está definida em coluna da mesma forma de antes, porém ordenada de forma inversa.</p></section>
       <section class="container flex flex-direction-column-rev">
          <div class="item flex-item-1">Teste 1</div>
          <div class="item flex-item-1">Teste 2</div>
          <div class="item flex-item-1">Teste 3</div>
+      </section>
+
+      <h1>flex-flow: row no-wrap</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code"> flex-flow: row no-wrap;</span>, onde a mesma está definida em linha sem quebra de linhas.</p>
+      </section>
+      <section class="container flex flex-flow-row-nowrap">
+         <div class="item flex-item-1">Teste 1</div>
+         <div class="item flex-item-1">Teste 2</div>
+         <div class="item flex-item-1">Teste 3</div>
+         <div class="item flex-item-1">Teste 4</div>
+         <div class="item flex-item-1">Teste 5</div>
+         <div class="item flex-item-1">Teste 6</div>
+      </section>
+
+      <h1>flex-flow: row wrap</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code"> flex-flow: row wrap;</span>, onde a mesma está definida em linha com quebra de linhas.</p>
+      </section>
+      <section class="container flex flex-flow-row-wrap">
+         <div class="item flex-item-1">Teste 1</div>
+         <div class="item flex-item-1">Teste 2</div>
+         <div class="item flex-item-1">Teste 3</div>
+         <div class="item flex-item-1">Teste 4</div>
+         <div class="item flex-item-1">Teste 5</div>
+         <div class="item flex-item-1">Teste 6</div>
+      </section>
+
+      <h1>flex-flow: column no-wrap</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code"> flex-flow: column no-wrap;</span>, onde a mesma está definida em colunas sem quebra de linhas.</p>
+      </section>
+      <section class="container flex flex-flow-column-nowrap">
+         <div class="item flex-item-1">Teste 1</div>
+         <div class="item flex-item-1">Teste 2</div>
+         <div class="item flex-item-1">Teste 3</div>
+         <div class="item flex-item-1">Teste 4</div>
+         <div class="item flex-item-1">Teste 5</div>
+         <div class="item flex-item-1">Teste 6</div>
+      </section>
+
+      <h1>justify-content: flex-start;</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code"> justify-content: flex-start;</span> onde a mesma se alinha o conteúdo à esquerda, seria como um text-align para div's dentro de um container.</p>
+      </section>
+      <section class="container flex flex-start">
+         <div class="item">1</div>
+         <div class="item">Teste 2</div>
+         <div class="item">3</div>
+         <div class="item">4</div>
+      </section>
+      
+      <h1>justify-content: flex-end;</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code"> justify-content: flex-end;</span> onde a mesma se alinha o conteúdo à direita, seria como um text-align para div's dentro de um container.</p>
+      </section>
+      <section class="container flex flex-end">
+         <div class="item">1</div>
+         <div class="item">Teste 2</div>
+         <div class="item">3</div>
+         <div class="item">4</div>
+      </section>
+
+      
+      <h1>justify-content: center;</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code"> justify-content: center;</span> onde a mesma se alinha o conteúdo ao centro, seria como um text-align para div's dentro de um container.</p>
+      </section>
+      <section class="container flex flex-center">
+         <div class="item">1</div>
+         <div class="item">Teste 2</div>
+         <div class="item">3</div>
+         <div class="item">4</div>
+      </section>
+      
+      <h1>justify-content: space-between;</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code"> justify-content: space-between;</span> onde a mesma se alinha o conteúdo dividindo o espaço entre as div's.</p>
+      </section>
+      <section class="container flex space-between">
+         <div class="item">1</div>
+         <div class="item">Teste 2</div>
+         <div class="item">3</div>
+         <div class="item">4</div>
+      </section>
+
+      <h1>justify-content: space-around;</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code"> justify-content: space-around;</span> onde a mesma se alinha o conteúdo com margens entre as div's e as laterais.</p>
+      </section>
+      <section class="container flex space-around">
+         <div class="item">1</div>
+         <div class="item">Teste 2</div>
+         <div class="item">3</div>
+         <div class="item">4</div>
+      </section>
+
+      <h1>justify-content: space-around; // itens com flex: 1 ;</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code"> justify-content: space-around;</span> onde a mesma se alinha o conteúdo com margens entre as div's e as laterais, porém temos um preenchimento das div's por conta do flex: 1 ;</p>
+      </section>
+      <section class="container flex space-around">
+         <div class="item flex-item-1">1</div>
+         <div class="item flex-item-1">Teste 2</div>
+         <div class="item flex-item-1">3</div>
+         <div class="item flex-item-1">4</div>
+      </section>
+
+      <h1>justify-content: flex-start; // column</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code"> justify-content: flex-start;</span> onde a mesma se alinha o conteúdo acima quando definida com uma <span class="code">flex-direction:column;</span>.</p>
+      </section>
+      <section class="container flex flex-start column">
+         <div class="item">1</div>
+         <div class="item">Teste 2</div>
+         <div class="item">3</div>
+         <div class="item">4</div>
+      </section>
+
+      <h1>justify-content: flex-end; // column</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code"> justify-content: flex-end;</span> onde a mesma se alinha o conteúdo abaixo quando definida com uma <span class="code">flex-direction:column;</span>.</p>
+      </section>
+      <section class="container flex flex-end column">
+         <div class="item">1</div>
+         <div class="item">Teste 2</div>
+         <div class="item">3</div>
+         <div class="item">4</div>
+      </section>
+
+      <h1>justify-content: center; // column</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code"> justify-content: center;</span> onde a mesma se alinha o conteúdo ao centro quando definida com uma <span class="code">flex-direction:column;</span>.</p>
+      </section>
+      <section class="container flex flex-center column">
+         <div class="item">1</div>
+         <div class="item">Teste 2</div>
+         <div class="item">3</div>
+         <div class="item">4</div>
+      </section>
+
+      <h1>justify-content: space-between; // column</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code"> justify-content: space-between;</span> onde a mesma se alinha o conteúdo com espaços entre eles quando definida com uma <span class="code">flex-direction:column;</span>.</p>
+      </section>
+      <section class="container flex space-between column">
+         <div class="item">1</div>
+         <div class="item">Teste 2</div>
+         <div class="item">3</div>
+         <div class="item">4</div>
+      </section>
+
+      <h1>justify-content: space-around; // column</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code"> justify-content: space-around;</span> onde a mesma se alinha o conteúdo com margens ao seu redor quando definida com uma <span class="code">flex-direction:column;</span>.</p>
+      </section>
+      <section class="container flex space-around column">
+         <div class="item">1</div>
+         <div class="item">Teste 2</div>
+         <div class="item">3</div>
+         <div class="item">4</div>
+      </section>
+
+      <h1>justify-content: space-around; // column // itens com flex:1;</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code"> justify-content: space-around;</span> onde a mesma se alinha o conteúdo com margens ao seu redor quando definida com uma <span class="code">flex-direction:column;</span>, porém com o espaço completamente ocupado, elimina o justify-content definido.</p>
+      </section>
+      <section class="container flex space-around column">
+         <div class="item flex-item-1">1</div>
+         <div class="item flex-item-1">Teste 2</div>
+         <div class="item flex-item-1">3</div>
+         <div class="item flex-item-1">4</div>
       </section>
 </body>
 </html>
