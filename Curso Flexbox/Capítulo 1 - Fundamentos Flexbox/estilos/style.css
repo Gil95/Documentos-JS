@@ -97,3 +97,7 @@ p{
 .space-around{
     justify-content: space-around;
 }
+
+.flex-stretch{
+    align-items: stretch;
+}
