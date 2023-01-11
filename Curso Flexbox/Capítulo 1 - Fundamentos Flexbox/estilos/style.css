@@ -98,6 +98,33 @@ p{
     justify-content: space-around;
 }
 
-.flex-stretch{
+.flex-align-stretch{
     align-items: stretch;
+}
+
+.flex-align-start{
+    align-items: flex-start;
+}
+
+.flex-align-end{
+    align-items: flex-end;
+}
+
+.flex-align-center{
+    align-items: center;
+}
+
+.flex-baseline{
+    align-items: baseline;
+}
+
+.alinhamento-central{
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.alinhamento-central .item{
+    flex: 0;
+    padding: 10px;
 }

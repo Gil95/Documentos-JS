@@ -290,7 +290,7 @@
       <section class="container">
          <p>Nesta disposição de flexbox, temos um <span class="code">align-itens: stretch;</span>, onde o mesmo preenche a div no container no eixo vertical, parecido com o flex: 1; porém no eixo vertical.</p>
       </section>
-      <section class="container flex flex-stretch">
+      <section class="container flex flex-align-stretch">
          <div class="item flex-item-1">1</div>
          <div class="item flex-item-1">Teste 2 do item</div>
          <div class="item flex-item-1">Teste 3 do item agora mesmo</div>
@@ -299,7 +299,109 @@
 
       <h1>align-itens: flex-start;</h1>
       <section class="container">
-         
+         <p>Nesta disposição de flexbox, temos um <span class="code">align-itens: flex-start</span>, onde o mesmo mantém as colunas alinhadas ao topo do container e encerrando onde o conteúdo termina.</p>
+      </section>
+      <section class="container flex flex-align-start">
+         <div class="item flex-item-1">1</div>
+         <div class="item flex-item-1">Teste 2 do item</div>
+         <div class="item flex-item-1">Teste 3 do item agora mesmo</div>
+         <div class="item flex-item-1">4</div>
+      </section>
+
+      <h1>align-itens: flex-end;</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code">align-itens: flex-end</span>, onde o mesmo mantém as colunas alinhadas ao fim do container e encerrando onde o conteúdo inicia.</p>
+      </section>
+      <section class="container flex flex-align-end">
+         <div class="item flex-item-1">1</div>
+         <div class="item flex-item-1">Teste 2 do item</div>
+         <div class="item flex-item-1">Teste 3 do item agora mesmo</div>
+         <div class="item flex-item-1">4</div>
+      </section>
+
+      <h1>align-itens: center;</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code">align-itens: center</span>, onde o mesmo mantém as colunas alinhadas ao centro do container e flexibilizando o container de acordo com o tamanho do conteúdo.</p>
+      </section>
+      <section class="container flex flex-align-center">
+         <div class="item flex-item-1">1</div>
+         <div class="item flex-item-1">Teste 2 do item</div>
+         <div class="item flex-item-1">Teste 3 do item agora mesmo</div>
+         <div class="item flex-item-1">4</div>
+      </section>
+
+      <h1>align-itens: baseline;</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code">align-itens: baseline</span>, onde o mesmo alinha o conteúdo como um flex-start, porém alinhando pela linha do texto, não pela linha do container.</p>
+      </section>
+      <section class="container flex flex-align-baseline">
+         <div class="item flex-item-1" style="padding-top: 20px;">1</div>
+         <div class="item flex-item-1">Teste 2 do item</div>
+         <div class="item flex-item-1">Teste 3 do item agora mesmo</div>
+         <div class="item flex-item-1">4</div>
+      </section>
+
+      <h1>align-itens: flex-stretch; // column</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code">align-itens: stretch;</span>, onde o mesmo preenche a div no container no eixo horizontal, da mesma forma que um <span class="code">flex-direction: column;</span>.</p>
+      </section>
+      <section class="container flex flex-align-stretch column">
+         <div class="item">1</div>
+         <div class="item">Teste 2 do item</div>
+         <div class="item">Teste 3 do item agora mesmo</div>
+         <div class="item">4</div>
+      </section>
+
+      <h1>align-itens: flex-start; // column</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code">align-itens: flex-start;</span>, onde o mesmo alinha as div's à esquerda, referente ao início, porém em colunas.</p>
+      </section>
+      <section class="container flex flex-align-start column">
+         <div class="item">1</div>
+         <div class="item">Teste 2 do item</div>
+         <div class="item">Teste 3 do item agora mesmo</div>
+         <div class="item">4</div>
+      </section>
+
+      <h1>align-itens: flex-end; // column</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code">align-itens: flex-end;</span>, onde o mesmo alinha as div's à direita, referente ao final, porém em colunas.</p>
+      </section>
+      <section class="container flex flex-align-end column">
+         <div class="item">1</div>
+         <div class="item">Teste 2 do item</div>
+         <div class="item">Teste 3 do item agora mesmo</div>
+         <div class="item">4</div>
+      </section>
+
+      <h1>align-itens: center; // column</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code">align-itens: center;</span>, onde o mesmo alinha as div's ao centro, referente ao meio do container, porém em colunas.</p>
+      </section>
+      <section class="container flex flex-align-center column">
+         <div class="item">1</div>
+         <div class="item">Teste 2 do item</div>
+         <div class="item">Teste 3 do item agora mesmo</div>
+         <div class="item">4</div>
+      </section>
+      
+      <h1>align-itens: baseline; // column</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code">align-itens: baseline;</span>, onde o mesmo alinha as div's à esquerda, se guiando pelo texto, não pelo container assim como a forma da padrão, porém em colunas.</p>
+      </section>
+      <section class="container flex flex-baseline column">
+         <div class="item" style="margin-left: 10px;">1</div>
+         <div class="item">Teste 2 do item</div>
+         <div class="item">Teste 3 do item agora mesmo</div>
+         <div class="item">4</div>
+      </section>
+
+      <h1>align-itens: center; // justify-content: center;</h1>
+      <section class="container">
+         <p>Nesta disposição de flexbox, temos um <span class="code">align-itens: center; justify-content: center;</span>, onde o mesmo alinha a div ao centro, tanto em linhas quanto em colunas dentro do container.</p>
+      </section>
+      <section class="container flex alinhamento-central">
+         <div class="item">Esse item está verticalmente alinhado ao centro</div>
       </section>
 </body>
 </html>
