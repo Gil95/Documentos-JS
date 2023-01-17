@@ -502,7 +502,72 @@
 
       <h1>flex-grow:0;</h1>
       <section class="container">
-         <p>Nesta disposição de flex-item, temos um <span class="code">flex-grow:0;</span> onde é o valor padrão dos flex-itens, </p>
+         <p>Nesta disposição de flex-item, temos um <span class="code">flex-grow:0;</span> onde é o valor padrão dos flex-items, neste caso o crescimento do flexbox do item é 0, ou seja, não há crescimento do mesmo.</p>
+      </section>
+      <section class="container flex">
+         <div class="grow0">1</div>
+         <div class="grow0">2</div>
+         <div class="grow0">3</div>
+      </section>
+
+      <h1>flex-grow:1;</h1>
+      <section class="container">
+         <p>Nesta disposição de flex-item, temos um <span class="code">flex-grow:1;</span> onde os flex-items possuem um valor de crescimento para ocupar o espaço do container.</p>
+      </section>
+      <section class="container flex">
+         <div class="grow1">1</div>
+         <div class="grow1">2</div>
+         <div class="grow1">3</div>
+      </section>
+
+      <h1>flex-grow:2;</h1>
+      <section class="container">
+         <p>Nesta disposição de flex-item, temos um <span class="code">flex-grow:2;</span> onde os flex-items possuem um valor de crescimento para ocupar o espaço do container, no caso do flex-grow de valor 2, quando todos possuem o mesmo valor, todos tem o mesmo padrão de crescimento.</p>
+      </section>
+      <section class="container flex">
+         <div class="grow2">1</div>
+         <div class="grow2">2</div>
+         <div class="grow2">3</div>
+      </section>
+      
+      <h1>flex-grow:1; // conteúdo largo</h1>
+      <section class="container">
+         <p>Nesta disposição de flex-item, temos um <span class="code">flex-grow:1;</span> e também um <span class="code">flex-grow:2;</span> onde os flex-items possuem um valor de crescimento para ocupar o espaço do container, porém como temos um 2 junto de um 1, onde o 2 remete ao valor dobrado em relação ao 1, onde o crescimento dele é o dobro.</p>
+      </section>
+      <section class="container flex">
+         <div class="grow1">1</div>
+         <div class="grow2">2</div>
+         <div class="grow1">3</div>
+      </section>
+
+      
+      <h1>flex-grow:(misturado);</h1>
+      <section class="container">
+         <p>Nesta disposição de flex-item, temos um <span class="code">flex-grow:0;</span>, um <span class="code">flex-grow:1;</span> e um <span class="code">flex-grow:2;</span> onde um flex-item não possui um valor de crescimento, um flex-item que possui um valor de crescimento para ocupar o espaço do container, porém temos um flex-item com o valor dobrado ao mesmo, onde esse de <span class="code">flex-grow:2;</span>, tem o crescimento ao dobro do anterior e um sem valor de crescimento, tornando diversos tamanhos de flex-items.</p>
+      </section>
+      <section class="container flex">
+         <div class="grow0">1</div>
+         <div class="grow1">2</div>
+         <div class="grow2">3</div>
+      </section>
+
+      <h1>flex-grow: (teste de mistura doida);</h1>
+      <section class="container">
+         <p>Nesta disposição de flex-item, temos diversos valores de flex-grow onde os flex-itens possuem um valor de crescimento para ocupar o espaço do container, porém de uma forma um pouco aleatória apenas para teste.</p>
+      </section>
+      <section class="container flex">
+         <div class="grow1">1</div>
+         <div class="grow0">0</div>
+         <div class="grow3">3</div>         
+         <div class="grow4">4</div>
+         <div class="grow2">2</div>
+         <div class="grow1">1</div>
+         <div class="grow4">4</div>
+      </section>
+
+      <h1>flex-basis: ;</h1>
+      <section class="container">
+         <p>Nesta disposição de flex-basis, define um valor inicial do flex-item,</p>
       </section>
 </body>
 </html>

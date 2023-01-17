@@ -157,3 +157,42 @@ p{
     align-content: space-around;
     height: 300px;
 }
+
+.grow0{
+    margin: 5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.grow1{
+    margin: 5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
+    flex-grow: 1;
+}
+
+.grow2{
+    margin: 5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
+    flex-grow: 2;
+}
+
+.grow3{
+    margin: 5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
+    flex-grow: 3;
+}
+
+.grow4{
+    margin: 5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
+    flex-grow: 4;
+}
