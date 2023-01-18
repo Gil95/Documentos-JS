@@ -567,7 +567,14 @@
 
       <h1>flex-basis: ;</h1>
       <section class="container">
-         <p>Nesta disposição de flex-basis, define um valor inicial do flex-item,</p>
+         <p>Nesta disposição de flex-basis, define um valor inicial do flex-item antes da distribuição do espaço restante, seria como um padding para os flex-items, porém com o valor auto, o mesmo tende a priorizar o conteúdo.</p>
+      </section>
+      <section class="container flex">
+         <div class="item flex-basis-auto">Palavra 1</div>
+         <div class="item flex-basis-auto">2</div>
+         <div class="item flex-basis-auto-grow-2">3</div>
+         <div class="item flex-basis-auto-width">4</div>
+         <div class="item flex-basis-auto-grow-0">5</div>
       </section>
 </body>
 </html>

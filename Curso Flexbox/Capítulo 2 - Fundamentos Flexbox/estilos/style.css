@@ -196,3 +196,23 @@ p{
     font-size: 1.5em;
     flex-grow: 4;
 }
+
+.flex-basis-auto{
+    flex-basis: auto;
+    flex-grow: 1;
+}
+
+.flex-basis-auto-grow-2{
+    flex-basis: auto;
+    flex-grow: 2;
+}
+
+.flex-basis-auto-width{
+    width: 60px;
+    flex-grow: 1;
+}
+
+.flex-basis-auto-grow-0{
+    flex-grow: 0;
+    flex-basis: auto;
+}
