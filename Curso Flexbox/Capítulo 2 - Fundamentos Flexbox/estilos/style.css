@@ -216,3 +216,38 @@ p{
     flex-grow: 0;
     flex-basis: auto;
 }
+
+.flex-basis-0{
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.flex-basis-0-grow-2{
+    flex-basis: 0;
+    flex-grow: 2;
+}
+
+.flex-basis-0-width{
+    width: 60px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.flex-basis-0-grow-0{
+    flex-grow: 0;
+    flex-basis: 0;
+}
+
+.flex-basis-110{
+    flex-basis: 110px;
+    flex-grow: 0;
+}
+
+.flex-basis-300{
+    flex-basis: 300px;
+    flex-grow: 0;
+}
+
+.flex-basis-110-porcento{
+    flex-basis: calc(25%-);
+}
