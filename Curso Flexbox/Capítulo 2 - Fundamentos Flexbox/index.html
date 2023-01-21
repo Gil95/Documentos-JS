@@ -606,14 +606,112 @@
 
       <h1>flex-basis: número; // diferente conteúdo</h1>
       <section class="container">
-         <p>Nesta disposição de flex-basis,.</p>
+         <p>Nesta disposição de flex-basis, podemos ver que o item tende a crescer de acordo com o flex-basis definido, porém quando o conteúdo é maior que a div, o conteúdo é respeitado e a div é aumentada.</p>
       </section>
       <section class="container flex flex-wrap">
-         <div class=""></div>
-         <div class=""></div>
-         <div class=""></div>
-         <div class=""></div>
-         <div class=""></div>
+         <div class="item flex-basis-110-porcento">Conteúdo Grande</div>
+         <div class="item flex-basis-110-porcento">PalavraMaior</div>
+         <div class="item flex-basis-110-porcento">Oi</div>
+      </section>
+
+      <h1>flex-basis: número; // grow 1</h1>
+      <section class="container">
+         <p>Nesta disposição de flex-basis, podemos ver que além do flex-basis, podemos alinhar o conteúdo dentro do container utilizando o <span class="code">flex-grow: 1;</span>, também temos no caso da 4ª div, um <span class="code">flex-basis: 600px;</span>, que é maior que o container, então o flex-item não permite, limitando ao tamanho total do container.</p>
+      </section>
+      <section class="container flex flex-wrap">
+         <div class="item flex-basis-110-porcento grow1">1</div>
+         <div class="item flex-basis-110-porcento grow1">12</div>
+         <div class="item flex-basis-110-porcento grow1">1234</div>
+         <div class="item flex-basis-600 grow1">12345</div>
+         <div class="item flex-basis-110-porcento grow1">5</div>
+      </section>
+
+      <h1>flex-shrink: 1;</h1>
+      <section class="container">
+         <p>A propriedade flex-shrink é a de diminuir a div ignorando o flex-basis ou padding indicado, neste caso, como temos apenas um flex-grow, o conteúdo não precisa ser reduzido, então não há a sua necessidade.</p>
+      </section>
+      <section class="container flex">
+         <div class="item shrink-1 grow1">1</div>
+         <div class="item shrink-1 grow1">2</div>
+         <div class="item shrink-1 grow1">3</div>
+         <div class="item shrink-1 grow1">4</div>
+      </section>
+
+      <h1>flex-shrink: 1; // conteúdo diferente</h1>
+      <section class="container">
+         <p>A propriedade flex-shrink é a de diminuir a div ignorando o flex-basis ou padding indicado, neste caso, como temos apenas um flex-grow, o conteúdo não precisa ser reduzido, então não há a sua necessidade, porém nesse caso, temos conteúdos de tamanhos diferentes com flex-grow.</p>
+      </section>
+      <section class="container flex">
+         <div class="item shrink-1 grow1">1</div>
+         <div class="item shrink-1 grow1">Teste 2</div>
+         <div class="item shrink-1 grow1">Oi 3</div>
+         <div class="item shrink-1 grow1">4</div>
+      </section>
+      
+      <h1>flex-shrink: misturado; // conteúdo diferente</h1>
+      <section class="container">
+         <p>A propriedade flex-shrink é a de diminuir a div ignorando o flex-basis ou padding indicado, neste caso, como temos apenas um flex-grow, e o flex-shrink de valores 3 e 1, porém como o conteúdo não precisa ser reduzido, então não há a sua necessidade, nesse caso, temos conteúdos de tamanhos diferentes com flex-grow e não há diferença alguma em relação ao container anterior.</p>
+      </section>
+      <section class="container flex">
+         <div class="item shrink-1 grow1">1</div>
+         <div class="item shrink-1 grow1">Teste 2</div>
+         <div class="item shrink-3 grow1">Oi 3</div>
+         <div class="item shrink-3 grow1">4</div>
+      </section>
+
+      <h1>flex-shrink: 1; // conteúdo maior que o container</h1>
+      <section class="container">
+         <p>No caso de conteúdo maior que o container, não é possivel reduzir o container, pois o mesmo respeita o conteúdo.</p>
+      </section>
+      <section class="container flex">
+         <div class="item shrink-1 grow1">TesteTesteTesteTeste</div>
+         <div class="item shrink-1 grow1">TesteTesteTeste 2</div>
+         <div class="item shrink-1 grow1">Oi 3</div>
+         <div class="item shrink-1 grow1">4</div>
+      </section>
+
+      <h1>flex-shrink: misturado ( 1 e 3 ); // Conteúdo maior que o container</h1>
+      <section class="container">
+         <p>No caso de flex-shrink 1 e 3, não faz diferença nesse caso, pois o mesmo ainda respeita o conteúdo e não possui espaço para encolher as div's</p>
+      </section>
+      <section class="container flex">
+         <div class="item shrink-1 grow1">TesteTesteTesteTeste</div>
+         <div class="item shrink-1 grow1">TesteTesteTeste 2</div>
+         <div class="item shrink-3 grow1">Oi 3</div>
+         <div class="item shrink-3 grow1">4</div>
+      </section>
+
+      <h1>flex-shrink: 1; // flex-basis: valor;</h1>
+      <section class="container">
+         <p>No caso de flex-shrink 1, combinado com flex-basis com alguns valores, e ainda com o conteúdo maior que o container, fica parecido com o caso anterior, mas com o flex-shrink 1, a div foi reduzida, mas ainda estoura o container, pois o mesmo ainda respeita o conteúdo e não possui mais espaço para encolher as div's</p>
+      </section>
+      <section class="container flex">
+         <div class="item shrink-1 basis150">TesteTesteTesteTeste</div>
+         <div class="item shrink-1 basis150">TesteTesteTeste 2</div>
+         <div class="item shrink-1 basis150">Oi 3</div>
+         <div class="item shrink-1 basis150">4</div>
+      </section>
+
+      <h1>flex-shrink: 0; // flex-basis: valor;</h1>
+      <section class="container">
+         <p>No caso de flex-shrink 0, combinado com flex-basis com alguns valores, e ainda com o conteúdo maior que o container, mas agora com o flex-shrink com valor 0, o conteúdo foi alargado, pois o mesmo agora segue o alargamento das div's com o flex-basis.</p>
+      </section>
+      <section class="container flex">
+         <div class="item shrink-0 basis150">TesteTesteTesteTeste</div>
+         <div class="item shrink-0 basis150">TesteTesteTeste 2</div>
+         <div class="item shrink-0 basis150">Oi 3</div>
+         <div class="item shrink-0 basis150">4</div>
+      </section>
+
+      <h1>flex-shrink: 0; // flex-basis: valor; // wrap</h1>
+      <section class="container">
+         <p>No caso de flex-shrink 0, combinado com flex-basis com alguns valores, e ainda com um flex-wrap que o container, mas agora com o flex-shrink com valor 0, o conteúdo foi alargado, pois o mesmo agora segue o alargamento das div's com o flex-basis.</p>
+      </section>
+      <section class="container flex flex-wrap">
+         <div class="item shrink-0 basis150">TesteTesteTesteTeste</div>
+         <div class="item shrink-0 basis150">testeTesteTeste 2</div>
+         <div class="item shrink-0 basis150">Oi 3</div>
+         <div class="item shrink-0 basis150">4</div>
       </section>
 </body>
 </html>
