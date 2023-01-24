@@ -829,7 +829,7 @@
 
       <h1>align-self:multiplos</h1>
       <section class="container">
-         <p>A propriedade align-self, é uma propriedade para alinhar o item ao container, parecido com o align-content, mas someente com itens isolados.</p>
+         <p>A propriedade align-self, é uma propriedade para alinhar o item ao container, parecido com o align-content, mas somente com itens isolados.</p>
       </section>
       <section class="container flex height180px">
          <div class="item flex-1 text-align-center padding-top-20 align-end">1</div>
@@ -840,13 +840,61 @@
       
       <h1>align-self:multiplos</h1>
       <section class="container">
-         <p>A propriedade align-self, é uma propriedade para alinhar o item ao container, parecido com o align-content, mas someente com itens isolados.</p>
+         <p>A propriedade align-self, é uma propriedade para alinhar o item ao container, parecido com o align-content, mas somente com itens isolados.</p>
       </section>
       <section class="container flex height180px">
-         <div class="item flex-1 text-align-center padding-top-20 align-start">1</div>
+         <div class="item flex-1 text-align-center padding-top-20 align-baseline">1</div>
          <div class="item flex-1 text-align-center align-baseline">Teste 2 do Item</div>
          <div class="item flex-1 text-align-center">Teste 3 do Item Agora Mesmo Esse Mesmo.</div>
          <div class="item flex-1 text-align-center align-center">Teste 4</div>
+      </section>
+            
+      <h1>align-self:stretch // align-itens: flex-end;</h1>
+      <section class="container">
+         <p>A propriedade align-self, é uma propriedade para alinhar o item ao container, parecido com o align-content, mas somente com itens isolados.</p>
+         <p>No caso do align-self, quando temos um align-itens, o que prioriza é o align-self.</p>
+      </section>
+      <section class="container flex height180px flex-align-end">
+         <div class="item flex-1">1</div>
+         <div class="item flex-1 align-stretch">Teste 2 do Item</div>
+         <div class="item flex-1">Teste 3 do Item Agora Mesmo Esse Mesmo.</div>
+         <div class="item flex-1">Teste 4</div>
+      </section>
+
+      <h1>align-self:multiplos;</h1>
+      <section class="container">
+         <p>A propriedade align-self, é uma propriedade para alinhar o item ao container, parecido com o align-content, mas somente com itens isolados.</p>
+         <p>No caso de colunas, também funciona a propriedade.</p>
+      </section>
+      <section class="container flex height180px column">
+         <div class="item flex-1 align-end">1</div>
+         <div class="item flex-1 align-start">Teste 2 do Item</div>
+         <div class="item flex-1 align-stretch">Teste 3 do Item Agora Mesmo Esse Mesmo.</div>
+         <div class="item flex-1 align-center">Teste 4</div>
+      </section>
+
+      <h1>align-self:multiplos;</h1>
+      <section class="container">
+         <p>A propriedade align-self, é uma propriedade para alinhar o item ao container, parecido com o align-content, mas somente com itens isolados.</p>
+         <p>No caso de colunas, também funciona a propriedade.</p>
+      </section>
+      <section class="container flex height180px column">
+         <div class="item flex-1 align-baseline">1</div>
+         <div class="item flex-1 align-baseline">Teste 2 do Item</div>
+         <div class="item flex-1">Teste 3 do Item Agora Mesmo Esse Mesmo.</div>
+         <div class="item flex-1 align-center">Teste 4</div>
+      </section>
+
+      <h1>align-self:stretch; // align-itens: flex-end;</h1>
+      <section class="container">
+         <p>A propriedade align-self, é uma propriedade para alinhar o item ao container, parecido com o align-content, mas somente com itens isolados.</p>
+         <p>No caso de colunas, também funciona a propriedade.</p>
+      </section>
+      <section class="container flex height180px column flex-align-end">
+         <div class="item flex-1">1</div>
+         <div class="item flex-1 align-stretch">Teste 2 do Item</div>
+         <div class="item flex-1">Teste 3 do Item Agora Mesmo Esse Mesmo.</div>
+         <div class="item flex-1">Teste 4</div>
       </section>
    </body>
 </html>

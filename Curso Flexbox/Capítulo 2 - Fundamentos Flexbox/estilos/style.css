@@ -351,6 +351,10 @@ p{
     align-self: baseline;
 }
 
+.align-stretch{
+    align-self: stretch;
+}
+
 .text-align-center{
     text-align: center;
     font-size: 1.5em;
@@ -360,4 +364,8 @@ p{
 
 .padding-top-20{
     padding-top: 20px;
+}
+
+.margin0auto{
+    margin: 0 auto;
 }
