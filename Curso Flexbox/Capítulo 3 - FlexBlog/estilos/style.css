@@ -13,6 +13,7 @@
     --cor1: #2C70FF;
     --cor2: #fff;
     --cor3: #000;
+    --cor4: #777;
     --fonte0: 'Nunito' , sans-serif;
     --fonte1:  Arial , Helvetica , sans-serif;
 }
@@ -88,4 +89,28 @@ section > h1.introdução{
     font-size: 2.5em;
     font-weight: bold;
     margin-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sobre{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sobre-info{
+    max-width: 50vw;
+    padding: 10px;
+}
+
+.sobre-foto{
+    padding: 10px;
+}
+
+.sobre-info > p{
+    font-weight: 300;
+    font-size: 1.3em;
+    color: var(--cor4);
+    padding: 10px;
 }
