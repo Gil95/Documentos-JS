@@ -168,3 +168,29 @@ section > h1.introdução{
 .blue{
     border-top: 8px solid var(--blue);
 }
+
+.preço{
+    background-color: var(--cor5);
+    margin-top: 20px;
+}
+
+.preço > h1{
+    margin: 10px 20px;
+}
+
+.preço-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.preço-item{
+    border-style: solid;
+    border-color: var(--cor3);
+    flex-basis: 40vw;
+    flex-shrink: 1;
+}
+
+.preço-item > ul > li{
+    color: var(--cor4);
+}
