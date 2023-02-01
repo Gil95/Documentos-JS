@@ -68,7 +68,7 @@ nav{
     flex-direction: column;
 }
 
-ul{
+.menu > nav > ul{
     list-style-type: none;
     display: flex;
     justify-content: space-around;
@@ -76,20 +76,20 @@ ul{
     flex-grow: 1;
 }
 
-li{
+.menu > nav > ul > li{
     display: flex;
     align-self: center;
     color: var(--cor2);
 }
 
-li a{
+.menu > nav > ul > li > a{
     background-color: var(--cor1);
     padding: 5px;
     border-radius: 5px;
     transition-duration: 500ms;
 }
 
-li a:hover{
+.menu > nav > ul > li > a:hover{
     color: var(--cor0);
     background-color: var(--cor2);
     transition-duration: 500ms;
@@ -187,13 +187,61 @@ section > h1.introdução{
 .preço-item{
     border-style: solid;
     border-color: var(--cor3);
+    flex: 1 1 260px;
+    text-align: center;
 }
 
 .preço-item > ul{
-    display: flex;
-    flex-direction: column;
+    text-align: left;
+    flex: 1 1 150px;
 }
 
 .preço-item > ul > li{
     color: var(--cor4);
+}
+
+.preço-item > ul > li::marker{
+    color: #0000;
+}
+
+.qualidade{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.qualidade-item{
+    padding: 10px;
+    flex: 1 1 260px;
+    font-size: 1.2em;
+}
+
+.inteligente{
+    text-indent: 10px;
+    border-left: solid 10px #AE81FF;
+}
+
+.compacto{
+    text-indent: 10px;
+    border-left: solid 10px #F9265E;
+}
+
+.economico{
+    text-indent: 10px;
+    border-left: solid 10px #66D9EB;
+}
+
+.transparente{
+    text-indent: 10px;
+    border-left: solid 10px #AE81FF;
+}
+
+.opaco{
+    text-indent: 10px;
+    border-left: solid 10px #F9265E;
+}
+
+.sustentavel{
+    text-indent: 10px;
+    border-left: solid 10px #66D9EB;
 }
