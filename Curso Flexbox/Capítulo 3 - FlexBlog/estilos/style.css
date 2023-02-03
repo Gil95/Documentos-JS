@@ -23,11 +23,11 @@
 }
 
 section{
-    max-width: 800px;
+    max-width: 960px;
     margin: auto;
 }
 
-/* Super-info*/
+/* Super-info */
 .superinfo-bg{
     background-color: var(--cor0);
     color: var(--cor2);
@@ -41,10 +41,11 @@ section{
 .superinfo{
     padding: 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-/*menu*/
+/* menu */
 header{
     display: block;
     position: sticky;
@@ -54,6 +55,7 @@ header{
 header > .menu{
     background-color: var(--cor1);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -64,15 +66,17 @@ header > .menu{
 
 .menu-logo a{
     display: flex;
+    margin: 0px 10px;
     padding: 10px 0px;
     padding-left: 10px;
-    font-size: 2em;
-    font-weight: 700;
+    font-size: 2.25em;
+    font-weight: bold;
 }
 
 nav{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .menu > nav > ul{
@@ -85,8 +89,10 @@ nav{
 
 .menu > nav > ul > li{
     display: flex;
+    flex-wrap: wrap;
     align-self: center;
     color: var(--cor2);
+    font-size: 1.25em;
 }
 
 .menu > nav > ul > li > a{
@@ -102,7 +108,7 @@ nav{
     transition-duration: 500ms;
 }
 
-/*introdução*/
+/* introdução */
 section > h1.introdução{
     font-size: 2.5em;
     font-weight: bold;
@@ -111,7 +117,7 @@ section > h1.introdução{
     padding-bottom: 40px;
 }
 
-/*Sobre*/
+/* Sobre */
 .sobre{
     display: flex;
     justify-content: space-between;
@@ -141,7 +147,7 @@ section > h1.introdução{
     padding: 10px;
 }
 
-/*produtos*/
+/* produtos */
 .produtos{
     border-top: 2px solid var(--cor1);
 }
@@ -186,7 +192,7 @@ section > h1.introdução{
     border-top: 8px solid var(--blue);
 }
 
-/*preços*/
+/* preços */
 .preço{
     background-color: var(--cor5);
     margin-top: 20px;
@@ -222,7 +228,7 @@ section > h1.introdução{
     color: #0000;
 }
 
-/*qualidades*/
+/* qualidades */
 .qualidade{
     display: flex;
     flex-wrap: wrap;
@@ -265,7 +271,7 @@ section > h1.introdução{
     border-left: solid 10px #66D9EB;
 }
 
-/*newsletter*/
+/* newsletter */
 .newsletter{
 
 }
