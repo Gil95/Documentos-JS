@@ -110,11 +110,12 @@ nav{
 
 /* introdução */
 section > h1.introdução{
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: bold;
     margin-left: 10px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1;
 }
 
 /* Sobre */
