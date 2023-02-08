@@ -120,30 +120,40 @@ section > h1.introdução{
 
 /* Sobre */
 .sobre{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     padding-top: 20px;
     border-top: 2px solid var(--cor1);
+    display: flex;
+    max-width: 960px;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .sobre-info{
-    margin: 10px;
-    flex: 1 1 300px;
+    flex: 2 1 300px;
+    margin: 0 10px;
 }
 
 .sobre-foto{
-    margin: 10px;
+    flex: 1 1 160px;
+    margin: 0 10px;
+}
+
+img{
+    display: block;
+    max-width: 100%;
 }
 
 .sobre-info > h1{
-    font-size: 2.5em;
+    font-size: 3em;
     text-indent: 10px;
+    margin-bottom: .5em;
 }
 
 .sobre-info > p{
+    font-size: 1.25em;
     font-weight: 300;
-    font-size: 1.3em;
+    line-height: 1.4;
+    margin-bottom: 1em;
     color: var(--cor4);
     padding: 10px;
 }
@@ -151,9 +161,11 @@ section > h1.introdução{
 /* produtos */
 .produtos{
     border-top: 2px solid var(--cor1);
+    max-width: 960px;
+    margin: 60px auto;
 }
 
-.produtos h1{
+.produtos > h1{
     padding: 40px 10px;
     font-size: 3em;
 }
@@ -225,8 +237,8 @@ section > h1.introdução{
     color: var(--cor4);
 }
 
-.preço-item > ul > li::marker{
-    color: #0000;
+ul{
+    list-style: none;
 }
 
 /* qualidades */
