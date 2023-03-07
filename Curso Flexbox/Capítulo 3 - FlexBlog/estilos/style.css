@@ -181,13 +181,13 @@ img{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    align-items: flex-end;
 }
 
 .produtos-item{
     margin: 10px;
     background-color: var(--cor5);
     color: var(--cor4);
-    align-self: flex-end;
     flex: 1 1 175px;
 }
 
@@ -213,24 +213,42 @@ img{
 /* preços */
 .preço{
     background-color: var(--cor5);
-    margin-top: 20px;
+    padding-top: 10px;
 }
 
 .preço > h1{
-    margin: 10px 20px;
+    margin: 10px;
 }
 
 .preço-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
 .preço-item{
     border-style: solid;
-    border-color: var(--cor3);
-    flex: 1 1 260px;
+    border-color: var(--cor2);
+    flex: 1 1 175px;
     text-align: center;
+    padding: 20px;
+}
+
+.preço-item > h2 {
+    color: var(--cor4);
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.preço-item > span {
+    color: var(--cor3);
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.preço-item > span > sup{
+    font-weight: bold;
 }
 
 .preço-item > ul{
@@ -240,6 +258,13 @@ img{
 
 .preço-item > ul > li{
     color: var(--cor4);
+    font-size: 1.2em;
+    line-height: 40px;
+}
+
+.preço-item > ul > li ::after{
+    list-style-type: disc;
+    color: var(--cor0);
 }
 
 ul{
@@ -258,34 +283,31 @@ ul{
     flex: 1 1 260px;
     font-size: 1.2em;
 }
+div.qualidade-item > h1 {
+    text-indent: 10px;
+}
 
 .inteligente{
-    text-indent: 10px;
     border-left: solid 10px #AE81FF;
 }
 
 .compacto{
-    text-indent: 10px;
     border-left: solid 10px #F9265E;
 }
 
 .economico{
-    text-indent: 10px;
     border-left: solid 10px #66D9EB;
 }
 
 .transparente{
-    text-indent: 10px;
     border-left: solid 10px #AE81FF;
 }
 
 .opaco{
-    text-indent: 10px;
     border-left: solid 10px #F9265E;
 }
 
 .sustentavel{
-    text-indent: 10px;
     border-left: solid 10px #66D9EB;
 }
 
