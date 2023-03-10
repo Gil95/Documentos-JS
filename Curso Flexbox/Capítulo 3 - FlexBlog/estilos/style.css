@@ -276,7 +276,7 @@ img{
 }
 
 .preço-item > ul > li ::after{
-    list-style-type: disc;
+    list-style: disc;
     color: var(--cor0);
 }
 
