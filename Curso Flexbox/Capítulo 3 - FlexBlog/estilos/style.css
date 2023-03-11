@@ -231,12 +231,10 @@ img{
 }
 
 .preço-item{
-    border-style: solid;
-    border-color: var(--cor2);
-    flex: 1 1 260px;
+    flex: 1 1 160px;
+    border: 4px solid var(--cor2);
     padding: 20px;
     margin: 10px;
-    align-items: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -253,35 +251,60 @@ img{
     color: var(--cor3);
     max-width: 300px;
     display: block;
+    margin: 20px auto;
+    padding: 10px 0 5px 0;
     font-size: 3em;
     font-weight: bolder;
-	border-top: 4px solid white;
-	border-bottom: 4px solid white;
+	border-top: 4px solid var(--cor2);
+	border-bottom: 4px solid var(--cor2);
 }
 
 .preço-item > span > sup{
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .preço-item > ul{
-    text-align: left;
-    flex: 0 1 175px;
-}
-
-.preço-item > ul > li{
+    max-width: 300px;
+    margin: 20px auto;
+    font-size: 1.5em;
+    font-style: italic;
+    line-height: 2em;
     color: var(--cor4);
-    font-size: 1.2em;
-    line-height: 40px;
-    justify-content: space-between;
+    min-width: 240px;
 }
 
-.preço-item > ul > li ::after{
-    list-style: disc;
-    color: var(--cor0);
+.preço-item li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preço-item > ul > li::after{
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: var(--cor1);
+    border-radius: 50%;
 }
 
 ul{
     list-style: none;
+}
+
+.preço-item > a{
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+    border: 4px solid;
+    color: #222222;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.25em;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
 }
 
 /* qualidades */
@@ -326,5 +349,48 @@ div.qualidade-item > h1 {
 
 /* newsletter */
 .newsletter{
+    background-color: var(--cor5);
+    display: flex;
+    justify-content: space-between;
+    color: var(--cor4);
+}
 
+.newsletter-text > h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.newsletter-text > p{
+    font-size: 1.5em;
+}
+
+.newsletter-form{
+    background-color: var(--cor1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.newsletter-form > input{
+    width: 50vw;
+    margin: 5px;
+    height: 50px;
+    font-size: 1.2em;
+    text-indent: 20px;
+}
+
+.newsletter-form > button{
+    background-color: var(--cor1);
+    border: none;
+    flex: 1 0 300px;
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--cor2);
+}
+
+@media (max-width: 800px){
+    .preço{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
