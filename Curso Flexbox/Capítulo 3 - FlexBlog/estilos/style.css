@@ -214,6 +214,7 @@ img{
 .preço{
     background-color: var(--cor5);
     padding-top: 10px;
+    max-width: 960px;
 }
 
 .preço > h1{
@@ -231,13 +232,10 @@ img{
 }
 
 .preço-item{
-    flex: 1 1 160px;
+    flex: 1 1 240px;
     border: 4px solid var(--cor2);
-    padding: 20px;
-    margin: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    padding: 15px;
+    margin: 5px;
 }
 
 .preço-item > h2 {
@@ -251,6 +249,7 @@ img{
     color: var(--cor3);
     max-width: 300px;
     display: block;
+    text-align: center;
     margin: 20px auto;
     padding: 10px 0 5px 0;
     font-size: 3em;
@@ -271,7 +270,6 @@ img{
     font-style: italic;
     line-height: 2em;
     color: var(--cor4);
-    min-width: 240px;
 }
 
 .preço-item li{
@@ -296,13 +294,13 @@ ul{
 .preço-item > a{
     max-width: 300px;
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
     border: 4px solid;
     color: #222222;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 2.25em;
-    padding: 15px 25px;
+    padding: 10px 10px;
     text-align: center;
     text-decoration: none;
 }
@@ -318,6 +316,7 @@ ul{
     padding: 10px;
     flex: 1 1 260px;
     font-size: 1.2em;
+    margin: 20px 10px;
 }
 div.qualidade-item > h1 {
     text-indent: 10px;
@@ -356,7 +355,7 @@ div.qualidade-item > h1 {
 }
 
 .newsletter-text > h1{
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
 }
 
@@ -372,18 +371,19 @@ div.qualidade-item > h1 {
 }
 
 .newsletter-form > input{
-    width: 50vw;
     margin: 5px;
     height: 50px;
+    display: flex;
     font-size: 1.2em;
     text-indent: 20px;
+    flex: 1 1;
 }
 
 .newsletter-form > button{
     background-color: var(--cor1);
     border: none;
-    flex: 1 0 300px;
-    font-size: 3em;
+    flex: 1 1;
+    font-size: 2em;
     font-weight: bold;
     color: var(--cor2);
 }
@@ -392,5 +392,12 @@ div.qualidade-item > h1 {
     .preço{
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .preço .preço-item:nth-child(3){
+        order: -2;
+    }
+
+    .preço .preço-item:nth-child(2){
+        order: -1;
     }
 }
