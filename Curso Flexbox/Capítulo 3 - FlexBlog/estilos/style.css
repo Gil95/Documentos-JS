@@ -318,6 +318,7 @@ ul{
     font-size: 1.2em;
     margin: 20px 10px;
 }
+
 div.qualidade-item > h1 {
     text-indent: 10px;
 }
@@ -357,10 +358,12 @@ div.qualidade-item > h1 {
 .newsletter-text > h1{
     font-size: 2em;
     font-weight: bold;
+    text-indent: 20px;
 }
 
 .newsletter-text > p{
     font-size: 1.5em;
+    padding-left: 10px;
 }
 
 .newsletter-form{
@@ -393,6 +396,7 @@ div.qualidade-item > h1 {
         padding-left: 10px;
         padding-right: 10px;
     }
+
     .preço .preço-item:nth-child(3){
         order: -2;
     }
