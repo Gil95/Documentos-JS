@@ -15,6 +15,7 @@
     --cor3: #000;
     --cor4: #a4a4a4;
     --cor5: #f7f7f7;
+    --cor6: #777777;
     --purple: #AE81FF;
     --pink: #F9265E;
     --blue: #66D9EB;
@@ -319,32 +320,27 @@ ul{
     margin: 20px 10px;
 }
 
-div.qualidade-item > h1 {
-    text-indent: 10px;
+.qualidade-item > p{
+    font-size: 1.1em;
+    line-height: 1.2;
+    color: var(--cor6);
 }
 
-.inteligente{
-    border-left: solid 10px #AE81FF;
+.qualidade-item > h1::before{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 25px;
+    margin-right: 10px;
+    background: #66D9EB;
 }
 
-.compacto{
-    border-left: solid 10px #F9265E;
+.qualidade-item:nth-of-type(3n+1) h1::before{
+    background: #AE81FF;
 }
 
-.economico{
-    border-left: solid 10px #66D9EB;
-}
-
-.transparente{
-    border-left: solid 10px #AE81FF;
-}
-
-.opaco{
-    border-left: solid 10px #F9265E;
-}
-
-.sustentavel{
-    border-left: solid 10px #66D9EB;
+.qualidade-item:nth-of-type(3n+2) h1::before{
+    background: #F9265E;
 }
 
 /* newsletter */
@@ -353,6 +349,7 @@ div.qualidade-item > h1 {
     display: flex;
     justify-content: space-between;
     color: var(--cor4);
+    width: 97vw;
 }
 
 .newsletter-text > h1{
