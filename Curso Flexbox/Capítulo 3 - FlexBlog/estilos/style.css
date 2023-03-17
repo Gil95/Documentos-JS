@@ -359,14 +359,14 @@ ul{
 }
 
 .newsletter-text > p{
-    font-size: 1.5em;
+    font-size: 1.25em;
+    font-style: italic;
+    max-width: 230px;
     padding-left: 10px;
 }
 
 .newsletter-form{
     background-color: var(--cor1);
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -382,10 +382,12 @@ ul{
 .newsletter-form > button{
     background-color: var(--cor1);
     border: none;
-    flex: 1 1;
     font-size: 2em;
     font-weight: bold;
     color: var(--cor2);
+    display: flex;
+    flex: 1 1;
+    align-self: center;
 }
 
 @media (max-width: 800px){
