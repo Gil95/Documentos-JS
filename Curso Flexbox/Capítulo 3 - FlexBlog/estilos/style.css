@@ -346,48 +346,22 @@ ul{
 /* newsletter */
 .newsletter{
     background-color: var(--cor5);
-    display: flex;
-    justify-content: space-between;
-    color: var(--cor4);
-    width: 97vw;
+    padding: 60px calc((100%-960px)/2);
 }
 
 .newsletter-text > h1{
-    font-size: 2em;
-    font-weight: bold;
-    text-indent: 20px;
 }
-
 .newsletter-text > p{
-    font-size: 1.25em;
-    font-style: italic;
-    max-width: 230px;
-    padding-left: 10px;
+
 }
 
 .newsletter-form{
-    background-color: var(--cor1);
-    justify-content: center;
 }
 
 .newsletter-form > input{
-    margin: 5px;
-    height: 50px;
-    display: flex;
-    font-size: 1.2em;
-    text-indent: 20px;
-    flex: 1 1;
 }
 
 .newsletter-form > button{
-    background-color: var(--cor1);
-    border: none;
-    font-size: 2em;
-    font-weight: bold;
-    color: var(--cor2);
-    display: flex;
-    flex: 1 1;
-    align-self: center;
 }
 
 @media (max-width: 800px){
