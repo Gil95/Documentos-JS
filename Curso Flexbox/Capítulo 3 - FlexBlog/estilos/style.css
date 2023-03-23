@@ -346,11 +346,20 @@ ul{
 /* newsletter */
 .newsletter{
     background-color: var(--cor5);
-    padding: 60px calc((100%-960px)/2);
+    padding: 60px calc((100% - 960px) / 2 );
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-text{
+    flex: 1 1 260px;
+    padding: 20px;
 }
 
 .newsletter-text > h1{
+
 }
+
 .newsletter-text > p{
 
 }
