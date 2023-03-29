@@ -11,7 +11,7 @@
 :root{
     --cor0: #4CBCF5;
     --cor1: #0B4DDE;
-    --cor2: #DA9FF5;
+    --cor2: #F56FF2;
     --cor3: #AA64FA;
     --cor4: #F5CDA7;
     --cor5: #fff;
@@ -24,7 +24,7 @@
 }
 
 body{
-    background-image:linear-gradient( to bottom, var(--cor0), var(--blue));
+    background-color:var(--cor0);
 }
 
 body::-webkit-scrollbar {
@@ -32,7 +32,7 @@ body::-webkit-scrollbar {
 }
 
 header{
-    background-image: linear-gradient(to bottom , var(--cor1) , var(--cor0));
+    background-image: linear-gradient(to bottom , var(--cor3) , var(--cor2));
     height: 150px;
     text-align: center;
     display: flex;
@@ -47,7 +47,7 @@ header > h1{
 }
 
 nav{
-    background-color: var(--cor0);
+    background-color: var(--cor2);
 }
 
 nav > div{
@@ -65,7 +65,7 @@ nav > div > div > a{
     padding: 5px 10px;
     color: var(--cor6);
     text-decoration: none;
-    background-color: var(--cor0);
+    background-color: var(--cor2);
     border-radius: 10px;
     font-size: 1.2em;
     transition-duration: 300ms;
@@ -110,9 +110,9 @@ main > section > div.mus > a{
     font-size: 1em;
     flex: 1 0 150px;
     text-align: center;
-    background-color: var(--cor2);
+    background-color: var(--cor0);
     border-style: solid;
-    border-color: var(--cor3);
+    border-color: var(--cor1);
     border-width: 2px;
     border-radius: 10px 5px;
     margin: 20px;
@@ -143,9 +143,9 @@ main > section > audio{
 }
 
 main > section > input{
-    background-color: var(--cor2);
+    background-color: var(--cor0);
     border-style: solid;
-    border-color: var(--cor3);
+    border-color: var(--cor1);
     padding: 10px;
     border-radius: 10px;
     display: block;
