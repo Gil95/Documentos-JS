@@ -9,10 +9,10 @@
 }
 
 :root{
-    --cor0: #114B5F;
-    --cor1: #39A0ED;
-    --cor2: #13C4A3;
-    --cor3: #36F1CD;
+    --cor0: #4CBCF5;
+    --cor1: #0B4DDE;
+    --cor2: #F56FF2;
+    --cor3: #AA64FA;
     --cor4: #F5CDA7;
     --cor5: #fff;
     --cor6: #000;
@@ -105,12 +105,15 @@ main > section > div.mus{
 }
 
 main > section > div.mus > a{
-    color: var(--cor0);
+    color: var(--cor1);
     text-decoration: none;
     font-size: 1em;
     flex: 1 0 150px;
     text-align: center;
-    background-color: var(--cor3);
+    background-color: var(--cor0);
+    border-style: solid;
+    border-color: var(--cor1);
+    border-width: 2px;
     border-radius: 10px 5px;
     margin: 20px;
     padding: 5px;
@@ -140,9 +143,9 @@ main > section > audio{
 }
 
 main > section > input{
-    background-color: var(--cor4);
+    background-color: var(--cor0);
     border-style: solid;
-    border-color: var(--cor0);
+    border-color: var(--cor1);
     padding: 10px;
     border-radius: 10px;
     display: block;
