@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="imagens/heart.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Não</h1>
+    </header>
+    <nav>
+        <div>
+            <div>
+                <a href="#mot">Motivacionais</a>
+                <a href="#rir">Alegre-se</a>
+                <a href="#sur">Surpresa</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="mot">
+            <h1>Músicas pra te animar</h1>
+            <div class="mus">
+                <a href="páginas/teenagers.html">Música animada</a>
+                <a href="páginas/the-vamps.html">Música que sei que você gosta</a>
+                <a href="páginas/reason-to-fight.html">Música deprê com letra incrível</a>
+            </div>
+        </section>
+        <section id="rir">
+            <h1>Alegre-se, meu bem!</h1>
+            <p>Nunca se esqueça da pessoa incrível que você é, espero que seja feliz sempre!</p>
+        </section>
+        <section id="sur">
+            <h1>Surpresinhas, meu bem!</h1>
+            <p>Deixe essa parte depois de ver as músicas!</p>
+            <input type="button" value="Surpresa" onclick="clickMenu()">
+            <div id="audio">
+            <p>Agora quero que se divirta ouvindo coisas aleatórias</p>
+                <audio src="audios/isqueiro.m4a" controls></audio>
+                <audio src="audios/porcaria.m4a" controls></audio>
+                <audio src="audios/goxta.m4a" controls></audio>
+                <audio src="audios/estupido.mp3" controls></audio>
+            </div>
+        </section>
+    </main>
+    <script>
+        function clickMenu(){
+            if (audio.style.display == 'block'){
+                audio.style.display = 'none'
+            } else { 
+                audio.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
