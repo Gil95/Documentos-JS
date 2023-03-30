@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Display grid</title>
+</head>
+<body>
+    <header>
+        <h1>Display Grid</h1>
+    </header>
+    <div class="margin50px">
+        <section class="container">
+            <h1>display: block;</h1>
+            <section class="block container">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </section>
+        </section>
+    </div>
+    <div class="margin50px">
+        <section class="container">
+            <h1>display: grid;</h1>
+            <section class="grid container">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </section>
+        </section>
+    </div>
+    <div class="margin50px">
+        <section class="container">
+            <h1>grid-template-columns: 200px 200px;</h1>
+            <section class="grid container grid-template-columns">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </section>
+        </section>
+    </div>
+    <div class="margin50px">
+        <section class="container">
+            <h1>grid-template-columns: 1fr 2fr 1fr;</h1>
+            <section class="grid container grid-template-columns-1-2-1">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+            </section>
+        </section>
+    </div>
+    <div class="margin50px">
+        <section class="container">
+            <h1>subgrid;</h1>
+            <section class="grid grid-template-columns-1-1-1">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item subgrid">
+                    <div>5.1</div>
+                    <div>5.2</div>
+                    <div>5.3</div>
+                </div>
+                <div class="item">6</div>
+            </section>
+        </section>
+    </div>
+</body>
+</html>
