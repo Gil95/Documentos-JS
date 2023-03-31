@@ -1,5 +1,20 @@
 @charset "UTF-8";
 
+body{
+    font-family: monospace;
+    color: #333;
+    margin: 0px;
+    padding-bottom: 60px;
+}
+
+body > div {
+	padding: 40px 0;
+}
+
+body > div:nth-of-type(even) {
+	background: rgba(0,0,0,.03);
+}
+
 .container{
     max-width: 400px;
     margin: 0 auto;
@@ -48,3 +63,35 @@ header > h1{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
 }
+
+.subgrid > div{
+    background-color: rgba(0,0,0,0.3);
+}
+
+.grid-template-columns-1{
+    grid-template-columns: 100px 100px 100px 100px;
+}
+
+.grid-template-columns-2{
+    grid-template-columns: 1fr 2fr;
+}
+
+.grid-template-columns-3{
+    grid-template-columns: minmax(180px , 1fr) 1fr 1fr;
+}
+
+.grid-template-columns-4{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-template-columns-5{
+    grid-template-columns: repeat(auto-fit, 100px);
+}
+
+.grid-template-columns-6{
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+}
+
+.grid-template-columns-7{
+    grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+}                                           
