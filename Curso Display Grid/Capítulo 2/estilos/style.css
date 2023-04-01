@@ -94,4 +94,16 @@ header > h1{
 
 .grid-template-columns-7{
     grid-template-columns: repeat(auto-fill, minmax(100px, auto));
-}                                           
+}
+
+.grid-columns{
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-rows1{
+    grid-template-rows: 50px 100px 50px 150px;
+}
+
+.grid-rows2{
+    grid-template-rows: 100px 100px;
+}
