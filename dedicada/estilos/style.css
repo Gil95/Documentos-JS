@@ -26,7 +26,7 @@
     --pink: #F9265E;
     --blue: #66D9EB;
     --fonte0: 'Naruto' , Helvetica, Arial, sans-serif;
-    --fonte1:  Arial , Helvetica , sans-serif;
+    --fonte1:  'Nunito',Arial , Helvetica , sans-serif;
 }
 
 body{
@@ -56,6 +56,7 @@ header > h1{
 
 nav{
     background-color: var(--cor2);
+    font-family: var(--fonte1)
 }
 
 nav > div{
@@ -88,6 +89,7 @@ main{
     margin-top: 50px;
     max-width: 650px;
     margin: auto;
+    font-family: var(--fonte1)
 }
 
 main > section{
