@@ -24,13 +24,13 @@
     --purple: #AE81FF;
     --pink: #F9265E;
     --blue: #66D9EB;
-    --fonte0: 'Naruto' , Helvetica, Arial, sans-serif;
-    --fonte1:  'Nunito',Arial , Helvetica , sans-serif;
+    --fonte0: 'Nunito' , Helvetica, Arial, sans-serif;
+    --fonte1: 'Naruto',Arial , Helvetica , sans-serif;
 }
 
 body{
     background-color:var(--cor0);
-    font-family:var(--fonte1)
+    font-family:var(--fonte0)
 }
 
 body::-webkit-scrollbar {
@@ -50,12 +50,12 @@ header > h1{
     font-size: 2.5em;
     font-weight: bold;
     color: var(--cor6);
-    font-family:var(--fonte0)
+    font-family: var(--fonte1)
 }
 
 nav{
     background-color: var(--cor2);
-    font-family: var(--fonte1)
+    font-family: var(--fonte0)
 }
 
 nav > div{
@@ -77,6 +77,7 @@ nav > div > div > a{
     border-radius: 10px;
     font-size: 1.2em;
     transition-duration: 300ms;
+    font-family: var(--fonte0)
 }
 
 nav > div > div > a:hover{
@@ -88,7 +89,7 @@ main{
     margin-top: 50px;
     max-width: 650px;
     margin: auto;
-    font-family: var(--fonte1)
+    font-family: var(--fonte0)
 }
 
 main > section{
@@ -161,4 +162,5 @@ main > section > input{
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: var(--fonte0)
 }
