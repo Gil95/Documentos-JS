@@ -116,3 +116,35 @@ header > h1{
     grid-template-columns: 100px auto 50px;
     grid-template-rows: 50px 200px auto;
 }
+
+.grid-template-areas-1{
+    grid-template-areas: 
+        "logo nav nav"
+        "sidenav content advert"
+        "sidenav content advert"
+        "sidenav footer footer";
+}
+
+.logo{
+    grid-area: logo;
+}
+
+.content{
+    grid-area: content;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.sidenav{
+    grid-area: sidenav;
+}
+
+.nav{
+    grid-area: nav;
+}
+
+.advert{
+    grid-area: advert;
+}
