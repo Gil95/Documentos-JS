@@ -121,8 +121,50 @@ header > h1{
     grid-template-areas: 
         "logo nav nav"
         "sidenav content advert"
+        "sidenav footer footer";
+}
+
+.grid-template-areas-2{
+    grid-template-areas: 
+        "sidenav logo nav"
+        "sidenav content content"
+        "sidenav advert footer";
+}
+
+@media (max-width: 500px){
+    .grid-template-areas-2{
+        grid-template-areas: 
+            "logo logo logo"
+            "sidenav sidenav sidenav"
+            "nav nav nav"
+            "content content content"
+            "advert footer footer";
+    }
+}
+
+.grid-template-areas-3{
+    grid-template-areas: 
+        "logo logo"
+        "nav nav"
+        "content content"
+        "sidenav advert"
+        "footer footer";
+}
+
+.grid-template-areas-4{
+    grid-template-columns: 100px auto 50px;
+    grid-template-rows: 50px 250px 50px;
+    grid-template-areas: 
+        "logo nav nav"
         "sidenav content advert"
         "sidenav footer footer";
+}
+
+.grid-template-areas-5{
+    grid-template-areas: 
+        "logo     content  nav"
+        "....     content  advert"
+        "sidenav  footer   ......";
 }
 
 .logo{
