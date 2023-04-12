@@ -167,6 +167,30 @@ header > h1{
         "sidenav  footer   ......";
 }
 
+.grid-template-1{
+    grid-template: 100px 50px / 100px 1fr 100px;
+}
+
+.grid-template-2{
+    grid-template:
+    "logo nav nav" 200px
+    "sidenav content advert" 150px
+    "sidenav footer footer" 50px
+    / 100px 1fr 80px;
+}
+
+.gap-1{
+    gap: 20px;
+}
+
+.gap-2{
+    column-gap: 20px;
+}
+
+.gap-3{
+    row-gap: 20px;
+}
+
 .logo{
     grid-area: logo;
 }
