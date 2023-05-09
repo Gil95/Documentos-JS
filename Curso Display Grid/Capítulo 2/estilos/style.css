@@ -216,7 +216,6 @@ header > h1{
 }
 
 .grid-auto-flow-1{
-    grid-template-columns: 100px 200px 100px;
     grid-auto-flow: column;
 }
 
@@ -224,6 +223,7 @@ header > h1{
     grid-template-columns: repeat(2, minmax(100px, 1fr));
     grid-template-rows: 50px 50px;
     grid-auto-columns: 100px;
+    grid-auto-flow: column;
 }
 
 .item-6{
