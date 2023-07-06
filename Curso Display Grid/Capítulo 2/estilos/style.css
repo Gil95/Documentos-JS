@@ -231,6 +231,24 @@ header > h1{
     grid-auto-flow: dense;
 }
 
+.grid-1{
+    grid: 100px / 1fr 1fr 1fr;
+}
+
+.grid-2{
+    grid: 100px / auto-flow 100px 50px;
+    grid-auto-columns: 100px 50px;
+    grid-auto-flow: column;
+}
+
+.grid-3{
+    grid: 
+    "logo nav nav" 50px
+    "sidenav content advert" 150px
+    "sidenav footer footer" 100px
+    / 100px 1fr 50px;
+}
+
 .item-2{
     grid-column: span 3;
 }
