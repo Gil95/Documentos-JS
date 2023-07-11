@@ -284,3 +284,21 @@ header > h1{
 .advert{
     grid-area: advert;
 }
+
+.grid-justify{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: 100px 100px 100px;
+}
+
+.justify-start{
+    justify-content: start;
+}
+
+.item-justify-2, .item-justify-3{
+ grid-row: span 2;
+}
+
+.item-justify-5{
+    grid-column: span 2;
+}
