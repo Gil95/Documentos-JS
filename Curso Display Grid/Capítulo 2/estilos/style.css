@@ -295,6 +295,62 @@ header > h1{
     justify-content: start;
 }
 
+.justify-end{
+    justify-content: end;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-stretch{
+    justify-content: stretch;
+    grid-template-columns: auto;
+}
+
+.justify-space-around{
+    justify-content: space-around;
+}
+
+.justify-space-between{
+    justify-content: space-between;
+}
+
+.justify-space-evenly{
+    justify-content: space-evenly;
+}
+
+.grid-align{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 70px);
+    height: 300px;
+}
+
+.align-content-start{
+    align-content: start;
+}
+
+.align-content-end{
+    align-content: end;
+}
+
+.align-content-center{
+    align-content: center;
+}
+
+.align-content-space-around{
+    align-content: space-around;
+}
+
+.align-content-space-between{
+    align-content: space-between;
+}
+
+.align-content-space-evenly{
+    align-content: space-evenly;
+}
+
 .item-justify-2, .item-justify-3{
  grid-row: span 2;
 }
