@@ -351,10 +351,94 @@ header > h1{
     align-content: space-evenly;
 }
 
+.grid-justify-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 50px);
+}
+
+.justify-items-start{
+    justify-items: start;
+}
+
+.justify-items-end{
+    justify-items: end;
+}
+
+.justify-items-center{
+    justify-items: center;
+}
+
+.justify-items-stretch{
+    justify-items: stretch;
+}
+
+.grid-align-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+}
+
+.align-items-start{
+    align-items: start;
+}
+
+.align-items-end{
+    align-items: end;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.align-items-stretch{
+    align-items: stretch;
+}
+
 .item-justify-2, .item-justify-3{
  grid-row: span 2;
 }
 
 .item-justify-5{
     grid-column: span 2;
+}
+
+.grid-column{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 50px;
+}
+
+.grid-column-1 .item-grid-item-1{
+    grid-column: 3;
+}
+
+.grid-column-1 .item-grid-item-3{
+    grid-column: 1;
+}
+
+.grid-column-2 .item-grid-item-3{
+    grid-column: 1 / -1;
+}
+
+.grid-column-2 .item-grid-item-5{
+    grid-column: span 2;
+}
+
+.grid-column-2 .item-grid-item-6{
+    grid-column: 2 / span 2;
+}
+
+.grid-column-3 .item-grid-item-2{
+    grid-column: 1 / 3;
+}
+
+.grid-column-3 .item-grid-item-4{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.grid-column-3 .item-grid-item-1{
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
