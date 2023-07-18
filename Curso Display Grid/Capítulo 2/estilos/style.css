@@ -442,3 +442,66 @@ header > h1{
     grid-column-start: 2;
     grid-column-end: 4;
 }
+
+.grid-column-4{
+    grid-template-columns: [inicio] 1fr [meio] 1fr [final];
+}
+
+.grid-column-4 .item-grid-item-nomeado-2{
+    grid-column: inicio / final ;
+}
+
+.grid-column-5{
+    grid-template-areas:
+        "header header header"
+        "sidenav content ads"
+        "sidenav footer footer";
+}
+
+.grid-column-5 .item-grid-areas-1{
+    grid-column-start: header;
+    grid-column-end: header;
+}
+
+.grid-column-5 .item-grid-areas-2{
+    grid-column-start: sidenav;
+    grid-column-end: sidenav;
+    grid-row-start: sidenav;
+    grid-row-end: sidenav;
+}
+
+.grid-column-5 .item-grid-areas-3{
+    grid-column-start: content;
+    grid-column-end: content;
+}
+
+.grid-column-5 .item-grid-areas-4{
+    grid-column-start: ads;
+    grid-column-end: ads;
+}
+
+.grid-column-5 .item-grid-areas-5{
+    grid-column-start: footer;
+    grid-column-end: footer;
+}
+
+.grid-column-6 .item-grid-column-1{
+    grid-column: 1/-1;
+}
+
+.grid-column-6 .item-grid-column-2{
+    grid-column: 1;
+    grid-row: 2/4;
+}
+
+.grid-column-6 .item-grid-column-3{
+    grid-column: 2/3;
+}
+
+.grid-column-6 .item-grid-column-4{
+    grid-column: 3/4;
+}
+
+.grid-column-6 .item-grid-column-5{
+    grid-column: 2/4;
+}
