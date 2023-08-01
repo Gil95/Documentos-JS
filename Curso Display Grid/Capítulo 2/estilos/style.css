@@ -654,3 +654,70 @@ header > h1{
     background: rgb(0,0,255);
     mix-blend-mode: screen;
 }
+
+.grid-self{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 50px);
+}
+
+.grid-self .item-grid-justify-2, .item-grid-justify-3{
+    grid-row: span 2;
+}
+
+.grid-self .item-grid-justify-5{
+    grid-column: span 2;
+}
+
+.grid-self-1 .item-grid-justify-2,.grid-self-1 .item-grid-justify-5{
+    justify-self: start;
+}
+
+.grid-self-2 .item-grid-justify-2,.grid-self-2 .item-grid-justify-5{
+    justify-self: end;
+}
+
+.grid-self-3 .item-grid-justify-2,.grid-self-3 .item-grid-justify-5{
+    justify-self: center;
+}
+
+.grid-self-4{
+    justify-items: start;
+}
+
+.grid-self-4 .item-grid-justify-2, .grid-self-4 .item-grid-justify-5{
+    justify-self: stretch;
+}
+
+.grid-align-self{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 50px);
+}
+
+.grid-align-self .item-grid-align-2, .grid-align-self .item-grid-align-3{
+    grid-row: span 2;
+}
+
+.grid-align-self .item-grid-align-5{
+    grid-column: span 2;
+}
+
+.grid-align-self-1 .item-grid-align-2,.grid-align-self-1 .item-grid-align-5 {
+    align-self: start;
+}
+
+.grid-align-self-2 .item-grid-align-2,.grid-align-self-2 .item-grid-align-5 {
+    align-self: end;
+}
+
+.grid-align-self-3 .item-grid-align-2,.grid-align-self-3 .item-grid-align-5 {
+    align-self: center;
+}
+
+.grid-align-self-4{
+    align-items: start;
+}
+.grid-align-self-4 .item-grid-align-2,.grid-align-self-4 .item-grid-align-5 {
+    align-self: stretch;
+}
