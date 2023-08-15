@@ -176,6 +176,40 @@ p{
     top: 2px;
 }
 
+.destaque{
+    font-size: 0.875em;
+    color: #b07dfb;
+    max-width: 16em;
+}
+
+.citacao, .atributos{
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(44,44,44,0.15);
+    background: linear-gradient(135deg, #8844ee, #b07dfb);
+    align-self: start;
+}
+
+.citacao p {
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    color: white;
+}
+
+.atributos li{
+    color: white;
+    font-family: Courier, monospace;
+    font-size: 1.125em;
+    padding: 15px;
+}
+
+.atributos li+li{
+    border-top: 2px solid #b07dfb;
+}
+
 .anuncios{
     grid-area: anuncios;
     background-color: #fafbfc;
@@ -194,4 +228,81 @@ p{
     color: white;
     text-align: center;
     padding: 30px;
+}
+
+@keyframes seta {
+    from{
+        right: 30px;
+    }
+    to{
+        right: 20px;
+    }
+}
+
+@media(max-width: 1024px){
+
+    .estrutura{
+        grid-template-areas: 
+        "header header header"
+        "sidenav content content"
+        "sidenav anuncios anuncios"
+        "footer footer footer";
+    }
+}
+@media(max-width: 667px){
+
+    .header{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .estrutura{
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "sidenav"
+        "content"
+        "anuncios"
+        "footer";
+    }
+    
+    .logo{
+        margin-bottom: 20px;
+    }
+    .header nav a{
+        font-size: 1em;
+    }
+
+    .header li+li{
+        margin-left: 10px;
+    }
+
+    .sidenav ul{
+        display: flex;
+    }
+
+    .sidenav ul li{
+        flex: 1 0 60px;
+    }
+
+    .sidenav{
+        position: relative;
+        padding: 0 30px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style:-ms-autohiding-scrollbar;
+    }
+
+    .sidenav::after{
+        content: '→';
+        position: absolute;
+        top: 5px;
+        right: 30px;
+        color: rgba(0,0,0,0.3);
+        animation: seta .5s ease-in 0s infinite alternate;
+    }
+
+    .sidenav li a{
+        margin: 30px 30px 30px 0;
+    }
 }
