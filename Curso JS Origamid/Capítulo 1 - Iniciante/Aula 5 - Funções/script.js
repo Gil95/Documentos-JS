@@ -31,3 +31,9 @@ function corFavorita(cor){
 }
 
 console.log(corFavorita('verde'))
+
+function mostraConsole(){
+    console.log('Oi')
+}
+
+addEventListener('click', mostraConsole);
