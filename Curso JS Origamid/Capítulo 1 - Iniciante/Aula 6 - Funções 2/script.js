@@ -41,3 +41,32 @@ function dados(){
 }
 
 console.log(dados());
+
+
+function isTruthy(dado){
+    return !!dado;
+}
+
+function perimetroQuadrado(lado){
+    return lado*4;
+}
+
+function nomeCompleto(primeiroNome, sobrenome){
+    return `${primeiroNome} ${sobrenome}`;
+}
+
+function isEven(numero1){
+    if (numero1 % 2 == 1){
+        return (`O Número ${numero1} é ímpar`);
+    } else if (numero1 % 2 == 0) {
+        return (`O Número ${numero1} é par`);
+    }
+}
+
+function tipoDoItem(item){
+    return typeof item
+}
+
+addEventListener('click', function (){
+    console.log('Gilson Gomes Neto');
+});
