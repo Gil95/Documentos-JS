@@ -22,3 +22,23 @@ var quadrado = {
 
 console.log(quadrado.area(5))
 console.log(quadrado.perimetro(5))
+
+var quadrado = {
+    lados:4,
+    areaabv(lado){
+        return lado*lado;
+    },
+    perimetroabv(lado){
+        return this.lados * lado;
+    },
+    cinco(){
+        return 5;
+    }
+}
+
+console.log(quadrado.areaabv(8))
+console.log(quadrado.perimetroabv(8))
+console.log(quadrado.cinco())
+
+Math.PI;
+Math.random();
