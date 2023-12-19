@@ -16,14 +16,16 @@ menu.esconder = function(){
 
 var bg = menu.backgroundColor;
 
-var estudante = {
+var dados = {
     nome: 'Gilson',
     sobrenome: 'Neto',
     idade: 28,
     areaDeEstudo: 'Front-End',
 }
+dados.nomeCompleto = function(){
+    return `${this.nome} ${this.sobrenome}`;
+}
 
-console.log(estudante.nomeCompleto)
 var carro = {
     preco: 32000,
     portas: 2,
@@ -36,7 +38,11 @@ var cachorro = {
     raca: 'labrador',
     cor: 'preto',
     idade: 10,
-    if(viuHomem){
-        console.log('latir')
-    },
+    latir(pessoa){
+        if(pessoa === 'homem'){
+            return 'Latir';
+        } else {
+            return 'nada';
+        }
+    }
 }
