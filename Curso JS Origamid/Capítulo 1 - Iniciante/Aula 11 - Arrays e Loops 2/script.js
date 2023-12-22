@@ -31,16 +31,16 @@ for(;numero < maximo;){
 
 var brasilCampeao = [1959, 1962, 1970, 1994, 2002]
 
-for(let campeao = 0; campeao < maximo ; campeao++){
+for(let campeao = 0; campeao < brasilCampeao.length ; campeao++){
     console.log(`O Brasil ganhou a copa de ${brasilCampeao[campeao]}`);
-    if (campeao >= 4){
+}
+
+
+for(let frutinhas = 0; frutinhas < frutas.length ; frutinhas++){
+    console.log(frutas[frutinhas]);
+    if (frutas[frutinhas] ===  'Uva'){
         break;
     }
 }
 
-
-for(let frutinhas = 0; frutinhas <= 2 ; frutinhas++){
-    console.log(frutas[frutinhas]);
-}
-
-var frutaGostosa = frutas[5]
+var ultimaFruta = frutas[frutas.length - 1];
