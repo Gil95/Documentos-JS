@@ -13,4 +13,4 @@ var numero2 = 10;
 
 numero /= numero2;
 console.log(numero);
-console.log(numero2)
+console.log(numero2);
