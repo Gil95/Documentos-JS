@@ -18,9 +18,31 @@ console.log(numero2);
 
 //Ternário
 var idade = 20;
-var naoPossuiDiabetes = true;
+var possuiDiabetes = false;
 
 var podeBeber;
-podeBeber = idade >= 18 && naoPossuiDiabetes? true: false;
+podeBeber = idade >= 18 && !possuiDiabetes? 'Pode beber': 'Não pode beber';
 
 console.log(podeBeber)
+
+var possuiFaculdade = true;
+
+if (possuiFaculdade)
+    console.log('Sim, possui');
+else
+    console.log('Não possui');
+
+//exercícios
+var scroll = 1000;
+
+scroll += 500;
+
+console.log (scroll)
+
+var possuiCarro = true;
+var possuiCasa = true;
+var darCredito;
+
+darCredito = possuiCarro && possuiCasa;
+
+console.log (darCredito)
