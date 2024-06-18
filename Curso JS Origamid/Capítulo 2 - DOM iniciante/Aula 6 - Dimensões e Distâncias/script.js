@@ -25,3 +25,8 @@ const margemEsquerda = imgAnimais.offsetLeft;
 
 console.log(margemAcima);
 console.log(margemEsquerda);
+
+const primeiroh2 = document.querySelector('h2');
+const h2left = primeiroh2.offsetLeft;
+
+console.log(h2left);
