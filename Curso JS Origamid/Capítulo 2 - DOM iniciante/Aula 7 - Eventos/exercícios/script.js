@@ -1,8 +1,10 @@
-const linkInterno = document.querySelectorAll('a[href^="#"]');
+const linksInternos = document.querySelectorAll('a[href^="#"]');
 
-function handleClick(event){
+function handleLink(event) {
         event.preventDefault();
-        document.body.classList.toggle('ativo');
-};
+        console.log(event);
+}
 
-linkInterno.addEventListener('click', handleClick);
+linksInternos.forEach((link) => {
+        link.addEventListener('click', handleLink);
+})
