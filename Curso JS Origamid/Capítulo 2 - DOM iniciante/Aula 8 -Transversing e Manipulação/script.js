@@ -20,3 +20,17 @@ h1.innerHTML = '<p>Novo Título</p>';
 
 console.log(h1.innerHTML);
 console.log(h1.outerHTML);
+
+const lista = document.querySelector('.animais-lista');
+
+console.log(lista.parentElement);
+console.log(lista.parentElement.parentElement);
+console.log(lista.previousElementSibling);
+console.log(lista.nextElementSibling);
+
+console.log(lista.children);
+console.log(lista.children[0]);
+console.log(lista.children[--lista.children.length]);
+
+lista.querySelectorAll('li');
+lista.querySelector('li:last-child');
