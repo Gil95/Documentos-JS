@@ -43,3 +43,11 @@ console.log(lista.previousSibling); //node acima
 console.log(lista.firstChild); //primeiro node child
 console.log(lista.children); //todos os child
 console.log(lista.childNodes); //todos os node child
+
+const animais = document.querySelector('.animais');
+const contato = document.querySelector('.contato');
+const titulo = contato.querySelector('.titulo');
+const mapa = document.querySelector('.mapa');
+contato.insertBefore(animais, mapa);
+contato.removeChild(titulo);
+contato.replaceChild(lista, mapa);
