@@ -22,8 +22,6 @@ function initTabNav() {
     }
 }
 
-initTabNav();
-
 function initAccordion() {
 
     const accordionList = document.querySelectorAll('.js-accordion dt');
@@ -44,42 +42,58 @@ function initAccordion() {
     }
 }
 
-initAccordion();3
+function initScrollSuave(){
+    const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
 
-const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
+    function scrollToSection(event){
+        event.preventDefault();
+        const href = event.currentTarget.getAttribute('href');
+        const section = document.querySelector(href);
+        const navbarHeight = document.querySelector('.menu').offsetHeight;
+        const contentPosition = section.offsetTop - navbarHeight;
 
-function scrollToSection(event){
-    event.preventDefault();
-    const href = event.currentTarget.getAttribute('href');
-    const section = document.querySelector(href);
-    const navbarHeight = document.querySelector('.menu').offsetHeight;
-    const contentPosition = section.offsetTop - navbarHeight;
+        // section.scrollIntoView({
+        //     behavior: 'smooth',
+        //     block: 'start',
+        // });
+        const topo = section.offsetTop
+        window.scrollTo({
+            top: contentPosition,
+            behavior: 'smooth'
+        });
+    }
 
-    // section.scrollIntoView({
-    //     behavior: 'smooth',
-    //     block: 'start',
-    // });
-    const topo = section.offsetTop
-    window.scrollTo({
-        top: contentPosition,
-        behavior: 'smooth'
+    linksInternos.forEach((link) => {
+        link.addEventListener('click', scrollToSection);
     });
 }
 
-linksInternos.forEach((link) => {
-    link.addEventListener('click', scrollToSection);
-});
+function initAnimacaoScroll(){
+    const sections = document.querySelectorAll('.js-scroll');
 
-const sections = document.querySelectorAll('.js-scroll');
+    if(sections.length) {
 
-function animaScroll(){
-    sections.forEach((section) => {
-        const sectionTop = section.getBoundingClientRect().top;
-        if(sectionTop < 0) {
-            section.classList.add('ativo');
+        const windowMetade = window.innerHeight*0.6;
+
+        function animaScroll(){
+            sections.forEach((section) => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const isSectionVisible = (sectionTop - windowMetade) < 0;
+                if(isSectionVisible) {
+                    section.classList.add('ativo');
+                } else {
+                    section.classList.remove('ativo');
+                }
+            })
+            
         }
-    })
-    
+        window.addEventListener('scroll', animaScroll);
+    }
 }
 
-window.addEventListener('scroll', animaScroll);
+
+//functions do código
+initAnimacaoScroll();
+initScrollSuave();
+initTabNav();
+initAccordion();
