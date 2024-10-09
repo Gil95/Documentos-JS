@@ -29,3 +29,5 @@ honda.andar = function(){
 const fiat = new Carro();
 fiat.marca = 'Fiat';
 fiat.preco = 3000;
+
+const volks = new Carro('VolksWagem', 18000);
