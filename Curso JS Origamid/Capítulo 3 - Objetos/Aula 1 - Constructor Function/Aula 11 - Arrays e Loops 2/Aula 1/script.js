@@ -1,13 +1,21 @@
-const Dom = {
-    seletor: 'li',
-    element() {
-        return document.querySelector(this.seletor);
+// const Dom = {
+//     seletor: 'li',
+//     element() {
+//         return document.querySelector(this.seletor);
+//     },
+//     ativar() {
+//         this.element().classList.add('ativo');
+//     },
+// }
+
+function Dom(seletor)  {
+    this.element = function() {
+        return document.querySelector(seletor);
     },
-    ativo() {
-        this.element().classList.add('ativo');
-    },
+    this.ativar = function() {
+        this.element().classList.add('ativar');
+    }
 }
 
-Dom.ativo();
-//Dom.seletor = 'ul';
-Dom.ativo();
+const li = new Dom('li');
+const ul = new Dom('ul');
