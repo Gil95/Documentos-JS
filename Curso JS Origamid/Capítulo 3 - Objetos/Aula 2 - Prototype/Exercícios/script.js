@@ -28,13 +28,13 @@ Object.getOwnPropertyNames(Document.prototype)
 // Liste os Construtores dos dados abaixo
 const li = document.querySelector('li');
 
-li;
-li.click;
-li.innerHTML;
-li.value;
-li.hidden;
-li.offsetLeft;
-li.click();
+li; //'HTMLLIElement'
+li.click; //'Function'
+li.innerHTML; //'String'
+li.value; //'Number'
+li.hidden; //Boolean
+li.offsetLeft; //'Number'
+li.click(); //undefined
 
 // Qaul o contrutor do dado abaixo:
-li.hidden.constructor.name;
+li.hidden.constructor.name; //'String'
