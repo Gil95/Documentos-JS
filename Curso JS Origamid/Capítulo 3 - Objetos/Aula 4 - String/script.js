@@ -26,3 +26,7 @@ const listaFrutas = 'Melancia, Banana, Laranja';
 
 console.log(listaFrutas.includes(fruta));
 console.log(fruta.includes(listaFrutas));
+
+console.log(fruta.endsWith('nana'));
+console.log(fruta.startsWith('Ba'));
+console.log(fruta.startsWith('na'));
