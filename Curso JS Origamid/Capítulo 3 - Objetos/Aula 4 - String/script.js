@@ -9,6 +9,8 @@ const frase = 'A melhor comida';
 console.log(frase.length);
 
 console.log(comida[0]);
+console.log(frase[0])
+console.log(frase[frase.length - 1])
 console.log(frase.charAt(frase.length - 1 ))
 
 const linguagem = 'Javascript';
@@ -25,6 +27,7 @@ const fruta = 'Banana';
 const listaFrutas = 'Melancia, Banana, Laranja';
 
 console.log(listaFrutas.includes(fruta));
+console.log(listaFrutas.includes(fruta, 14));
 console.log(fruta.includes(listaFrutas));
 
 console.log(fruta.endsWith('nana'));
