@@ -13,7 +13,7 @@ console.log(frase[0])
 console.log(frase[frase.length - 1])
 console.log(frase.charAt(frase.length - 1 ))
 
-const linguagem = 'Javascript';
+const linguagem = 'JavaScript';
 
 console.log(linguagem.charAt(0));
 console.log(linguagem.charAt(2));
@@ -48,3 +48,21 @@ console.log(transacao1.slice(3, 6));
 
 console.log(fruta.slice(-3));
 
+console.log(linguagem.substring(3,5));
+console.log(linguagem.substring(0,4));
+console.log(linguagem.substring(4));
+console.log(linguagem.substring(-3)); //Não funciona valores negativos
+
+const instrumento = 'Guitarra';
+console.log(instrumento.indexOf('r'));
+console.log(instrumento.lastIndexOf('r'));
+console.log(instrumento.indexOf('ta'));
+
+const listaPrecos = ['R$99,00', 'R$199,00', 'R$12000,00'];
+
+listaPrecos.forEach((preco) => {
+    console.log(preco.padStart(10, '.'));
+});
+
+console.log(listaPrecos[0].padStart(10, '.'));
+console.log(listaPrecos[0].padEnd(10, '.'));
