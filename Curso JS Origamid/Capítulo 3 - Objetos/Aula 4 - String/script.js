@@ -66,3 +66,17 @@ listaPrecos.forEach((preco) => {
 
 console.log(listaPrecos[0].padStart(10, '.'));
 console.log(listaPrecos[0].padEnd(10, '.'));
+
+const fraseR = 'Ta'
+
+console.log(fraseR.repeat(5));
+console.log(instrumento.repeat(3));
+console.log(listaPrecos[1].repeat(3));
+
+let listaItens = 'Camisas Bonés Calças Bermudas Vestidos Saias';
+listaItens = listaItens.replace(/[ ]+/g, ', ');
+let preco = 'R$1200,43';
+preco = preco.replace(',', '.');
+
+console.log(listaItens);
+console.log(preco);
