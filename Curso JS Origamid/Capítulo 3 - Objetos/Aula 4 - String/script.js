@@ -80,3 +80,36 @@ preco = preco.replace(',', '.');
 
 console.log(listaItens);
 console.log(preco);
+
+const arrayItens = listaItens.split(', ');
+
+const htmlText = '<div>O melhor item</div><div>A melhor lista</div>';
+const htmlArray = htmlText.split('div');
+const htmlNovo = htmlArray.join('section');
+
+console.log(arrayItens);
+console.log(htmlText);
+console.log(htmlArray);
+console.log(htmlNovo);
+
+const sexo1 = 'Feminino'
+
+const sexo2 = sexo1.toLowerCase();
+const sexo3 = sexo1.toUpperCase();
+
+console.log(sexo1);
+console.log(sexo2);
+console.log(sexo3);
+
+sexoLowerCase = sexo3.toLowerCase();
+sexoFirstUpperCase = sexoLowerCase.charAt(0).toUpperCase();
+sexoRemainingLetters = sexoLowerCase.slice(1)
+sexoFirstUpperCaseWord = sexoFirstUpperCase + sexoRemainingLetters;
+
+console.log(sexoFirstUpperCaseWord);
+
+const valor = '  R$ 23.00  ';
+
+console.log(valor.trim());
+console.log(valor.trimStart());
+console.log(valor.trimEnd());
