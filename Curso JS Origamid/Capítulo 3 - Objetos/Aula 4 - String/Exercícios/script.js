@@ -19,11 +19,28 @@ const transacoes = [
       valor: 'R$ 129',
     },
     {
-      descricao: 'Recebimento de Cliente',
+      descricao: 'Recebimento de Taxa do Cliente',
       valor: 'R$ 49',
     },
   ];
   
+  let taxaTotal = 0;
+  let receTotal = 0;
+
+  transacoes.forEach((item) => {
+    const numeroLimpo = +item.valor.replace('R$ ', '')
+    console.log(item.descricao.slice(0,4) === 'Taxa')
+    if (item.descricao.slice (0,4) === 'Taxa'){
+        taxaTotal += numeroLimpo;
+        console.log(taxaTotal);
+    }
+     if (item.descricao.slice(0,4) === 'Rece'){
+        receTotal += numeroLimpo;
+        console.log(receTotal);
+    }
+    })
+  
+
   // Retorne uma array com a lista abaixo
   const transportes = 'Carro;Avião;Trem;Ônibus;Bicicleta';
   
