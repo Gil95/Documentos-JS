@@ -32,30 +32,48 @@ const transacoes = [
     console.log(item.descricao.slice(0,4) === 'Taxa')
     if (item.descricao.slice (0,4) === 'Taxa'){
         taxaTotal += numeroLimpo;
-        console.log(taxaTotal);
     }
      if (item.descricao.slice(0,4) === 'Rece'){
         receTotal += numeroLimpo;
-        console.log(receTotal);
     }
     })
-  
+    console.log('Taxa total de R$' + taxaTotal);
+    console.log('Recebimento total de R$'+ receTotal);
 
   // Retorne uma array com a lista abaixo
   const transportes = 'Carro;Avião;Trem;Ônibus;Bicicleta';
+
+  const transportesArray = transportes.split(';');
+  console.log(transportesArray);
   
   // Substitua todos os span's por a's
-  const html = `<ul>
+  let html = 
+                `<ul>
                   <li><span>Sobre</span></li>
                   <li><span>Produtos</span></li>
                   <li><span>Contato</span></li>
                 </ul>`;
   
-  // Retorne o último caracter da frase
+    html = html.split('span').join('a');
+    console.log(html);
+  
+    // Retorne o último caracter da frase
   const frase = 'Melhor do ano!';
   
+  console.log(frase.slice(-1));
+
   // Retorne o total de taxas
   const transacoes2 = ['Taxa do Banco', '   TAXA DO PÃO', '  taxa do mercado', 'depósito Bancário', 'TARIFA especial'];
-  
-  
+
+  let taxasTotal = 0;
+
+  transacoes2.forEach((item) => {
+    item = item.toLowerCase();
+    item = item.trim();
+    item = item.slice(0,4);
+
+    if(item ==='taxa')
+      taxasTotal++
+  })
+  console.log(taxasTotal);
   
