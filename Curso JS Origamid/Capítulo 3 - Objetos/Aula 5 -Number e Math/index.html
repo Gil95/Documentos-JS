@@ -17,21 +17,56 @@
             color: #ffcc00;
         }
         p {
-            background: #404040;
-            padding: 10px;
-            border-radius: 5px;
             margin-bottom: 10px;
         }
         code {
-            font-family: monospace;
+            display: block;
             background: #505050;
-            padding: 2px 4px;
-            border-radius: 3px;
+            color: #00ff00;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin-bottom: 5px;
+        }
+        .saida {
+            background: #404040;
+            color: #ffcc00;
+            padding: 10px;
+            border-radius: 5px;
+            font-style: italic;
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
-    
+    <h1>Exercícios de JavaScript</h1>
+    <h2>Aula 5 - Number e Math</h2>
+    <code>const ano = 2025;</code>
+    <code>const preco = new Number(99);</code>
+    <code>console.log(Number.isNaN(NaN));</code>
+    <p class="saida">Saída: true</p>
+    <code>console.log(Number.isNaN(4+5));</code>
+    <p class="saida">Saída: false</p>
+    <code>console.log(Number.isNaN('Olá, Mundo!'));</code>
+    <p class="saida">Saída: false</p>
+    <code>console.log(Number.isInteger(20));</code>
+    <p class="saida">Saída: true</p>
+    <code>console.log(Number.isInteger(23.6));</code>
+    <p class="saida">Saída: false</p>
+    <code>console.log(parseFloat('99.50'));</code>
+    <p class="saida">Saída: 99.5</p>
+    <code>console.log(Number.parseFloat('99,50'));</code>
+    <p class="saida">Saída: NaN</p>
+    <code>console.log(Number.parseFloat('100 Reais'));</code>
+    <p class="saida">Saída: 100</p>
+    <code>console.log(Number.parseFloat('R$100,00'));</code>
+    <p class="saida">Saída: NaN</p>
+    <code>console.log(parseInt('99,50'));</code>
+    <p class="saida">Saída: 99</p>
+    <code>console.log(parseInt(5.434343555555, 10));</code>
+    <p class="saida">Saída: 5</p>
+    <code>console.log(Number.parseInt('100 Reais'));</code>
+    <p class="saida">Saída: 100</p>
     <script src="script.js"></script>
 </body>
 </html>
