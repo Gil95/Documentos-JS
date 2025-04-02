@@ -26,4 +26,11 @@ console.log(preco3.toFixed());
 const gasAdit = 6.499;
 const tanque = 55.3001;
 const abastec = gasAdit*tanque;
-console.log(abastec, abastec.toFixed(2));
+console.log(abastec, +abastec.toFixed(2));
+
+const preco4 = [255, 0, 255];
+const hexArray = preco4.map(valor => valor.toString(16).padStart(2, '0'));
+console.log(hexArray);
+
+const hexString = hexArray.join('');
+console.log(hexString);
