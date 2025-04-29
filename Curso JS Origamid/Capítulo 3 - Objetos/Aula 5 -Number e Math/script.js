@@ -34,3 +34,19 @@ console.log(hexArray);
 
 const hexString = hexArray.join('');
 console.log(hexString);
+
+const preco5 = 54.49;
+console.log(preco5.toLocaleString('en-US', {style: 'currency', currency:'USD'}));
+console.log(preco5.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'}));
+console.log(preco5.toLocaleString('pt-PT', {style: 'currency', currency:'EUR'}));
+console.log(preco5.toLocaleString('en-GB', {style: 'currency', currency:'GBP'}));
+
+console.log(Math.PI , Math.E , Math.LN10);
+
+console.log(Math.abs(-5.5));
+console.log(Math.ceil(4.8334));
+console.log(Math.ceil(4.3));
+console.log(Math.floor(4.8334));
+console.log(Math.floor(4.3));
+console.log(Math.round(4.8334));
+console.log(Math.round(4.3));
