@@ -156,6 +156,99 @@
             <code>console.log(hexString);</code>
             <p class="saida">Saída: 'ff00ff'</p>
         </div>
+        <h3>toLocaleString</h3>
+<div class="linha">
+    <code>const preco5 = 54.49;</code>
+    <p class="saida">Saída: preco5 = 54.49</p>
+</div>
+<div class="linha">
+    <code>console.log(preco5.toLocaleString('en-US', {style: 'currency', currency:'USD'}));</code>
+    <p class="saida">Saída: $54.49</p>
+</div>
+<div class="linha">
+    <code>console.log(preco5.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'}));</code>
+    <p class="saida">Saída: R$ 54,49</p>
+</div>
+<div class="linha">
+    <code>console.log(preco5.toLocaleString('pt-PT', {style: 'currency', currency:'EUR'}));</code>
+    <p class="saida">Saída: 54,49 €</p>
+</div>
+<div class="linha">
+    <code>console.log(preco5.toLocaleString('en-GB', {style: 'currency', currency:'GBP'}));</code>
+    <p class="saida">Saída: £54.49</p>
+</div>
+
+<h3>Math constantes</h3>
+<div class="linha">
+    <code>console.log(Math.PI, Math.E, Math.LN10);</code>
+    <p class="saida">Saída: 3.141592653589793, 2.718281828459045, 2.302585092994046</p>
+</div>
+
+<h3>Math funções</h3>
+<div class="linha">
+    <code>console.log(Math.abs(-5.5));</code>
+    <p class="saida">Saída: 5.5</p>
+</div>
+<div class="linha">
+    <code>console.log(Math.ceil(4.8334));</code>
+    <p class="saida">Saída: 5</p>
+</div>
+<div class="linha">
+    <code>console.log(Math.ceil(4.3));</code>
+    <p class="saida">Saída: 5</p>
+</div>
+<div class="linha">
+    <code>console.log(Math.floor(4.8334));</code>
+    <p class="saida">Saída: 4</p>
+</div>
+<div class="linha">
+    <code>console.log(Math.floor(4.3));</code>
+    <p class="saida">Saída: 4</p>
+</div>
+<div class="linha">
+    <code>console.log(Math.round(4.8334));</code>
+    <p class="saida">Saída: 5</p>
+</div>
+<div class="linha">
+    <code>console.log(Math.round(4.3));</code>
+    <p class="saida">Saída: 4</p>
+</div>
+
+<h3>Math max e min</h3>
+<div class="linha">
+    <code>console.log(Math.max(5, 3, 10, 42, 2));</code>
+    <p class="saida">Saída: 42</p>
+</div>
+<div class="linha">
+    <code>console.log(Math.min(5, 3, 10, 42, 2));</code>
+    <p class="saida">Saída: 2</p>
+</div>
+
+<h3>Math random</h3>
+<div class="linha">
+    <code>console.log(Math.random());</code>
+    <p class="saida">Saída: Número aleatório entre 0 e 1</p>
+</div>
+<div class="linha">
+    <code>console.log(Math.floor(Math.random() * 100));</code>
+    <p class="saida">Saída: Número aleatório entre 0 e 100</p>
+</div>
+<div class="linha">
+    <code>console.log(Math.floor(Math.random() * 500));</code>
+    <p class="saida">Saída: Número aleatório entre 0 e 500</p>
+</div>
+<div class="linha">
+    <code>console.log(Math.floor(Math.random() * (72 - 32 + 1)) + 32);</code>
+    <p class="saida">Saída: Número aleatório entre 32 e 72</p>
+</div>
+<div class="linha">
+    <code>const aleatorio = Math.round(Math.random() * 10);</code>
+    <p class="saida">Saída: Número aleatório entre 0 e 10</p>
+</div>
+<div class="linha">
+    <code>console.log(aleatorio);</code>
+    <p class="saida">Saída: Número aleatório entre 0 e 10</p>
+</div>
     </div>
     <script src="script.js"></script>
 </body>

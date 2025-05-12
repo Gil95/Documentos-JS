@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number e Math</title>
+</head>
+<style>
+        body {
+            background-color: #303030;
+            color: #f0f0f0;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 , h3{
+            color: #ffcc00;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        p {
+            color: #ffcc00;
+            font-family: monospace;
+        }
+        .linha {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+        code {
+            background: #505050;
+            color: #00ff00;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            flex: 1;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .saida {
+            background: #404040;
+            color: #ffcc00;
+            padding: 10px;
+            border-radius: 5px;
+            font-style: monospace;
+            flex: 1;
+            text-align: right;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios de JavaScript</h1>
+    <h2>Aula 5 - Number e Math</h2>
+    <div class="container">
+        <div class="linha">
+            <p>Retorne um número aleatório entre 1050 e 2000</p>
+            <code>console.log(Math.floor(Math.random() * (2000 - 1050 + 1)) + 1050);</code>
+            <p class="saida">Um número aleatório entre 1050 e 2000</p>
+        </div>
+        <div class="linha">
+            <p>Retorne o maior número da lista abaixo</p>
+            <code>const numeros = '4, 5, 20, 8, 9'
+                <br></code>
+            <p class="saida"></p>
+        </div>
+        <div class="linha">
+            <p>Crie uma função para limpar os preços e retornar os números com centavos arredondados<br>
+            Depois retorne a soma total</p>
+            <code>const listaPrecos = ['R$59,99', 'R$ 100,222', 'R$230,00', 'r$ 200,00']</code>
+            <p class="saida"></p>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

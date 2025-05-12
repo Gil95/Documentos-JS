@@ -50,3 +50,18 @@ console.log(Math.floor(4.8334));
 console.log(Math.floor(4.3));
 console.log(Math.round(4.8334));
 console.log(Math.round(4.3));
+
+console.log(Math.max(5,3,10,42,2));
+console.log(Math.min(5,3,10,42,2));
+console.log(Math.random());
+
+console.log(Math.floor(Math.random()*100)); // entre 0 e 100
+console.log(Math.floor(Math.random()*500)); // entre 0 e 500
+
+// Número random entre 72 e 32
+console.log(Math.floor(Math.random() * (72 - 32 + 1)) + 32);
+// console.log(Math.floor(Math.random() * (max - min + 1)) + min);
+
+const aleatorio = Math.round(Math.random() * 10);
+
+console.log(aleatorio);
