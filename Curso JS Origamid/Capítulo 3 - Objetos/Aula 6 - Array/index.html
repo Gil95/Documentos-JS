@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<style>
+        body {
+            background-color: #303030;
+            color: #f0f0f0;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 , h3{
+            color: #ffcc00;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        p {
+            color: #ffcc00;
+            font-family: monospace;
+        }
+        .linha {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+        code {
+            background: #505050;
+            color: #00ff00;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            flex: 1;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .saida {
+            background: #404040;
+            color: #ffcc00;
+            padding: 10px;
+            border-radius: 5px;
+            font-style: monospace;
+            flex: 1;
+            text-align: right;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios de JavaScript</h1>
+    <h2>Aula 6 - Array</h2>
+    <div class="container">
+        <h3>isNaN</h3>
+        <div class="linha">
+            <code>const ano = 2025;</code>
+            <p class="saida">Saída: </p>
+        </div>
+        <div class="linha">
+            <code>console.log(Number.isNaN(NaN));</code>
+            <p class="saida">Saída: true</p>
+        </div>
+        <div class="linha">
+            <code>console.log(Number.isNaN(4+5));</code>
+            <p class="saida">Saída: false</p>
+        </div>
+        <div class="linha">
+            <code>console.log(Number.isNaN('Olá, Mundo!'));</code>
+            <p class="saida">Saída: false</p>
+        </div>
+        <h3>isInteger</h3>
+        <div class="linha">
+            <code>console.log(Number.isInteger(20));</code>
+            <p class="saida">Saída: true</p>
+        </div>
+        <div class="linha">
+            <code>console.log(Number.isInteger(23.6));</code>
+            <p class="saida">Saída: false</p>
+        </div>
+        <h3>parseFloat</h3>
+        <div class="linha">
+            <code>console.log(parseFloat('99.50'));</code>
+            <p class="saida">Saída: 99.5</p>
+        </div>
+        <div class="linha">
+            <code>console.log(Number.parseFloat('99,50'));</code>
+            <p class="saida">Saída: NaN</p>
+        </div>
+        <div class="linha">
+            <code>console.log(Number.parseFloat('100 Reais'));</code>
+            <p class="saida">Saída: 100</p>
+        </div>
+        <div class="linha">
+            <code>console.log(Number.parseFloat('R$100,00'));</code>
+            <p class="saida">Saída: NaN</p>
+        </div>
+        <h3>parseInt</h3>
+        <div class="linha">
+            <code>console.log(parseInt('99,50'));</code>
+            <p class="saida">Saída: 99</p>
+        </div>
+        <div class="linha">
+            <code>console.log(parseInt(5.434343555555, 10));</code>
+            <p class="saida">Saída: 5</p>
+        </div>
+        <div class="linha">
+            <code>console.log(Number.parseInt('100 Reais'));</code>
+            <p class="saida">Saída: 100</p>
+        </div>
+        <h3>toFixed</h3>
+        <div class="linha">
+            <code>console.log(preco2.toFixed());</code>
+            <p class="saida">Saída: 3</p>
+        </div>
+        <div class="linha">
+            <code>console.log(carro.toFixed(2));</code>
+            <p class="saida">Saída: 1000.46</p>
+        </div>
+        <div class="linha">
+            <code>console.log(preco3.toFixed());</code>
+            <p class="saida">Saída: 1499</p>
+        </div>
+        <div class="linha">
+            <code>console.log(abastec, +abastec.toFixed(2));</code>
+            <p class="saida">Saída: 359.871749, 359.87</p>
+        </div>
+        <h3>hexArray</h3>
+        <div class="linha">
+            <code>const preco4 = [255, 0, 255];</code>
+            <p class="saida">Saída: preco4 = [255, 0, 255]</p>
+        </div>
+        <div class="linha">
+            <code>const hexArray = preco4.map(valor => valor.toString(16).padStart(2, '0'));</code>
+            <p class="saida">
+                0:"ff"; <br>
+                1: "00"; <br>
+                2: "ff"; <br>
+            </p>
+        </div>
+        <div class="linha">
+            <code>console.log(hexArray);</code>
+            <p class="saida">Saída: ['ff', '00', 'ff']</p>
+        </div>
+        <div class="linha">
+            <code>const hexString = hexArray.join('');</code>
+            <p class="saida">Saída: 'ff00ff'</p>
+        </div>
+        <div class="linha">
+            <code>console.log(hexString);</code>
+            <p class="saida">Saída: 'ff00ff'</p>
+        </div>
+        <h3>toLocaleString</h3>
+<div class="linha">
+    <code>const preco5 = 54.49;</code>
+    <p class="saida">Saída: preco5 = 54.49</p>
+</div>
+<div class="linha">
+    <code>console.log(preco5.toLocaleString('en-US', {style: 'currency', currency:'USD'}));</code>
+    <p class="saida">Saída: $54.49</p>
+</div>
+<div class="linha">
+    <code>console.log(preco5.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'}));</code>
+    <p class="saida">Saída: R$ 54,49</p>
+</div>
+<div class="linha">
+    <code>console.log(preco5.toLocaleString('pt-PT', {style: 'currency', currency:'EUR'}));</code>
+    <p class="saida">Saída: 54,49 €</p>
+</div>
+<div class="linha">
+    <code>console.log(preco5.toLocaleString('en-GB', {style: 'currency', currency:'GBP'}));</code>
+    <p class="saida">Saída: £54.49</p>
+</div>
+
+<h3>Math constantes</h3>
+<div class="linha">
+    <code>console.log(Math.PI, Math.E, Math.LN10);</code>
+    <p class="saida">Saída: 3.141592653589793, 2.718281828459045, 2.302585092994046</p>
+</div>
+
+<h3>Math funções</h3>
+<div class="linha">
+    <code>console.log(Math.abs(-5.5));</code>
+    <p class="saida">Saída: 5.5</p>
+</div>
+<div class="linha">
+    <code>console.log(Math.ceil(4.8334));</code>
+    <p class="saida">Saída: 5</p>
+</div>
+<div class="linha">
+    <code>console.log(Math.ceil(4.3));</code>
+    <p class="saida">Saída: 5</p>
+</div>
+<div class="linha">
+    <code>console.log(Math.floor(4.8334));</code>
+    <p class="saida">Saída: 4</p>
+</div>
+<div class="linha">
+    <code>console.log(Math.floor(4.3));</code>
+    <p class="saida">Saída: 4</p>
+</div>
+<div class="linha">
+    <code>console.log(Math.round(4.8334));</code>
+    <p class="saida">Saída: 5</p>
+</div>
+<div class="linha">
+    <code>console.log(Math.round(4.3));</code>
+    <p class="saida">Saída: 4</p>
+</div>
+
+<h3>Math max e min</h3>
+<div class="linha">
+    <code>console.log(Math.max(5, 3, 10, 42, 2));</code>
+    <p class="saida">Saída: 42</p>
+</div>
+<div class="linha">
+    <code>console.log(Math.min(5, 3, 10, 42, 2));</code>
+    <p class="saida">Saída: 2</p>
+</div>
+
+<h3>Math random</h3>
+<div class="linha">
+    <code>console.log(Math.random());</code>
+    <p class="saida">Saída: Número aleatório entre 0 e 1</p>
+</div>
+<div class="linha">
+    <code>console.log(Math.floor(Math.random() * 100));</code>
+    <p class="saida">Saída: Número aleatório entre 0 e 100</p>
+</div>
+<div class="linha">
+    <code>console.log(Math.floor(Math.random() * 500));</code>
+    <p class="saida">Saída: Número aleatório entre 0 e 500</p>
+</div>
+<div class="linha">
+    <code>console.log(Math.floor(Math.random() * (72 - 32 + 1)) + 32);</code>
+    <p class="saida">Saída: Número aleatório entre 32 e 72</p>
+</div>
+<div class="linha">
+    <code>const aleatorio = Math.round(Math.random() * 10);</code>
+    <p class="saida">Saída: Número aleatório entre 0 e 10</p>
+</div>
+<div class="linha">
+    <code>console.log(aleatorio);</code>
+    <p class="saida">Saída: Número aleatório entre 0 e 10</p>
+</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
