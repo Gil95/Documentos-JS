@@ -58,10 +58,28 @@
     <h1>Exercícios de JavaScript</h1>
     <h2>Aula 6 - Array</h2>
     <div class="container">
-        <h3>Titulo</h3>
+        <h3>Array's [0]</h3>
+        <p>Arrays sempre começam endereçadas por 0</p>
         <div class="linha">
-            <code>Code</code>
-            <p class="saida">Saída: </p>
+            <code>const instrumentos = ['Guitarra', 'Baixo', 'Violão'];<br>
+            const precos = [49, 99, 69, 89];
+            </code>
+            <p class="saida">Saída: array armazenada</p>
+        </div>
+        <div class="linha">
+            <code>const dados = [new String('Tipo 1'), ['Carro', 'Portas', {cor:'Azul', preco: 2000}], function andar(nome) { console.log(nome)}];
+            </code>
+            <p class="saida">Saída: array armazenada</p>
+        </div>
+        <div class="linha">
+            <code>dados[2]('Ford');
+            </code>
+            <p class="saida">Saída: Ford</p>
+        </div>
+        <div class="linha">
+            <code>dados[1][2].cor;
+            </code>
+            <p class="saida">Saída: 'Azul'</p>
         </div>
     <script src="script.js"></script>
 </body>
