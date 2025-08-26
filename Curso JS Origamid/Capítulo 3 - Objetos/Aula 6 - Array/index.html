@@ -81,6 +81,50 @@
             </code>
             <p class="saida">Saída: 'Azul'</p>
         </div>
+        <div class="linha">
+            <code>const carros = new Array('Ford', 'Fiat', 'Honda');</code>
+            <p class="saida">Saída: carros = ['Ford', 'Fiat', 'Honda']</p>
+        </div>
+        <div class="linha">
+            <code>carros[2] = 'Ferrari';</code>
+            <p class="saida">Saída: carros = ['Ford', 'Fiat', 'Ferrari']</p>
+        </div>
+        <div class="linha">
+            <code>carros[3] = 'Kia';</code>
+            <p class="saida">Saída: carros = ['Ford', 'Fiat', 'Ferrari', 'Kia']</p>
+        </div>
+        <div class="linha">
+            <code>carros[20] = 'Kia';</code>
+            <p class="saida">Saída: carros[20] = 'Kia' (índices 4 a 19 ficam vazios)</p>
+        </div>
+        <div class="linha">
+            <code>console.log(carros.length);</code>
+            <p class="saida">Saída: 21</p>
+        </div>
+        <div class="linha">
+            <code>let li = document.querySelectorAll('li');</code>
+            <p class="saida">Saída: NodeList de &lt;li&gt; do documento</p>
+        </div>
+        <div class="linha">
+            <code>li = Array.from(li);</code>
+            <p class="saida">Saída: li agora é um Array</p>
+        </div>
+        <div class="linha">
+            <code>const carros2 = { 0: 'Fiat', 1: 'Honda', 2: 'Ford', length: 4 };</code>
+            <p class="saida">Saída: carros2 é um objeto parecido com array</p>
+        </div>
+        <div class="linha">
+            <code>const carrosArray = Array.from(carros2);</code>
+            <p class="saida">Saída: carrosArray = ['Fiat', 'Honda', 'Ford', undefined]</p>
+        </div>
+
+        <h2>Exemplo</h2>
+        <ul>
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            <li>Item4</li>
+        </ul>
     <script src="script.js"></script>
 </body>
 </html>
