@@ -125,6 +125,54 @@
             <li>Item3</li>
             <li>Item4</li>
         </ul>
+        <div class="linha">
+            <code>const li = document.querySelectorAll('li');</code>
+            <p class="saida">Saída: NodeList de &lt;li&gt; do documento</p>
+        </div>
+        <div class="linha">
+            <code>const arrayLi = Array.from(li)</code>
+            <p class="saida">Saída: arrayLi agora é um Array</p>
+        </div>
+        <div class="linha">
+            <code>const obj = { 0: 'Gilson', 1: 'Neto', 4: 'Teste', length: 4 }</code>
+            <p class="saida">Saída: obj é um objeto parecido com array</p>
+        </div>
+        <div class="linha">
+            <code>const objArray = Array.from(obj);</code>
+            <p class="saida">Saída: objArray = ['Gilson', 'Neto', undefined, undefined]</p>
+        </div>
+        <div class="linha">
+            <code>console.log(li)</code>
+            <p class="saida">Saída: NodeList de &lt;li&gt; do documento (impresso no console)</p>
+        </div>
+
+        <h2>Array.of(), Array() e new Array()</h2>
+        
+        <div class="linha">
+            <code>Array.of(10);</code>
+            <p class="saida">Saída: [10]</p>
+        </div>
+        <p>Array.of sempre criará o conteúdo indicado como uma array</p>
+        <div class="linha">
+            <code>Array.of(1,2,3,4);</code>
+            <p class="saida">Saída: [1, 2, 3, 4]</p>
+        </div>
+        <div class="linha">
+            <code>new Array(5);</code>
+            <p class="saida">Saída: [empty × 5]</p>
+        </div>
+        <p>Uma new Array, quando indicado um número somente, ira criar uma array vazia com o length total do número indicado</p>
+        <div class="linha">
+            <code>Array(5);</code>
+            <p class="saida">Saída: [empty × 5]</p>
+        </div>
+        <p>O mesmo ocorre quando feita apenas como Array</p>
+        <div class="linha">
+            <code>Array(1,2,3,4);</code>
+            <p class="saida">Saída: [1, 2, 3, 4]</p>
+        </div>
+        <p>Porém quando se separa com vírgulas, criar uma array dessa forma, criará diversas array's com os números indicados</p>
+</div>
     <script src="script.js"></script>
 </body>
 </html>

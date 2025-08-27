@@ -17,15 +17,29 @@ carros[20] = 'Kia';
 console.log(carros.length);
 
 
-let li = document.querySelectorAll('li');
+const li = document.querySelectorAll('li');
 
-li = Array.from(li);
+const arrayLi = Array.from(li)
 
-const carros2 = {
-    0: 'Fiat',
-    1: 'Honda',
-    2: 'Ford',
+const obj = {
+    0: 'Gilson',
+    1: 'Neto',
+    4: 'Teste',
     length: 4,
 }
 
-const carrosArray = Array.from(carros2);
+const objArray = Array.from(obj);
+
+console.log(li)
+
+// Array.of() Array() e new Array()
+Array.of(10);
+
+Array.of(1,2,3,4);
+
+new Array(5);
+
+Array(5);
+
+Array(1,2,3,4);
+
