@@ -43,3 +43,19 @@ Array(5);
 
 Array(1,2,3,4);
 
+// [].length
+
+const frutas = ['Banana', 'Pêra', ['Uva Roxa', 'Uva Verde']];
+
+console.log(frutas.length);
+
+console.log(frutas[0].length);
+console.log(frutas[1].length);
+console.log(frutas[2].length);
+console.log(frutas[2][0].length);
+
+//Métodos Modificadores
+
+const instrumentos2 = ['Guitarra', 'Baixo', 'Violão'];
+instrumentos2.sort();
+console.log(instrumentos2);
