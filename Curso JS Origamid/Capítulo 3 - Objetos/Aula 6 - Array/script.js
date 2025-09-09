@@ -57,5 +57,46 @@ console.log(frutas[2][0].length);
 //Métodos Modificadores
 
 const instrumentos2 = ['Guitarra', 'Baixo', 'Violão'];
-instrumentos2.sort();
 console.log(instrumentos2);
+instrumentos2.sort();
+
+const idades = [32,21,33,43,1,12,8];
+idades.sort();
+
+console.log(instrumentos2);
+console.log(idades)
+
+// .unshift() e .push()
+
+const carros2 = ['Ford', 'Fiat', 'VW'];
+console.log(carros2);
+
+const novaArray = carros2.unshift('Honda', 'Kia');
+console.log(novaArray);
+console.log(carros2);
+
+const novaArray2 = carros2.push('Ferrari', 'Toyota', 'Subaru');
+console.log(novaArray2);
+console.log(carros2);
+
+//.shift() e .pop()
+
+const primeiroCarro = carros2.shift();
+console.log(primeiroCarro);
+console.log(carros2);
+
+const ultimoCarro = carros2.pop();
+console.log(ultimoCarro);
+console.log(carros2);
+
+carros2.reverse();
+console.log(carros2);
+
+// .splice(index, remover, item1, item1, ...)
+
+const carros3 = ['Ford', 'Fiat', 'VW', 'Honda'];
+carros3.splice(1, 0, 'Kia', 'Mustang');
+console.log(carros3);
+
+carros3.splice(3, 2, 'Ferrari');
+console.log(carros3);
