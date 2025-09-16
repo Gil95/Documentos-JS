@@ -100,3 +100,90 @@ console.log(carros3);
 
 carros3.splice(3, 2, 'Ferrari');
 console.log(carros3);
+
+// .copyWithin(alvo, inicio, final)
+
+const itens = ['item1', 'item2', 'item3', 'item4', 'item5'].copyWithin(2, 0, 3);
+console.log(itens);
+
+const itens2 = ['item1', 'item2', 'item3', 'item4', 'item5'].copyWithin(-1);
+console.log(itens2);
+
+// .fill(valor, inicio, final)
+
+const itens3 = ['item1', 'item2', 'item3', 'item4'].fill('Banana');
+console.log(itens3);
+
+const itens4 = ['item1', 'item2', 'item3', 'item4'].fill('Banana', 2);
+console.log(itens4);
+
+
+const itens5 = ['item1', 'item2', 'item3', 'item4'].fill('Banana', 1, 3);
+console.log(itens5);
+
+// Métodos de acesso [].concat()
+
+const transporte1 = ['Barco', 'Avião'];
+console.log(transporte1);
+const transporte2 = ['Carro', 'Moto'];
+console.log(transporte2);
+
+const transportes = transporte1.concat(transporte2);
+console.log(transportes);
+
+const maisTransportes = [].concat(transporte1, transporte2, 'Van');
+console.log(maisTransportes);
+
+// .includes(), .indexOf() e .lastIndexOf()
+
+const linguagens = ['html', 'css', 'js', 'php', 'python', 'js'];
+
+console.log(linguagens.includes('css'));
+console.log(linguagens.includes('ruby'));
+console.log(linguagens.indexOf('python'));
+console.log(linguagens.indexOf('js'));
+console.log(linguagens.lastIndexOf('js'));
+console.log(linguagens.indexOf('ruby'));
+
+// .join(separador)
+
+const linguagens2 = ['html', 'css', 'js', 'php', 'python'];
+
+console.log(linguagens2.join());
+console.log(linguagens2.join(''));
+console.log(linguagens2.join(' '));
+console.log(linguagens2.join(', '));
+console.log(linguagens2.join('-_-'));
+
+let htmlString = '<h2>Título Principal</h2>'
+console.log(htmlString);
+
+htmlString = htmlString.split('h2');
+console.log(htmlString);
+
+htmlString = htmlString.join('h1');
+console.log(htmlString);
+
+// .slice()
+
+const linguagens3 = ['html', 'css', 'js', 'php', 'python'];
+console.log(linguagens3);
+
+
+console.log(linguagens3.slice(3));
+console.log(linguagens3.slice(1, 4));
+
+const cloneLinguagens = linguagens3.slice();
+console.log(cloneLinguagens);
+
+// .splice(index, remover, item1, item2, ...)
+
+const carros4 = ['Ford', 'Fiat', 'VW', 'Honda'];
+console.log(carros4);
+
+carros4.splice(1, 0, 'Kia', 'Mustang');
+console.log(carros4);
+
+carros4.splice(3, 2, 'Ferrari');
+console.log(carros4);
+
