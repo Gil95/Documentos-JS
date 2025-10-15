@@ -187,3 +187,29 @@ console.log(carros4);
 carros4.splice(3, 2, 'Ferrari');
 console.log(carros4);
 
+const carros5 = ['Kia', 'Ferrari', 'Parati', 'Gol'];
+
+console.log(carros5);
+
+console.log(carros5.splice(2,0, 'Fusca','Uno'));
+
+console.log(carros5);
+
+// .copyWithin(alvo, inicio, final)
+
+console.log(['Item1', 'Item2','Item3', 'Item4', 'Item5'].copyWithin(2,0,3));
+
+console.log(['Item1', 'Item2','Item3', 'Item4'].copyWithin(-1));
+
+// .fill(valor, inicio, final)
+
+console.log(['Item1', 'Item2','Item3', 'Item4'].fill('Banana'));
+
+console.log(['Item1', 'Item2','Item3', 'Item4'].fill('Banana', 2));
+
+console.log(['Item1', 'Item2','Item3', 'Item4', 'Item5'].fill('Banana', 1, 3));
+
+// Métodos de Acesso
+
+// .concat()
+
