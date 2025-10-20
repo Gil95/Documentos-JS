@@ -213,3 +213,13 @@ console.log(['Item1', 'Item2','Item3', 'Item4', 'Item5'].fill('Banana', 1, 3));
 
 // .concat()
 
+const transporte3 = ['Barco', 'Avião'];
+const transporte4 = ['Carro', 'Moto'];
+const transportes2 = transporte3.concat(transporte4, 'Helicóptero');
+
+console.log(transportes2);
+
+const maisTransportes2 = [].concat(transporte3, transporte4, 'Van');
+
+console.log(maisTransportes2);
+
