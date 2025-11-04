@@ -164,7 +164,7 @@ console.log(htmlString);
 htmlString = htmlString.join('h1');
 console.log(htmlString);
 
-// .slice()
+// .slice(inicio, final)
 
 const linguagens3 = ['html', 'css', 'js', 'php', 'python'];
 console.log(linguagens3);
@@ -175,61 +175,3 @@ console.log(linguagens3.slice(1, 4));
 
 const cloneLinguagens = linguagens3.slice();
 console.log(cloneLinguagens);
-
-// .splice(index, remover, item1, item2, ...)
-
-const carros4 = ['Ford', 'Fiat', 'VW', 'Honda'];
-console.log(carros4);
-
-carros4.splice(1, 0, 'Kia', 'Mustang');
-console.log(carros4);
-
-carros4.splice(3, 2, 'Ferrari');
-console.log(carros4);
-
-const carros5 = ['Kia', 'Ferrari', 'Parati', 'Gol'];
-
-console.log(carros5);
-
-console.log(carros5.splice(2,0, 'Fusca','Uno'));
-
-console.log(carros5);
-
-// .copyWithin(alvo, inicio, final)
-
-console.log(['Item1', 'Item2','Item3', 'Item4', 'Item5'].copyWithin(2,0,3));
-
-console.log(['Item1', 'Item2','Item3', 'Item4'].copyWithin(-1));
-
-// .fill(valor, inicio, final)
-
-console.log(['Item1', 'Item2','Item3', 'Item4'].fill('Banana'));
-
-console.log(['Item1', 'Item2','Item3', 'Item4'].fill('Banana', 2));
-
-console.log(['Item1', 'Item2','Item3', 'Item4', 'Item5'].fill('Banana', 1, 3));
-
-// Métodos de Acesso
-
-// .concat()
-
-const transporte3 = ['Barco', 'Avião'];
-const transporte4 = ['Carro', 'Moto'];
-const transportes2 = transporte3.concat(transporte4, 'Helicóptero');
-
-console.log(transportes2);
-
-const maisTransportes2 = [].concat(transporte3, transporte4, 'Van');
-
-console.log(maisTransportes2);
-
-// .includes(), .indexOf() e .lastIndexOf()
-
-const linguagens4 = ['html', 'css', 'js', 'php', 'python', 'js'];
-
-console.log(linguagens4.includes('css'));
-console.log(linguagens4.includes('ruby'));
-console.log(linguagens4.indexOf('python'));
-console.log(linguagens4.indexOf('js'));
-console.log(linguagens4.lastIndexOf('js'));
-

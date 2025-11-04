@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<style>
+        body {
+            background-color: #303030;
+            color: #f0f0f0;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 , h3{
+            color: #ffcc00;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        p {
+            color: #ffcc00;
+            font-family: monospace;
+        }
+        .linha {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+        code {
+            background: #505050;
+            color: #00ff00;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            flex: 1;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .saida {
+            background: #404040;
+            color: #ffcc00;
+            padding: 10px;
+            border-radius: 5px;
+            font-style: monospace;
+            flex: 1;
+            text-align: right;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios de JavaScript</h1>
+    <div class="container">
+        <h3>Questão 1</h3>
+        <div class="linha">
+            <code>const comidas = ['Pizza', 'Frango', 'Carne', 'Macarrão'];</code>
+        </div>
+        <p>
+            <ul>
+                <li>Remova o primeiro valor de comidas e coloque em uma variável</li>
+                <li>Remova o último valor de comidas e coloque em uma variável</li>
+                <li>Adiciona 'Arroz' ao final da array</li>
+                <li>Adicione 'Peixe e 'Batata ao início da array</li>
+            </ul>
+        </p>
+        <h3>Questão 2</h3>
+        <div class="linha">
+            <code>const estudantes = ['Marcio', 'Brenda', 'Joana', 'Kleber', 'Julia'];</code>
+        </div>
+        <p>
+            <ul>
+                <li>Arrume os estudantes em ordem alfabética</li>
+                <li>Inverta a ordem dos estudantes</li>
+                <li>Verifique se Joana faz parte dos estudantes</li>
+                <li>Verifique se Juliana faz parte dos estudantes</li>
+            </ul>
+        </p>
+        <h3>Questão 3</h3>
+        <div class="linha">
+            <code><pre>const html = '&lt;section&gt;
+                 &lt;div&gt;Sobre&lt;/div&gt;
+                 &lt;div&gt;Produtos&lt;/div&gt;
+                 &lt;div&gt;Contato&lt;/div&gt;
+             &lt;/section&gt;'</pre></code>
+        </div>
+        <p>
+            <ul>
+                <li>Substitua section por ul e div com li, utilizando split e join</li>
+            </ul>
+        </p>
+        <h3>Questão 2</h3>
+        <div class="linha">
+            <code>const carros = ['Ford', 'Fiat', 'VW', 'Honda'];</code>
+        </div>
+        <p>
+            <ul>
+                <li>Remova o último carro, mas antes de remover, salve a array original em outra variável</li>
+            </ul>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
