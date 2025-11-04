@@ -313,6 +313,186 @@
             <code>console.log(carros3);</code>
             <p class="saida">Saída: ['Ford', 'Kia', 'Mustang', 'Ferrari', 'Honda']</p>
         </div>
+
+        <h3>.copyWithin()</h3>
+        
+        <div class="linha">
+            <code>const itens = ['item1','item2','item3','item4','item5'].copyWithin(2,0,3);</code>
+            <p class="saida">Saída: ['item1','item2','item1','item2','item3']</p>
+        </div>
+        <div class="linha">
+            <code>const itens2 = ['item1','item2','item3','item4','item5'].copyWithin(-1);</code>
+            <p class="saida">Saída: ['item1','item2','item3','item4','item1']</p>
+        </div>
+
+        <h3>.fill(valor, inicio, final)</h3>
+        <div class="linha">
+            <code>['item1','item2','item3','item4'].fill('Banana');</code>
+            <p class="saida">Saída: ['Banana','Banana','Banana','Banana']</p>
+        </div>
+        <div class="linha">
+            <code>['item1','item2','item3','item4'].fill('Banana', 2);</code>
+            <p class="saida">Saída: ['item1','item2','Banana','Banana']</p>
+        </div>
+        <div class="linha">
+            <code>['item1','item2','item3','item4'].fill('Banana', 1, 3);</code>
+            <p class="saida">Saída: ['item1','Banana','Banana','item4']</p>
+        </div>
+
+        <h3>Concatenação (.concat)</h3>
+        <div class="linha">
+            <code>const transporte1 = ['Barco','Avião']; const transporte2 = ['Carro','Moto']; const transportes = transporte1.concat(transporte2);</code>
+            <p class="saida">Saída: ['Barco','Avião','Carro','Moto']</p>
+        </div>
+        <div class="linha">
+            <code>const maisTransportes = [].concat(transporte1, transporte2, 'Van');</code>
+            <p class="saida">Saída: ['Barco','Avião','Carro','Moto','Van']</p>
+        </div>
+
+        <h3>.includes(), .indexOf(), .lastIndexOf()</h3>
+        <div class="linha">
+            <code>const linguagens = ['html','css','js','php','python','js'];</code>
+            <p class="saida">Saída: array declarado</p>
+        </div>
+        <div class="linha">
+            <code>linguagens.includes('css');</code>
+            <p class="saida">Saída: true</p>
+        </div>
+        <div class="linha">
+            <code>linguagens.includes('ruby');</code>
+            <p class="saida">Saída: false</p>
+        </div>
+        <div class="linha">
+            <code>linguagens.indexOf('python');</code>
+            <p class="saida">Saída: 4</p>
+        </div>
+        <div class="linha">
+            <code>linguagens.indexOf('js');</code>
+            <p class="saida">Saída: 2</p>
+        </div>
+        <div class="linha">
+            <code>linguagens.lastIndexOf('js');</code>
+            <p class="saida">Saída: 5</p>
+        </div>
+        <div class="linha">
+            <code>linguagens.indexOf('ruby');</code>
+            <p class="saida">Saída: -1</p>
+        </div>
+
+        <h3>.join() e manipulação de string</h3>
+        <div class="linha">
+            <code>const linguagens2 = ['html','css','js','php','python']; linguagens2.join();</code>
+            <p class="saida">Saída: 'html,css,js,php,python'</p>
+        </div>
+        <div class="linha">
+            <code>linguagens2.join('');</code>
+            <p class="saida">Saída: 'htmlcssjsphppython'</p>
+        </div>
+        <div class="linha">
+            <code>linguagens2.join(' ');</code>
+            <p class="saida">Saída: 'html css js php python'</p>
+        </div>
+        <div class="linha">
+            <code>linguagens2.join(', ');</code>
+            <p class="saida">Saída: 'html, css, js, php, python'</p>
+        </div>
+        <div class="linha">
+            <code>linguagens2.join('-_-');</code>
+            <p class="saida">Saída: 'html-_-css-_-js-_-php-_-python'</p>
+        </div>
+
+        <div class="linha">
+            <code>let htmlString = '&lt;h2&gt;Título Principal&lt;/h2&gt;'; htmlString = htmlString.split('h2'); htmlString = htmlString.join('h1');</code>
+            <p class="saida">Saída (final): '&lt;h1&gt;Título Principal&lt;/h1&gt;'</p>
+        </div>
+
+        <h3>.slice()</h3>
+        <div class="linha">
+            <code>const linguagens3 = ['html','css','js','php','python']; linguagens3.slice(3);</code>
+            <p class="saida">Saída: ['php','python']</p>
+        </div>
+        <div class="linha">
+            <code>linguagens3.slice(1,4);</code>
+            <p class="saida">Saída: ['css','js','php']</p>
+        </div>
+        <div class="linha">
+            <code>const cloneLinguagens = linguagens3.slice();</code>
+            <p class="saida">Saída: clone com todos os itens</p>
+        </div>
+
+        <h3>Repetição dos exemplos (.splice, copyWithin, fill, concat, includes...)</h3>
+        <div class="linha">
+            <code>const carros4 = ['Ford','Fiat','VW','Honda']; carros4.splice(1,0,'Kia','Mustang'); carros4.splice(3,2,'Ferrari');</code>
+            <p class="saida">Saída final: ['Ford','Kia','Mustang','Ferrari','Honda']</p>
+        </div>
+
+        <div class="linha">
+            <code>const carros5 = ['Kia','Ferrari','Parati','Gol']; carros5.splice(2,0,'Fusca','Uno');</code>
+            <p class="saida">Saída: adicionou e retornou array modificado</p>
+        </div>
+
+        <div class="linha">
+            <code>console.log(['Item1','Item2','Item3','Item4','Item5'].copyWithin(2,0,3));</code>
+            <p class="saida">Saída: ['Item1','Item2','Item1','Item2','Item3']</p>
+        </div>
+
+        <div class="linha">
+            <code>console.log(['Item1','Item2','Item3','Item4'].copyWithin(-1));</code>
+            <p class="saida">Saída: ['Item1','Item2','Item3','Item1']</p>
+        </div>
+
+        <div class="linha">
+            <code>console.log(['Item1','Item2','Item3','Item4'].fill('Banana'));</code>
+            <p class="saida">Saída: ['Banana','Banana','Banana','Banana']</p>
+        </div>
+
+        <div class="linha">
+            <code>console.log(['Item1','Item2','Item3','Item4'].fill('Banana',2));</code>
+            <p class="saida">Saída: ['Item1','Item2','Banana','Banana']</p>
+        </div>
+
+        <div class="linha">
+            <code>console.log(['Item1','Item2','Item3','Item4','Item5'].fill('Banana',1,3));</code>
+            <p class="saida">Saída: ['Item1','Banana','Banana','Item4','Item5']</p>
+        </div>
+
+        <div class="linha">
+            <code>const transporte3=['Barco','Avião'], transporte4=['Carro','Moto'];</code>
+            <p class="saida">Saída: arrays declarados</p>
+        </div>
+        <div class="linha">
+            <code>const transportes2 = transporte3.concat(transporte4, 'Helicóptero');</code>
+            <p class="saida">Saída: ['Barco','Avião','Carro','Moto','Helicóptero']</p>
+        </div>
+        <div class="linha">
+            <code>const maisTransportes2 = [].concat(transporte3, transporte4, 'Van');</code>
+            <p class="saida">Saída: ['Barco','Avião','Carro','Moto','Van']</p>
+        </div>
+
+        <div class="linha">
+            <code>const linguagens4 = ['html','css','js','php','python','js'];</code>
+            <p class="saida">Saída: array declarado</p>
+        </div>
+        <div class="linha">
+            <code>console.log(linguagens4.includes('css'));</code>
+            <p class="saida">Saída: true</p>
+        </div>
+        <div class="linha">
+            <code>console.log(linguagens4.includes('ruby'));</code>
+            <p class="saida">Saída: false</p>
+        </div>
+        <div class="linha">
+            <code>console.log(linguagens4.indexOf('python'));</code>
+            <p class="saida">Saída: 4</p>
+        </div>
+        <div class="linha">
+            <code>console.log(linguagens4.indexOf('js'));</code>
+            <p class="saida">Saída: 2</p>
+        </div>
+        <div class="linha">
+            <code>console.log(linguagens4.lastIndexOf('js'));</code>
+            <p class="saida">Saída: 5</p>
+        </div>
 </div>
     <script src="script.js"></script>
 </body>

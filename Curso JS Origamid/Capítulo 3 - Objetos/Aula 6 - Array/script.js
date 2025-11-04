@@ -223,3 +223,13 @@ const maisTransportes2 = [].concat(transporte3, transporte4, 'Van');
 
 console.log(maisTransportes2);
 
+// .includes(), .indexOf() e .lastIndexOf()
+
+const linguagens4 = ['html', 'css', 'js', 'php', 'python', 'js'];
+
+console.log(linguagens4.includes('css'));
+console.log(linguagens4.includes('ruby'));
+console.log(linguagens4.indexOf('python'));
+console.log(linguagens4.indexOf('js'));
+console.log(linguagens4.lastIndexOf('js'));
+
