@@ -102,11 +102,24 @@ carros.forEach(function(item, index, array){
 
 li.forEach(i => i.classList.add('ativa'));
 
+</pre>
+        </code>
+    <p class="saida">Adiciona uma classe chamada 'ativa' a cada li do HTML</p>
+    </div>
+
+    <br>
+
+    <div class="linha">
+        <code>
+<pre>const li = document.querySelectorAll('li');
+
 li.forEach(function(item){
     item.classList.add('ativa');
 });</pre>
         </code>
-        <p class="saida">Adiciona uma classe chamada 'ativa' a cada li do HTML</p>
+        <p class="saida">Funciona exatamente igual à outra linha anterior <br>
+        Adiciona uma classe chamada 'ativa' a cada li do HTML <br>
+        Caso acrescente algum outro argumento como um index, o mesmo pode ser adicionado em casa classe no elemento.</p>
     </div>
     
     <script src="script.js"></script>
