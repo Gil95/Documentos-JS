@@ -88,40 +88,163 @@ carros.forEach(function(item, index, array){
                 HONDA
             </p>
         </div>
-    </div>
-
-    <h3>Arrow Function</h3>
-    <ul>
-        <li>Teste1</li>
-        <li>Teste2</li>
-        <li>Teste3</li>
-    </ul>
-    <div class="linha">
-        <code>
+        <h3>Arrow Function</h3>
+        <ul>
+            <li>Teste1</li>
+            <li>Teste2</li>
+            <li>Teste3</li>
+        </ul>
+        <div class="linha">
+            <code>
 <pre>const li = document.querySelectorAll('li');
 
 li.forEach(i => i.classList.add('ativa'));
 
 </pre>
-        </code>
-    <p class="saida">Adiciona uma classe chamada 'ativa' a cada li do HTML</p>
-    </div>
+            </code>
+            <p class="saida">Adiciona uma classe chamada 'ativa' a cada li do HTML</p>
+        </div>
 
-    <br>
+        <br>
 
-    <div class="linha">
-        <code>
+        <div class="linha">
+            <code>
 <pre>const li = document.querySelectorAll('li');
 
 li.forEach(function(item){
     item.classList.add('ativa');
 });</pre>
-        </code>
-        <p class="saida">Funciona exatamente igual à outra linha anterior <br>
+            </code>
+            <p class="saida">Funciona exatamente igual à outra linha anterior <br>
         Adiciona uma classe chamada 'ativa' a cada li do HTML <br>
         Caso acrescente algum outro argumento como um index, o mesmo pode ser adicionado em casa classe no elemento.</p>
+        </div>
+        <h3>Modificar a Array Original</h3>
+        <p>Você pode modificar os valores da array dentro da iteração usando o índice</p>
+
+        <div class="linha">
+            <code>
+<pre>const carros2 = ['Ford', 'Fiat', 'Honda']
+carros2.forEach((item, index, array) => {
+    array[index] = item.toUpperCase();
+});
+console.log(carros2);</pre>
+            </code>
+            <p class="saida">['FORD', 'FIAT', 'HONDA']</p>
+        </div>
+
+        <h3>Arrow Function</h3>
+        <p>Adicionar classes aos elementos</p>
+        <div class="linha">
+            <code>
+<pre>const li = document.querySelectorAll('li');
+
+li.forEach((i,index) => i.classList.add('ativa' + index));
+
+li.forEach(function(item, index){
+    item.classList.add('ativa' + index);
+});</pre>
+            </code>
+            <p class="saida">Adiciona classe ativa0, ativa1, ativa2...</p>
+        </div>
+
+        <h3>Concatenar strings</h3>
+        <p>Adicionar texto aos valores existentes na array</p>
+
+        <div class="linha">
+            <code>
+<pre>const carros3 = ['Ford', 'Fiat', 'Honda'];
+carros3.forEach((item, index, array) => {
+    array[index] = 'Carro ' + item;
+});
+console.log(carros3);</pre>
+            </code>
+            <p class="saida">['Carro Ford', 'Carro Fiat', 'Carro Honda']</p>
+        </div>
+
+        <h2>[].map(callback(itemAtual, index, array))</h2>
+        <p>Funciona da mesma forma que o forEach(), porém ao invés de retornar undefined, retorna uma nova array com valores atualizados de acordo com o return de cada iteração</p>
+        <div class="linha">
+            <code>
+<pre>const carros4 = ['Ford', 'Fiat', 'Honda'];
+
+const newCarros = carros4.map((item) => {
+    return 'Carro '+ item;
+});
+
+console.log(carros4, newCarros);</pre>
+            </code>
+            <p class="saida">['Ford', 'Fiat', 'Honda'] <br> ['Carro Ford', 'Carro Fiat', 'Carro Honda']</p>
+        </div>
+
+        <h3>Transformar para UPPERCASE</h3>
+        <p>Converter todos os valores da array para letras maiúsculas</p>
+
+        <div class="linha">
+            <code>
+<pre>const novaArray = carros4.map((item, index, array) => {
+    return item.toUpperCase();
+});
+
+console.log(novaArray, carros4);</pre>
+            </code>
+            <p class="saida">['FORD', 'FIAT', 'HONDA'] <br> ['Ford', 'Fiat', 'Honda']</p>
+        </div>
+
+        <h3>Multiplicar números</h3>
+        <p>Usar map para fazer operações matemáticas com os valores da array</p>
+        
+        <div class="linha">
+            <code>
+<pre>const numeros = [2, 4, 5, 6, 78];
+
+const numerosX2 = numeros.map(n => n * 2);
+
+console.log(numerosX2);</pre>
+            </code>
+            <p class="saida">[4, 8, 10, 12, 156]</p>
+        </div>
+
+        <h3>Valor Retornado</h3>
+        <p>Se não retornarmos nenhum valor durante a iteração utilizando map, o valor retornado como de qualquer função que não possui o return, será undefined.</p>
+        <div class="linha">
+            <code>
+<pre>const carros5 = ['Ford', 'Fiat', 'Honda'];
+const newCarros2 = carros.map((item) => {
+    const novoValor = 'Carro ' + item;
+});
+
+console.log(newCarros2);</pre>
+            </code>
+            <p class="saida">[undefined, undefined, undefined]</p>
+        </div>
+
+        <h3>Arrow Function e [].map()</h3>
+        <p>Uma Arrow Function de linha única e sem chaves irá retornar o valor após a fat arrow =></p>
+        <div class="linha">
+            <code>
+<pre>const numeros2 = [2, 4, 5, 6, 8, 10, 12, 14];
+
+const numerosX3 = numeros2.map(n => n * 3);
+
+console.log(numerosX3);</pre>
+            </code>
+            <p class="saida">[6, 12, 15, 18, 24, 30, 36, 42]</p>
+        </div>
+
+        <h3>[].map() vs [].forEach()</h3>
+        <p>Se o objetivo for modificar os valores da array atual, sempre utilize o map, pois assim uma nova array com os valores modificados é retornada e você pode imediatamente iterar novamente sobre estes valores.</p>
+        <div class="linha">
+            <code>
+<pre>const numeros4 = [2, 4, 5, 6, 8, 10, 12, 14];
+
+const numerosX4 = numeros4.map(n => n * 4);
+
+console.log(numerosX4);</pre>
+            </code>
+            <p class="saida">[8, 16, 20, 24, 32, 40, 48, 56]</p>
+        </div>
     </div>
-    
     <script src="script.js"></script>
 </body>
 </html>
