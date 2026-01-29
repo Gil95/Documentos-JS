@@ -85,6 +85,8 @@ console.log(numerosX3); // [6, 12, 15, 18, 24, 30, 36, 42];
 
 // [].map() vs [].forEach()
 // Se o objetivo for modificar os valores da array atual, sempre utilize o map, pois assim uma nova array com os valores modificados é retornada e você pode imediatamente iterar novamente sobre estes valores.
+// [].forEach() altera a array e pode adicionar valores e classes à array existente.
+// [].map() já faz um pouco diferente, este cria uma nova array.
 
 const numeros4 = [2, 4, 5, 6, 8, 10, 12, 14];
 
@@ -92,3 +94,54 @@ const numeros4 = [2, 4, 5, 6, 8, 10, 12, 14];
 const numerosX4 = numeros4.map(n => n * 4);
 
 console.log(numerosX4); // [8, 16, 20, 24, 32, 40, 48, 56];
+
+// Exemplo de uso de [].map()
+// Neste caso, o .map foi utilizado para criar uma nova array com alguns dos dados de outra array anterior.
+
+const aulas = [
+    {
+        nome:'HTML 1',
+        min: 15 
+    },
+    {
+        nome:'HTML 2',
+        min: 10 
+    },
+    {
+        nome:'CSS 1',
+        min: 20 
+    },
+    {
+        nome:'JS 1',
+        min: 25 
+    },
+]
+
+const tempoAulas = aulas.map(aula=> aula.min);
+function nomeAulas(aula) {
+    return aula.nome;
+}
+const arrayNomeAulas = aulas.map(nomeAulas);
+
+console.log(tempoAulas,arrayNomeAulas);
+
+// [].reduce()
+// [].reduce(callback(acumulador, valorAtual, index, array), valorInicial)
+
+// executa a função de callback para cada item da Aray. Um valor especial existe nessa função de callback, ele é chamado de acumulador, mas é na verdade apenas o retorno da iteração anterior.
+
+const aulas2 = [10, 25, 30];
+const total1 = aulas2.reduce((acumulador, atual, index, array) => {
+    console.log(acumulador, atual, index, array);
+    return acumulador + atual;
+});
+
+// No caso do total1, não teve valor inicial definido, ou seja, começou como o valor 0.
+
+console.log(total1);
+
+const total2 = aulas2.reduce((acc, cur) => acc + cur, 100);
+
+// No caso do total2, foi definido um valor inicial de 100.
+
+console.log(total2);
