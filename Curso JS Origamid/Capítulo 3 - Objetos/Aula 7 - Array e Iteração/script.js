@@ -133,8 +133,8 @@ console.log(tempoAulas,arrayNomeAulas);
 const aulas2 = [10, 25, 30];
 const total1 = aulas2.reduce((acumulador, atual, index, array) => {
     console.log(acumulador, atual, index, array);
-    return acumulador + atual;
-});
+    return acumulador + item;
+}, 33);
 
 // No caso do total1, não teve valor inicial definido, ou seja, começou como o valor 0.
 
