@@ -88,10 +88,10 @@ console.log(numerosX3); // [6, 12, 15, 18, 24, 30, 36, 42];
 // [].forEach() altera a array e pode adicionar valores e classes à array existente.
 // [].map() já faz um pouco diferente, este cria uma nova array.
 
-const numeros4 = [2, 4, 5, 6, 8, 10, 12, 14];
+const numeros3 = [2, 4, 5, 6, 8, 10, 12, 14];
 
 
-const numerosX4 = numeros4.map(n => n * 4);
+const numerosX4 = numeros3.map(n => n * 4);
 
 console.log(numerosX4); // [8, 16, 20, 24, 32, 40, 48, 56];
 
@@ -131,10 +131,10 @@ console.log(tempoAulas,arrayNomeAulas);
 // executa a função de callback para cada item da Aray. Um valor especial existe nessa função de callback, ele é chamado de acumulador, mas é na verdade apenas o retorno da iteração anterior.
 
 const aulas2 = [10, 25, 30];
-const total1 = aulas2.reduce((acumulador, atual, index, array) => {
-    console.log(acumulador, atual, index, array);
+const total1 = aulas2.reduce((acumulador, item, index, array) => {
+    console.log(acumulador, item, index);
     return acumulador + item;
-}, 33);
+}, 0);
 
 // No caso do total1, não teve valor inicial definido, ou seja, começou como o valor 0.
 
@@ -145,3 +145,14 @@ const total2 = aulas2.reduce((acc, cur) => acc + cur, 100);
 // No caso do total2, foi definido um valor inicial de 100.
 
 console.log(total2);
+
+// Maior Valor com [].reduce()
+
+const numeros4 = [10, 25, 60, 5, 35, 10];
+
+const maiorValor = numeros4.reduce((anterior, atual) => {
+    return anterior < atual ? atual : anterior;
+});
+
+console.log(maiorValor);
+
