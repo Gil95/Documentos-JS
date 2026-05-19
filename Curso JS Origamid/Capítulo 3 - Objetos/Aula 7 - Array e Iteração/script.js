@@ -156,3 +156,13 @@ const maiorValor = numeros4.reduce((anterior, atual) => {
 
 console.log(maiorValor);
 
+const numeros5 = [10, 25, 30, 3, 54, 33, 22];
+
+const maiorValor2 = numeros5.reduce((anterior, atual) => {
+    if (anterior > atual)
+        return anterior
+    else
+        return atual
+})
+
+console.log(maiorValor2);
