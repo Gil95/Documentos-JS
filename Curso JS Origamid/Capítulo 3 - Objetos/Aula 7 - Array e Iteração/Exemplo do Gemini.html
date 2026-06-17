@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstração Prática: forEach vs Map</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #202024;
+            color: #e1e1e6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #2b2b32;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        h2 { color: #00b37e; border-bottom: 1px solid #4d4d57; padding-bottom: 10px; }
+        .produto {
+            background: #121214;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            transition: all 0.3s;
+        }
+        /* Classe que o forEach vai adicionar */
+        .selecionado {
+            border-left: 5px solid #00b37e;
+            background: #1a2f26;
+        }
+        button {
+            background: #00b37e;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover { background: #029469; }
+        .secao-botoes { margin: 20px 0; text-align: center; }
+        #console-simulado {
+            background: #121214;
+            padding: 15px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #f8f8f2;
+            min-height: 50px;
+            border: 1px solid #4d4d57;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Lista de Produtos (Original)</h2>
+    <!-- Temos 3 elementos de produto na tela -->
+    <div class="produto"><span>Item 1: Mouse Gamer</span> <strong>R$ 100</strong></div>
+    <div class="produto"><span>Item 2: Teclado Mecânico</span> <strong>R$ 200</strong></div>
+    <div class="produto"><span>Item 3: Monitor UltraWide</span> <strong>R$ 1200</strong></div>
+
+    <div class="secao-botoes">
+        <h3>Testar o .forEach() (Ações/Efeitos Visuais)</h3>
+        <button onclick="testarForEachVisual()">1. Modificar Tela (Efeito Colateral)</button>
+        <button onclick="testarForEachConsole()">2. Ver Itens no Console</button>
+        
+        <h3>Testar o .map() (Transformação de Dados)</h3>
+        <button onclick="testarMapDesconto()">3. Calcular 10% de Desconto</button>
+        <button onclick="testarMapApenasNomes()">4. Isolar Apenas os Nomes</button>
+    </div>
+
+    <h3>Resultado do Script (Simulação do Console):</h3>
+    <div id="console-simulado">Clique em um dos botões acima para ver a mágica...</div>
+</div>
+
+<script>
+    // Nossos dados vindo do "banco de dados"
+    const produtosPrecos = [100, 200, 1200];
+    const produtosLista = [
+        { nome: 'Mouse Gamer', preco: 100 },
+        { nome: 'Teclado Mecânico', preco: 200 },
+        { nome: 'Monitor UltraWide', preco: 1200 }
+    ];
+
+    const painel = document.getElementById('console-simulado');
+
+    // --- EXEMPLOS COM FOREACH ---
+
+    // Botão 1: Usa o forEach para colocar uma classe CSS em cada item da tela
+    function testarForEachVisual() {
+        const elementos = document.querySelectorAll('.produto');
+        
+        // O forEach passa de um em um adicionando a classe, causando um efeito visual
+        elementos.forEach(div => {
+            div.classList.toggle('selecionado');
+        });
+        
+        painel.innerHTML = "O .forEach() passou por todos os elementos HTML da tela e adicionou/removeu a classe CSS '.selecionado' de cada um deles.";
+    }
+
+    // Botão 2: Usa o forEach apenas para ler a lista e mostrar no painel
+    function testarForEachConsole() {
+        let texto = "Executando ação para cada item:<br>";
+        
+        produtosLista.forEach((item, index) => {
+            texto += `-> Enviando produto ${index + 1}: ${item.nome} para o relatório.<br>`;
+        });
+        
+        painel.innerHTML = texto;
+    }
+
+    // --- EXEMPLOS COM MAP ---
+
+    // Botão 3: Usa o map para criar uma NOVA lista de preços com desconto
+    function testarMapDesconto() {
+        // O map pega o array original [100, 200, 1200] e gera um NOVO array modificado
+        const precosComDesconto = produtosPrecos.map(preco => preco * 0.9);
+        
+        painel.innerHTML = `
+            <b>Array Original:</b> [${produtosPrecos.join(', ')}]<br>
+            <b>Novo Array gerado pelo .map():</b> [${precosComDesconto.join(', ')}]<br>
+            <small>*Note que o array original continuou intacto (Imutabilidade!).</small>
+        `;
+    }
+
+    // Botão 4: Usa o map para transformar um array de objetos em um array de strings (só os nomes)
+    function testarMapApenasNomes() {
+        // Pega a lista cheia de dados e extrai apenas o que importa para criar uma lista nova
+        const apenasNomes = produtosLista.map(item => item.nome);
+        
+        painel.innerHTML = `
+            <b>Array original tinha objetos completos.</b><br>
+            <b>Novo Array de Strings criado pelo .map():</b><br>
+            ${JSON.stringify(apenasNomes)}
+        `;
+    }
+</script>
+
+</body>
+</html>

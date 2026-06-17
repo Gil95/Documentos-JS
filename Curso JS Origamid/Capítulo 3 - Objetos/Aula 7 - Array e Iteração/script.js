@@ -166,3 +166,5 @@ const maiorValor2 = numeros5.reduce((anterior, atual) => {
 })
 
 console.log(maiorValor2);
+
+console.log(2**3);
