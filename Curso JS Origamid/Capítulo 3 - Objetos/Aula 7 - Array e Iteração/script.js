@@ -150,21 +150,48 @@ console.log(total2);
 
 const numeros4 = [10, 25, 60, 5, 35, 10];
 
-const maiorValor = numeros4.reduce((anterior, atual) => {
+const maiorNumero = numeros4.reduce((anterior, atual) => {
     return anterior < atual ? atual : anterior;
 });
 
-console.log(maiorValor);
+console.log(maiorNumero);
 
 const numeros5 = [10, 25, 30, 3, 54, 33, 22];
 
-const maiorValor2 = numeros5.reduce((anterior, atual) => {
+const maiorNumero2 = numeros5.reduce((anterior, atual) => {
     if (anterior > atual)
         return anterior
     else
         return atual
-})
+});
 
-console.log(maiorValor2);
+console.log(maiorNumero2);
 
-console.log(2**3);
+const maiorNumero3 = numeros5.reduce((anterior, atual) => anterior > atual ? anterior : atual, 0);
+
+console.log(maiorNumero3);
+
+const aulas3 = [
+    {
+        nome: 'HTML 1',
+        min: 15
+    },
+    {
+        nome: 'HTML 2',
+        min: 10
+    },
+    {
+        nome: 'CSS 1',
+        min: 20
+    },
+    {
+        nome: 'JS 1',
+        min: 25
+    },
+]
+
+const listaAulas = aulas.reduce((acumulador, aula, index) => {
+    acumulador[index] = aula.nome;
+    return acumulador;
+}, {});
+
