@@ -190,8 +190,21 @@ const aulas3 = [
     },
 ]
 
-const listaAulas = aulas.reduce((acumulador, aula, index) => {
-    acumulador[index] = aula.nome;
+const listaAulas = aulas.reduce((acumulador, atual, index) => {
+    acumulador[index] = atual.nome;
     return acumulador;
 }, {});
 
+console.log (listaAulas);
+
+// .reduceRight()
+
+// Existe também o método [].reduceRight(), a diferença é que este começa a iterar da direita para a esquerda, enquanto o reduce itera da esqueda para a direita.
+
+const frutas = ['Banana', 'Pêra', 'Uva'];
+
+const frutasRight = frutas.reduceRight((acc, fruta) => acc + ' ' + fruta);
+const frutas2 = frutas.reduce((acc, fruta) => acc + ' ' + fruta);
+
+console.log(frutasRight);
+console.log(frutas2);
