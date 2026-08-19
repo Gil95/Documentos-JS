@@ -208,3 +208,36 @@ const frutas2 = frutas.reduce((acc, fruta) => acc + ' ' + fruta);
 
 console.log(frutasRight);
 console.log(frutas2);
+
+// .some()
+
+// Se pelo menos um return da iteração for truthy, ele retorna true.
+
+const frutas3 = ['Banana', 'Pêra', 'Uva'];
+const temUva = frutas.some((fruta) => {
+    return fruta === 'Uva';
+})
+
+console.log(temUva);
+
+function maiorQue100(numero) {
+    return numero > 100;
+}
+
+const numeros6 = [0, 43, 22, 88, 101, 2];
+const temMaior = numeros6.some(maiorQue100);
+
+console.log(temMaior);
+
+function menorQue0(numero) {
+    return numero < 0;
+}
+
+const temMenor = numeros6.some(menorQue0);
+
+console.log(temMenor);
+
+const numeros7 = [0, 15, 20, 39, -5]
+const temMenor2 = numeros7.some(menorQue0)
+
+console.log(temMenor2);
